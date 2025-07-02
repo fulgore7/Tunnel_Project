@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Textile.Tsa.Opc
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Textile.Tsa.Opc.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Opc.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Opc.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Wdw_Sust.Textile.Tsa.Opc.TsaClassifiedCallOffData">
+ <summary>
+ This class is used in OPCTSAWorkflowCallOffData
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Tsa.Opc.TsaClassifiedBagDetail">
+ <summary>
+ Warning: this class is used in more than 1 OPC class and property names should not be changed
+ </summary>
+ <remarks>Last Updated: 09/11/2009 (CYS)</remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Opc.OpcTsaClassifiedDischargerCallOff.#ctor(System.String,System.String)">
+ <summary>
+ Create new object for the class. if groupName is not defined, it will be the
+ same as the TagName)
+ </summary>
+ <param name="plcName">Name of the PLC topic name</param>
+ <param name="tagName">Name of the tag name</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Opc.OpcTsaCleanworkDischargerCallOff.#ctor(System.String,System.String)">
+ <summary>
+ Create new object for the class. if groupName is not defined, it will be the
+ same as the TagName)
+ </summary>
+ <param name="plcName">Name of the PLC topic name</param>
+ <param name="tagName">Name of the tag name</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Opc.OpcTsaWorkflowCallOffControl.#ctor(System.String,System.String)">
+ <summary>
+ Create new object for the class. if groupName is not defined, it will be the
+ same as the TagName)
+ </summary>
+ <param name="plcName">Name of the PLC topic name</param>
+ <param name="tagName">Name of the tag name</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

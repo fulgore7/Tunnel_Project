@@ -1,0 +1,71 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TSA_Rail_System
+</name>
+</assembly>
+<members>
+<member name="T:TSA_Rail_System.TsaProductDistributionBuilder">
+ <summary>
+ To build the pie charts in the TSA rail graphics application
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:TSA_Rail_System.TsaProductDistributionBuilder.Build">
+ <summary>
+ Building the chart data
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:TSA_Rail_System.CtrlOpcTsaRailFormBase">
+ <summary>
+ Define anything here that is specifically related to TSA facility
+ </summary>
+ <seealso cref="T:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase" />
+</member>
+<member name="M:TSA_Rail_System.CtrlOpcTsaRailFormBase.ManageControlsEvent(System.Windows.Forms.Control,Wdw_Sust.Textile.Global.Opc.WinForms.Enums.HandlerAction)">
+ <summary>
+ This meant to be overriden so the derived form can wire events to the control
+ </summary>
+ <param name="ctrl">Control to be wired</param>
+ <param name="handlerAction">The handler action.</param>
+</member>
+<member name="M:TSA_Rail_System.CtrlOpcTsaRailFormBase.CheckIfBagCanBeEdited(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintBagEventArgs)">
+ <summary>
+ This is to determine if a bag can be edited. It can only be edited if the run down of that bag area
+ is completed.
+ </summary>
+ <param name="sender">The bag which called the sub</param>
+ <param name="e">The parameters associated to the bag</param>
+</member>
+<member name="M:TSA_Rail_System.frmMain.ApplicationModeChanged">
+ <summary>
+ This will fire when an application mode changed is detected. This will also fire at the beginning of the program start.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:TSA_Rail_System.frmMain.InitializeBroadcasters">
+ <summary>
+ Initialize all broadcasters here. These broadcasters are used to get alarm and login 
+ information from the database. The 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:TSA_Rail_System.frmMain.OpenWashdeckDisplay">
+ <summary>
+ Open washdeck display on the 2nd monitor 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:TSA_Rail_System.frmMain.OnCheckedAccessRight(System.Object,Wdw_Sust.Textile.Core.Interfaces.IRailAccessRightEventArgs)">
+ <summary>
+ Each workstation has its own requirements. This is to make sure that those requirements are met before giving
+ rights to the end user to perform action.
+ </summary>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

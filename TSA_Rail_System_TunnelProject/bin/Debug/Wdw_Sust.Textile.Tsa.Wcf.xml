@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Textile.Tsa.Wcf
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Textile.Tsa.Wcf.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Wcf.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Wcf.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Wcf.BllRailInfoProvider.InformationSource">
+ <summary>
+ Information source to get data. Either using Wcf or directly geting from the database
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Wcf.Interfaces.IWcfTsaRailInfoService.GetNumberOfBagWashedAndSorted(Wdw_Sust.Textile.Core.LintShiftData)">
+ <summary>
+ Get number of bags washed and sorted from the beginning of shift up until the minute of that shift.
+ This is rolling 60 minutes.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Wcf.Interfaces.IWcfTsaRailInfoService.GetLast60MinutesNumberOfBagDrops">
+ <summary>
+ Get last 60 minutes of bag drops in the washdeck
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Wcf.Interfaces.IWcfTsaRailInfoService.GetOperatorProductivitySummaryData">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Wcf.Interfaces.IWcfTsaRailInfoService.GetTsaTowelFoldDepartmentTotal(Wdw_Sust.Textile.Core.LintShiftData)">
+ <summary>
+ Get towel fold department total from the beginning of shift up until the minute of that shift
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Wcf.Interfaces.IWcfTsaRailInfoService.GetLast60MinutesCleanworkProductivity">
+ <summary>
+ Get last 60 minutes for the whole cleanwork dempartment productivity. This is rolling 60 minutes
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Wcf.WcfTsaTeamServiceClient.CreateBinding">
+ <summary>
+ Override the CreateBinding function due to insufficient of the buffer size to handle the machine status distribution
+ </summary>
+ <returns></returns>
+</member>
+</members>
+</doc>

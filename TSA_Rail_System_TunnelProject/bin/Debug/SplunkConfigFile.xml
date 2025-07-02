@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<SplunkConfigFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <IsPropertyChangedEventBuffered>false</IsPropertyChangedEventBuffered>
+  <LastUpdated>2025-05-22T16:09:15.0070564-04:00</LastUpdated>
+  <Index>textilemsg_wdw</Index>
+  <EndpointUrl>https://rse-splunk.disney.com/splunk-hec</EndpointUrl>
+  <Token>8313ffce-56c5-4b53-a866-5979a21adbc1</Token>
+  <Port>443</Port>
+</SplunkConfigFile>

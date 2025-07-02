@@ -1,0 +1,142 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Textile.Tsa.Dal
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Textile.Tsa.Dal.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Dal.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Dal.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Wdw_Sust.Textile.Tsa.Dal.TsaFactoryProvider">
+ <summary>
+ Class TsaFactoryProvider.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Textile.Global.Dal.Core.LintFactoryProviderBase`1" />
+ <seealso cref="T:Wdw_Sust.Textile.Core.Interfaces.ILintFactoryProvider" />
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaInfoProvider.AddTsaDiagnosticIssue(Wdw_Sust.Textile.Tsa.TsaDiagnosticInterfaceIssue)">
+ <summary>
+ Insert issue detail into the database
+ </summary>
+ <param name="issueDetail"></param>
+ <returns>Issue number returned by the database</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaInfoProvider.GetTsaLiveData(System.DateTime,System.DateTime)">
+ <summary>
+ To get live live productivity data 
+ </summary>
+ <param name="startTime"></param>
+ <param name="endTime"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaProductivityInfoProvider.GetOperatorDetailsByTimeRange(System.DateTime,System.DateTime)">
+ <summary>
+ For report TSAOperatorDetails.rdlc
+ </summary>
+ <param name="startTime"></param>
+ <param name="endTime"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaRailInfoProvider.GetCategoryReleaseWeight(System.Int32,Wdw_Sust.Textile.Core.Enums.LintZone)">
+ <summary>
+ Gets the category release weight. Clean side carries 2 soiled bags so we will need to double the release weight
+ </summary>
+ <param name="categoryCode">The category code.</param>
+ <param name="zone">The zone where the bag is at the moment.</param>
+ <returns>System.Int32.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaRailInfoProvider.GetCleanworkBagDetail(System.Int32)">
+ <summary>
+ Get clean-work bag detail. 1.) Check if the cache has the bag detail already. 2.) if not get live data from clean-work bag table 3.) if not return nothing as
+ the bag is not in the database
+ </summary>
+ <param name="plcBagID">PLC bag ID of the bag</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaRailInfoProvider.AddInsertUpdateCategoryParameters(System.Data.SqlClient.SqlCommand,Wdw_Sust.Textile.Tsa.TsaCategoryDetail)">
+ <summary>
+ Inert or update the particular category detail
+ </summary>
+ <param name="cmd">The SQL command object for the insert or update</param>
+ <param name="category">The category detail to be inserted or updated</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaReportInfoProvider.GetOperatorDetailsByTimeRange(System.DateTime,System.DateTime)">
+ <summary>
+ For report TSAOperatorDetails.rdlc
+ </summary>
+ <param name="startTime"></param>
+ <param name="endTime"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaTeamMachineAvailabilityInfoProvider.GetTeamCleanworkMachineDashboardDataQuery">
+ <summary>
+ (a.Session_Change_Reason != 18 OR a.Session_Change_Reason != 10) AND a.Actual_Count > 0
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaTeamMachineAvailabilityInfoProvider.GetTeamWasherDashboardDataQuery">
+ <summary>
+ (a.Session_Change_Reason != 18 OR a.Session_Change_Reason != 10) AND a.Actual_Count > 0
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaTeamMachineAvailabilityInfoProvider.GetTeamCleanworkMachineDashboardData(System.DateTime,System.DateTime)">
+ <summary>
+ Get cleanwork dashboard
+ </summary>
+ <param name="startTime"></param>
+ <param name="endTime"></param>
+ <returns></returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaTeamMachineAvailabilityInfoProvider.GetTeamWashdeckDashboardData(System.DateTime,System.DateTime)">
+ <summary>
+ Get TEAM washer data
+ </summary>
+ <param name="startTime"></param>
+ <param name="endTime"></param>
+ <returns></returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaTeamMachineAvailabilityInfoProvider.GetTeamMachineDashboardData(System.DateTime,System.DateTime)">
+ <summary>
+ Get all TEAM data in one query
+ </summary>
+ <param name="startTime"></param>
+ <param name="endTime"></param>
+ <returns></returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Dal.TsaTeamMachineAvailabilityInfoProvider.GetTeamWashdeckBagDrops(System.DateTime,System.DateTime)">
+ <summary>
+
+ SUM(Bag_Drops) / SUM(Target_Bag_Drops) AS Efficiency,
+ SUM(Bag_Drops) / SUM(Run_Time_In_Hours) AS Bag_Drop_Rate
+
+ </summary>
+ <param name="startTime"></param>
+ <param name="endTime"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>

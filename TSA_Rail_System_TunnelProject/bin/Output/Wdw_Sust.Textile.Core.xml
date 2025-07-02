@@ -1,0 +1,633 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Textile.Core
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Textile.Core.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.donald_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.donald_green">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.donald_lightblue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.donald_orange">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.donald_pink">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.donald_purple">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.donald_red">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.donald_yellow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.goofy_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.goofy_green">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.goofy_lightblue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.goofy_orange">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.goofy_pink">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.goofy_purple">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.goofy_red">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.goofy_yellow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.mickey_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.mickey_green">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.mickey_lightblue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.mickey_orange">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.mickey_pink">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.mickey_purple">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.mickey_red">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.mickey_yellow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.minnie_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.minnie_green">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.minnie_light_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.minnie_orange">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.minnie_pink">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.minnie_purple">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.minnie_red">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.minnie_yellow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.pluto_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.pluto_green">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.pluto_light_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.pluto_orange">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.pluto_pink">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.pluto_purple">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.pluto_red">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.My.Resources.Resources.pluto_yellow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Configurations.LintApplicationConfigurationManager">
+ <summary>
+ Class LintApplicationConfigurationManager. This is the main configuration class for all 
+ LINT program to configure the application with proper parameters.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.Configurations.EditableSingletonConfigurationManager`2" />
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Interfaces.ILintBagDetail">
+ <summary>
+ This interface is used across all 3 plants and are the building
+ block for the OPC Bag Control. This should not be changed in normal
+ case and will affect all 3 facilities
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Interfaces.ILintEditableBag">
+ <summary>
+ This interface is used across all 3 plants 
+ to tell if the bag (CtrlOPCBag or CtrlOPCBagAddButton) is editable
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Interfaces.ILintFactoryProvider">
+ <summary>
+ This is the object that can get to different providers and also set 
+ their connection strings accordingly.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.Interfaces.IHaveConnectionString" />
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Interfaces.ILintRailInfoProvider">
+ <summary>
+ Basic skeleton for all rail program to stay consistency. All rail program must implement
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.Interfaces.ILintRailSystemLogger.LogBagEvent(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintBagEditLogEventArgs)">
+ <summary>
+ Log bag related events
+ </summary>
+ <param name="sender">Object which fires the event</param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.Interfaces.ILintRailSystemLogger.LogRailSequenceEvent(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintRailSequenceEventArgs)">
+ <summary>
+ Log rail sequence events
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.Interfaces.ILintRailSystemLogger.LogOperatorEvent(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintOperatorEventArgs)">
+ <summary>
+ Log operator events
+ </summary>
+ <param name="sender">What control caused the action</param>
+ <param name="e">The event args which contains the action from an operator</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.Interfaces.ILintRailSystemLogger.LogApplicationEvent(Wdw_Sust.Textile.Core.LintApplicationEventLog)">
+ <summary>
+ Log application events
+ </summary>
+ <param name="log"></param>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.EventArgs.LintBagEventArgs.Message">
+ <summary>
+ This message will only be shown when the bag mode is set to read only!!
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.EventArgs.LintApplicationManagerEventArgs">
+ <summary>
+ To track the program mode should we need use the program mode feature
+ </summary>
+ <seealso cref="T:Wdw_Sust.Textile.Core.EventArgs.LintProgramEventArgs" />
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.DefaultLINTAccessLevel">
+ <summary>
+ Default LINT Access Levels. This is used to map the default settings
+ for different roles when the user was first assigned in the system.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.CardAssignmentReason">
+ <summary>
+ Card Assignment Reason:
+ 1 = Card assigned to the Cast Member the first time
+ 2 = Card reassigned due to card lost
+ 3 = Card reassigned due to card malfunction - no penalty for this type of re-assignment
+ 4 = Card Assigned to Existing Cast Member for the First Time
+ 5 = Change cast member status - no penalty for this type of re-assignment
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.LintReasoning">
+ <summary>
+ This list is mapped to the database table "LINT_software.LINT_Reasoning_Lookup""
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.LintSystemOrigin">
+ <summary>
+ This enum series has to match with the table "LINT_software.LINT_System_Origin_Lookup" in the database
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.LintMachineType">
+ <summary>
+ This enum series has to match with the table "LINT_software.LINT_Machine_Type_Lookup" in the database
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.LintDepartments">
+ <summary>
+ This enum series has to match with the table "LINT_software.LINT_Department_Lookup" in the database
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.LintSystemOrigins">
+ <summary>
+ This enum series has to match with the table "LINT_software.LINT_System_Origin_Lookup" in the database
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.LintZone">
+ <summary>
+ This enum series is mapped to database table "LINT_software.LINT_Zone_Lookup"
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.LintAction">
+ <summary>
+ This list is mapped to the database table "LINT_software.LINT_Action_Lookup""
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.LintComponents">
+ <summary>
+ This enum series has to match with the table "LINT_software.LINT_Component_Lookup" in the database
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.DefaultRailAccessLevel">
+ <summary>
+ Default Futurail Access Levels
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.LintUserType">
+ <summary>
+ Default LINT User Type. This enum series has to match with the table "LINT_software.LINT_User_Type_Lookup" in the database
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.RailAccessOptions">
+ <summary>
+ This list is mapped to the database table "LINT_software.LINT_User_List""
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.Textile.Core.Enums.RailAccessOptions.UNKNOWN">
+ <summary>
+Default Rail Access Options
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.Textile.Core.Enums.LintAdminAccessLevel.NO_RIGHT">
+ <summary>
+ Default LINT Administration Level
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.LintApplicationId">
+ <summary>
+ The IDs must match the table LINT_software.LINT_Application_Info in the database
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.LintSystemParameterId">
+ <summary>
+ This list is mapped to the database table "LINT_software.LINT_System_Parameter_Lookup"
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.Enums.SortingDisplayStatus">
+ <summary>
+  Connection display status for Sorting Displays
+ </summary>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.JensenIronerScanner">
+ <summary>
+ This class is used by an OPC object class
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.LintApplicationEventLog">
+ <summary>
+ This class is to log application event into the database
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.LintBagDetail">
+ <summary>
+ Warning: this class is used in more than 1 OPC class and property names should not be changed
+ </summary>
+ <remarks>Last Updated: 09/11/2009 (CYS)</remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.LintCastMember.WorksInMultipleLocations">
+ <summary>
+ Check if CM is working in multiple locations
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.LintCategoryDetail.#ctor(System.Data.IDataReader)">
+ <summary>
+ reader(0) = reader("Category_ID"), reader(1) = reader("Category_Description")
+ </summary>
+ <param name="reader"></param>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.LintJobProvider">
+ <summary>
+ This class has a tick resolution of 1 second
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.LintJobProvider.AddJob(Wdw_Sust.Core.Interfaces.IJobDetail,System.Boolean)">
+ <summary>
+ Add job to the manager. The job will run immediately by default
+ </summary>
+ <param name="jobDetail"></param>
+ <param name="runImmediately"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.LintJobProvider.AddJob(System.String,System.TimeSpan,System.Action,System.Boolean)">
+ <summary>
+ Add job to the manager. The job will run immediately by default
+ </summary>
+ <param name="jobName">Name of the job. This has to be unique</param>
+ <param name="frequency">How frequent the job needs to run</param>
+ <param name="act">The action of the job</param>
+ <param name="runImmediately"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.LintJobProvider.DoOnce(System.String,System.TimeSpan,System.Action)">
+ <summary>
+ Only do the action once
+ </summary>
+ <param name="jobName">Name of the job</param>
+ <param name="secondsFromNow">Perform the action X number of seconds from now</param>
+ <param name="act"></param>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.LintKeyValuePair`2">
+ <summary>
+ This class is used to create a list of name and value pair, such as Machine ID / Machine Name
+ or Rail Step ID / Rail Step description
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.LintNameValuePair">
+ <summary>
+ This class is used to create a list of name and value pair, such as Machine ID / Machine Name
+ or Rail Step ID / Rail Step description
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.LintObjectBase.IsValid">
+ <summary>
+ This is to test if the object has business rules associated with it.
+ If there are any, by calling this property the object will verify its data
+ to the rules and return a boolean to indicate if this is valid or not.
+ Default is returned "True"
+ </summary>
+ <value>Boolean value to indicate if the object is valid or not.</value>
+ <returns></returns>
+ <remarks>Please check the class "BusinessRuleManager" to learn how to apply business rules.</remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.LintObjectBase`1.Sort">
+ <summary>
+ This is to tell how to sort a list of the same object. This property
+ only works if you are only sorting one property at a time
+ </summary>
+ <value>Ascending or descending</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.LintObjectBase`1.SortBy">
+ <summary>
+ Property name used to be sorting the elements in the list. Property names are case sensitive.
+ For example "PropertyNameA, PropertyNameB DESC", where PropertyNameA is sorted in ascending order
+ and PropertyNameB in descending order.
+ </summary>
+ <value>Name of the property</value>
+ <returns></returns>
+ <remarks>This must be the same as the name of the property</remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.LintObjectBase`1.Comparer">
+ <summary>
+ Comparer to make the sorting algorithm work
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.LintObjectBase`1.BeginEdit">
+ <summary>
+ Start edit of object
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.LintObjectBase`1.CancelEdit">
+ <summary>
+ Cancel edit of the object
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.LintObjectBase`1.Clone">
+ <summary>
+ Create a clone of the object with data. This is a deep clone of the object.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.LintObjectBase`1.CompareTo(System.Object)">
+ <summary>
+ Tell the interface if the object needs to be updated
+ to the database
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.LintObjectBase`1.EndEdit">
+ <summary>
+ Finish edit of the object
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.LintOperatorLoginDetail.LoginTime">
+ <summary>
+ Login in time in minutes
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.LintRailSequenceStep.IsActive">
+ <summary>
+ If the step is active
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.LintRailSequenceStep.IsReadOnly">
+ <summary>
+ Indicate if the step is readonly, which is not changable from the GUI 
+ if the step is set to true in the database
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.LintRailSequenceStep.RolesToModifySequence">
+ <summary>
+ Roles to modify the step if it is defined in the database
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Core.LintRailSequenceStep.IsDefaultAccess">
+ <summary>
+ Check if there is customization to the step that some roles will not be able to edit
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Core.LintShiftData.GetCurrentShiftTimeSoFarInHours">
+ <summary>
+ Get the time so far in the current shift
+ </summary>
+ <returns>Time so far in hours</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Core.SluggishDatabaseConnectionSimulationJobManager">
+ <summary>
+ This class mimic a sluggish database connection. 
+ The default fail delay is 20 seconds, and will be alternating online and offline every 30 seconds.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Textile.Core.DatabaseMonitorJobManagerBase" />
+</member>
+<member name="T:Wdw_Sust.Textile.Core.UnreachableDatabaseSimulationJobManager">
+ <summary>
+ Use this class to mimic database failure.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Textile.Core.DatabaseMonitorJobManagerBase" />
+</member>
+<member name="P:Wdw_Sust.Textile.Core.UnreachableDatabaseSimulationJobManager.FailDelayInSeconds">
+ <summary>
+ Gets or sets the fail delay in seconds. Default is 20 seconds will simulate the failure
+ </summary>
+ <value>The fail delay in seconds.</value>
+</member>
+</members>
+</doc>

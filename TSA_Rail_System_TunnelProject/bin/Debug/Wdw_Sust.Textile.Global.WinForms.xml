@@ -1,0 +1,715 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Textile.Global.WinForms
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.cancel">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.chat_32_by_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.chat_not_working_32_by_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.check">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.cross">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.default_avatar">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.donald_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.donald_green">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.donald_light_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.donald_orange">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.donald_pink">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.donald_purple">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.donald_red">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.donald_yellow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.exclamation_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.goofy_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.goofy_dev">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.goofy_green">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.goofy_light_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.goofy_orange">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.goofy_pink">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.goofy_purple">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.goofy_red">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.goofy_yellow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.Help">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.Loading_3_Dot">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.loading_circle">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.mickey_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.mickey_green">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.mickey_light_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.mickey_orange">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.mickey_pink">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.mickey_purple">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.mickey_red">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.mickey_yellow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.minnie_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.minnie_green">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.minnie_light_blue">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.minnie_orange">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.minnie_pink">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.minnie_purple">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.minnie_red">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.minnie_yellow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.Prox_Number_Guide">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.My.Resources.Resources.TS_LOADING">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.IsFormClosable">
+ <summary>
+ To determine if the form can be exited out by clicking 'X' to exit the form. Setting this property during runtime will not have effect.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.CreateParams">
+ <summary>
+ To enable / disable the red X button on the top right of the form
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.CtrlFormBase_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ Use native code here to intercept Windows messages
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.GetJobCounts">
+ <summary>
+ Gets the job counts.
+ </summary>
+ <returns>System.Int32.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.GetJobNames">
+ <summary>
+ Gets the job names.
+ </summary>
+ <returns>List(Of System.String).</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.GetApplicationModeSubscriberNames">
+ <summary>
+ Gets the application mode subscriber names.
+ </summary>
+ <returns>List(Of System.String).</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.DoOnceAtFirstTrueResult(System.String,System.TimeSpan,System.Func{System.Boolean},System.Action,System.Action,System.Boolean)">
+ <summary>
+ Define an action that is only needed to run once when the test condition 
+ to become true the very first timeoutInSeconds
+ </summary>
+ <param name="jobName">A Unique name of the job to add</param>
+ <param name="frequency">How frequent this job needs to run</param>
+ <param name="testCondition">Condition to be tested</param>
+ <param name="actionWhenTrue">Action to do when the condition first becomes true</param>
+ <param name="actionWhenFalse">Optional action to do when the condition is false. This will run every time the condition is false</param>
+ <param name="runImmediately">Set if the job should run immediately</param>
+ <returns>Return a boolean to tell if the job was added successfully</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.DoUntilFirstFalseResult(System.String,System.TimeSpan,System.Func{System.Boolean},System.Action,System.Action,System.Boolean)">
+ <summary>
+ This is the opposite of the function <code>DoOnceAtFirstTrueResult</code> please see
+ <code>DoOnceAtFirstTrueResult</code> for detail.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.SubscribeApplicationChangeInfo(Wdw_Sust.Textile.Global.WinForms.LintFormConfiguration)">
+ <summary>
+ Subscribes the application change information. If the object is also a form, the system will
+ also remove the form object from the ApplicationManager to prevent memory leak
+ </summary>
+ <param name="config">The configuration.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.ProcessSubscribedInformation(Wdw_Sust.Textile.Core.EventArgs.LintApplicationManagerEventArgs)">
+ <summary>
+ Processes the subscribed information.
+ </summary>
+ <param name="args">The <see cref="T:Wdw_Sust.Textile.Core.EventArgs.LintApplicationManagerEventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.Initialize">
+ <summary>
+ This is where the initailization logic for the form
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.OnInitialize(Wdw_Sust.Textile.Global.WinForms.LintFormConfiguration)">
+ <summary>
+ This is used to subscribe to different settings from the base form, espeically to the application manager to listen
+ to the application mode changes
+ </summary>
+ <param name="config"></param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.LintInUseConnectionStringChanged">
+ <summary>
+ Will call when the database connection string is changed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.ApplicationModeChanged">
+ <summary>
+ Will call when the application mode is changed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.WorkStationChanged">
+ <summary>
+ Will call when the workstation mode is changed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.ChatServiceEnableChanged">
+ <summary>
+ Will call when the chat function is changed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase.LoggingEnableChanged">
+ <summary>
+ Will call when the logging function is changed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase">
+ <summary>
+ This is to control which controls will be available for the user to edit per
+ the program type.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Textile.Global.WinForms.Interfaces.ICtrlLintAdminConsoleViewModel" />
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase.UseBagGraphics">
+ <summary>
+ Gets a value indicating whether bag graphics is used for the program.
+ </summary>
+ <value><c>true</c> if [use bag graphics]; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase.UseChatService">
+ <summary>
+ Gets a value indicating whether chat service is used for the program.
+ </summary>
+ <value><c>true</c> if [use chat service]; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase.UseDatabase">
+ <summary>
+ Gets a value indicating whether database is used for the program.
+ </summary>
+ <value><c>true</c> if [use database]; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase.UseOpc">
+ <summary>
+ Gets a value indicating whether Opc is used for the program.
+ </summary>
+ <value><c>true</c> if [use opc]; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase.UseRfidReader">
+ <summary>
+ Gets a value indicating whether Rfid reader is used for the program.
+ </summary>
+ <value><c>true</c> if [use rfid reader]; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase.UseWorkStationName">
+ <summary>
+ Gets a value indicating whether the work station name is used for the program. This is used for logging
+ purposes, for example.
+ </summary>
+ <value><c>true</c> if [use work station name]; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase.UseLintAppId">
+ <summary>
+ Gets a value indicating whether Lint application identifier is used for the program.
+ </summary>
+ <value><c>true</c> if [use lint application identifier]; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase.UseProgramMode">
+ <summary>
+ Gets a value indicating whether program mode is used for the program.
+ </summary>
+ <value><c>true</c> if [use program mode]; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase.CanMonitorAppStatus">
+ <summary>
+ Gets a value indicating whether the program can be monitored by the application monitoring system.
+ </summary>
+ <value><c>true</c> if this instance can monitor application status; otherwise, <c>false</c>.</value>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlMdiFormBase.OnChildFormCreated(System.Windows.Forms.Form,System.Boolean@)">
+ <summary>
+ Called when [child form created].
+ </summary>
+ <param name="frm">The form object created.</param>
+ <param name="singleInstance">if set to <c>true</c> we can create more than one form object of the same type. Default is set to true.</param>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlMainFormBase.ApplicationId">
+ <summary>
+ Gets or sets the application identifier.
+ </summary>
+ <value>The application identifier.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.Core.CtrlMainFormBase.IsHealthMonitoringEnabled">
+ <summary>
+ If this is enabled, the application will update the timestamp in the database for
+ monitoring purposes.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>
+ If this is enabled, the application will update the timestamp in the database for
+ monitoring purposes.
+ </remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlUserControlBase.OnCreateFactoryObject">
+ <summary>
+ Called when the property Factory is being called but the field was not initialized yet.
+ By overriding this the form will use the concrete provider for database operations.
+ </summary>
+ <returns>ILintFactoryProvider.</returns>
+ <exception cref="T:System.Exception">This is needed to override to provide the proper factory object for different facility</exception>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlUserControlBase.ShowToolTip">
+ <summary>
+ This sub is location in the base class
+ </summary>
+ <remarks>This sub is location in the base class</remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlUserControlBase.HideToolTip">
+ <summary>
+ This sub is location in the base class
+ </summary>
+ <remarks>This sub is location in the base class</remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Core.CtrlUserControlBase.AddJob(System.String,System.TimeSpan,System.Action,System.Boolean)">
+ <summary>
+ Add job to the JobManager
+ </summary>
+ <param name="jobName">Name of the job. This needs to be unique in <c>JobManager</c></param>
+ <param name="frequency">How frequent the job needs to run</param>
+ <param name="act">Action of the job</param>
+ <param name="runImmediately">Configure if the job needs to run immediately</param>
+ <returns>Return a boolean if the job is added successfully</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintAdminConsole.#ctor(Wdw_Sust.Textile.Global.WinForms.Interfaces.ICtrlLintAdminConsoleViewModel)">
+ <summary>
+ Initializes a new instance of the <see cref="T:Wdw_Sust.Textile.Global.WinForms.CtrlLintAdminConsole"/> class. By default, remote user validation
+ is used.
+ </summary>
+ <param name="viewModel">The view model.</param>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.WinForms.ViewModels.CtrlLintAdminConsoleViewModelForDataCollection">
+ <summary>
+ This is to control which controls in the control CtrlLintAdminCosole will be available for the user to edit per
+ the program type.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase" />
+</member>
+<member name="T:Wdw_Sust.Textile.Global.WinForms.ViewModels.CtrlLintAdminConsoleViewModelForGenericLintApp">
+ <summary>
+ Only use this view model when the app only uses Lint app id, Workstation
+ </summary>
+ <seealso cref="T:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase" />
+</member>
+<member name="T:Wdw_Sust.Textile.Global.WinForms.ViewModels.CtrlLintAdminConsoleViewModelForReportViewer">
+ <summary>
+ This is to control which controls in the control CtrlLintAdminCosole will be available for the user to edit per
+ the program type.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Textile.Global.WinForms.Core.CtrlLintAdminConsoleViewModelBase" />
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.CtrlLintAlarmIcon.SubscribedAlarms">
+ <summary>
+ To input alarm ids stored in the database during design time.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.CtrlLintAlarmMonitoringStatusIcon.GraphicShownWhenFalse">
+ <summary>
+ Show when the value is true. If not defined the control will hide with value is true.
+ </summary>
+ <value>Image to be displayed</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.CtrlLintAlarmMonitoringStatusIcon.GraphicShownWhenTrue">
+ <summary>
+ Show when the value is false. If not defined the control will hide with value is false."
+ </summary>
+ <value>Image to be displayed</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.CtrlLintAlarmToolStripIndicator.GraphicShownWhenFalse">
+ <summary>
+ Show when the value is true. If not defined the control will hide with value is true.
+ </summary>
+ <value>Image to be displayed</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.WinForms.CtrlLintAlarmToolStripIndicator.GraphicShownWhenTrue">
+ <summary>
+ Show when the value is false. If not defined the control will hide with value is false."
+ </summary>
+ <value>Image to be displayed</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder">
+ <summary>
+ Class CtrlLintConnectionStringBuilder.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Textile.Global.WinForms.Core.CtrlFormBase" />
+</member>
+<member name="F:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder._useLocalCheck">
+ <summary>
+ The use local check
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder.NO_RIGHT_MESSAGE">
+ <summary>
+ The no right message
+ </summary>
+</member>
+<member name="E:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder._OnSavingData">
+ <summary>
+ Occurs when [on saving data].
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder.Initialize">
+ <summary>
+ This is where the initailization logic for the form
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder.LocalCheck">
+ <summary>
+ Check using the local method
+ </summary>
+ <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder.DatabaseCheck">
+ <summary>
+ Check using the database method
+ </summary>
+ <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder.OnSavingData(Wdw_Sust.Textile.Core.EventArgs.LintRoleAccessRightEventArgs)">
+ <summary>
+ Handles the <see cref="E:SavingData" /> event.
+ </summary>
+ <param name="e">The <see cref="T:Wdw_Sust.Textile.Core.EventArgs.LintRoleAccessRightEventArgs" /> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder.HandleSaveAction(System.Func{System.Boolean})">
+ <summary>
+ Handles the save action.
+ </summary>
+ <param name="accessRightHandler">The access right handler.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder.btnApply_Click(System.Object,System.EventArgs)">
+ <summary>
+ Save changes
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder.SaveSettings">
+ <summary>
+ Saves the settings.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder.btnTestConnection_Click(System.Object,System.EventArgs)">
+ <summary>
+ check if the connection string is valid
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder.#ctor(System.Boolean)">
+ <summary>
+ Initializes a new instance of the <see cref="T:Wdw_Sust.Textile.Global.WinForms.CtrlLintConnectionStringBuilder"/> class.
+ </summary>
+ <param name="useLocalCheck">if set to <c>true</c> [use local check].</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintIdCardList.btnAddNewCard_Click(System.Object,System.EventArgs)">
+ <summary>
+ Add new card to the DB
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintIdCardList.btnReturnCard_Click(System.Object,System.EventArgs)">
+ <summary>
+ Return card back to the database as UNASSIGNED
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintIdCardList.btnVerifyCard_Click(System.Object,System.EventArgs)">
+ <summary>
+  Verify card information from the DB
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintIdCardList.AddCardToSystem(System.Int32)">
+ <summary>
+ Add the RFID card instance to the database.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintRfidReader.CardReaderInitialize">
+ <summary>
+ Connect to Card Reader and 'read in card data' on scan
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintRfidReader.RestablishConnectionInitialize">
+ <summary>
+ Initialize the reestablish connection com ports collection.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintRfidReader.RestablishConnectionToCardReader(Wdw_Sust.Rfid.SecuraKeyDevices.EventArgs.RfidCardReaderErrorEventArgs)">
+ <summary>
+ This method is used whenever there is an issue reading the card reader.
+ This method attempts to find the correct Com Port (for the Card Reader)
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintRfidReader._reader_ReaderInactiveTimeout(System.Object,Wdw_Sust.Rfid.SecuraKeyDevices.EventArgs.RfidCardReaderErrorEventArgs)">
+ <summary>
+ Event indicating that Card reader activity was not detected.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintRfidReader.IsSerialPortDefinedSuccessfully">
+ <summary>
+ Try if the port can be open
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintUserManagement.btnSearch_Click(System.Object,System.EventArgs)">
+ <summary>
+ When the button is clicked, the system will locate the CMs based on the name filter.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.CtrlLintUserManagement.InitializeControlsByUserRights">
+ <summary>
+ Initializes the controls by user rights.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Helpers.ExtractNumbers(System.String)">
+ <summary>
+ Extract Number from a string and return an integer
+ </summary>
+ <param name="expr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.WinForms.Helpers.GetRfidCardData(Wdw_Sust.Core.ComPortSetting)">
+ <summary>
+ This is to get data from the database for the CM who is going to be logged in
+ </summary>
+ <returns>Information related to the CM</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,410 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Textile.Global.Dal
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Textile.Global.Dal.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Dal.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Dal.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Dal.ApplicationHealthMonitoringManager">
+ <summary>
+ Class ApplicationHealthMonitoringManager. This is to provide the heart beat to the monitoring system to
+ let the centralized monitoring system.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.Job.TimeSpanJobDetail" />
+ <seealso cref="T:Wdw_Sust.Core.Interfaces.IInformationSubscriber`1" />
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Dal.Core.LintDatabaseInformationBroadcasterBase`2.UpdateInterval">
+ <summary>
+ Update interval in milliseconds. Default is 3000 ms
+ </summary>
+ <value>Update interval in milliseconds</value>
+ <returns>the update interval value in ms</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.Core.LintDatabaseInformationBroadcasterBase`2.OnWorkCompletedUnsucessfully(`1)">
+ <summary>
+ Try 5 times before giving up and raise the fail event
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.Core.LintDatabaseInformationBroadcasterBase`2.StartSubscribingInformation">
+ <summary>
+ Start getting data on a regular basis.
+ This is called automatically when the
+ instance is first instantiated.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.Core.LintDatabaseInformationBroadcasterBase`2.StartSubscribingInformation(System.Boolean)">
+ <summary>
+ Start getting data on a regular basis.
+ This is called automatically when the
+ instance is first instantiated.
+ </summary>
+ <param name="refreshImmediately">Refresh immediately if this is set to true.</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.Core.LintDatabaseInformationBroadcasterBase`2.StartSubscribingInformation(System.Int32)">
+ <summary>
+ Start getting data on a regular basis.
+ This is called automatically when the
+ instance is first instantiated.
+ </summary>
+ <param name="updateInterval">Update interval in milliseconds</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.Core.LintDatabaseInformationBroadcasterBase`2.StopSubscribingInformation">
+ <summary>
+ Stop refreshing data.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.Core.LintDatabaseInformationBroadcasterBase`2.Refresh(System.Boolean)">
+ <summary>
+ Refresh data immediately if the BackgroundWorker
+ is not busy at the moment. Use property IsCacheSupported to check if the class
+ supports cache.
+ </summary>
+ <param name="fromCache">Load data from cache if this class is supported.</param>
+ <remarks>This is not limited even though the regular
+ update is stopped. If cache is called and the class does not support this, an exception will be thrown.</remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Dal.Core.LintProductivitySummaryBroadcasterBase`1">
+ <summary>
+ This class is used with either one of the RailProvider in all 3 plants.
+ If the ConnectionString of the RailProvider class is not set. This class will throw an exception.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.Core.LintProductivitySummaryBroadcasterBase`1.GetOperatorMachineLogInStatus(System.Boolean)">
+ <summary>
+ Get the data either remotely or from Cache
+ </summary>
+ <param name="fromCache"></param>
+ <returns></returns>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Dal.Core.LintRailInfoProviderBase`1">
+ <summary>
+ Basic skeleton for all rail program to stay consistency. All rail program must implement
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.Core.LintRailInfoProviderBase`1.UpdateManuallyModifiedBag(System.Int32,Wdw_Sust.Textile.Core.Enums.PLC_System)">
+ <summary>
+ Update the bag to be recoginzed on the graphics to be manually modified by a cast member
+ </summary>
+ <param name="plcBagID"></param>
+ <param name="plcSystem"></param>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Dal.Core.LintReportInfoProviderBase`1">
+ <summary>
+ Basic skeleton for all rail program to stay consistency. All rail program must implement
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Dal.LintAlarmBroadcaster">
+ <summary>
+ This is used to get alarm data from the table "LINT_software.LINT_Alarm_Log"
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintApplicationLogger.LogBagEvent(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintBagEditLogEventArgs)">
+ <summary>
+ Log bag related events
+ </summary>
+ <param name="sender">Object which fires the event</param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintApplicationLogger.LogRailSequenceEvent(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintRailSequenceEventArgs)">
+ <summary>
+ Log rail sequence events
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintApplicationLogger.LogOperatorEvent(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintOperatorEventArgs)">
+ <summary>
+ Log operator events
+ </summary>
+ <param name="sender">What control caused the action</param>
+ <param name="e">The event args which contains the action from an operator</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintBackupProvider.UpdateFailOverRailTables(System.String)">
+ <summary>
+ Create the latest user list and other rail program related tables and insert it into the fail-over database
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Dal.LintDiagnosticsProvider">
+ <summary>
+ This provider class is used for diagnostics purposes.
+ </summary>
+ <remarks>Please put all the related methods in this class so we have one common place to work with all the methods. Thanks</remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Dal.LintFactoryProvider">
+ <summary>
+ This class is only supporting the providers that are not plant specific
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintFactoryProvider.#ctor">
+ <summary>
+ When <code>EnableAutomaticUpdateConnectionString</code> is set to True (by default this is set to true), LINTInUseProductionConnectionString in Config class changes
+ will affect the connection string to each of the providers. If connection string is desired to set individually,
+ EnableAutomaticUpdateConnectionString needs to set to false
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Dal.LintInfoProvider">
+ <summary>
+ This provider class is used to retrieve any information related to the LINT database. 
+ </summary>
+ <remarks>Please put all the related methods in this class so we have one common place to work with all the methods. Thanks</remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintInfoProvider.GetLintUserType(System.String)">
+ <summary>
+ Get user type of the Cast Member from the database.
+ </summary>
+ <param name="userName"></param>
+ <returns>User type in integer</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintInfoProvider.GetLintUserTypes">
+ <summary>
+ Get list of user type from database
+ </summary>
+ <returns>List of user types</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintInfoProvider.GetLintUserTypes(Wdw_Sust.Textile.Core.Enums.LintUserType)">
+ <summary>
+ Get list of user types which is lower than the userType rank from database
+ </summary>
+ <returns>List of user types</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintInfoProvider.GetNumberOfActiveEmployees">
+ <summary>
+ Used Locations:
+ LINT_Administration
+ </summary>
+ <returns>Number of active employees</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintInfoProvider.GetEmployeeNameByRFIDNumber(System.Int32)">
+ <summary>
+ Put the data to the ID card instance from the database.
+ </summary>
+ <param name="rfBadgeUserID">RF Badge User ID</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintInfoProvider.GetCastMemberNamesByWildCards(System.String,System.Boolean)">
+ <summary>
+ Get a list of Cast Member names which fit in the critiria
+ </summary>
+ <param name="wildCards">search critiria</param>
+ <param name="isOnlyActive">Optional parameter which indicates the result set 
+ only contains active Csat Members</param>
+ <returns>A list of Cast Member names</returns>
+ <remarks>This will only return the CMs who are active in the database</remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintInfoProvider.GetEmployeeNameByEmployeeID(System.String)">
+ <summary>
+ Return an employee name regarding to the employee ID
+ </summary>
+ <param name="employeeID">employee ID</param>
+ <returns>Employee Name</returns>
+ <remarks>This will only return the CMs who are active in the database</remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintInfoProvider.AddEventToLintEventLog(Wdw_Sust.Textile.Global.Opc.IOpcLintEventLog)">
+ <summary>
+ Return card back to the database as UNASSIGNED (Used this with ButtonReturnCard_Click)
+ </summary>
+ <returns>Boolean</returns>
+ <remarks>Input the card from the information obtained by the RFID reader</remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintInfoProvider.AddRfidCardToDatabase(System.Int64,System.Int64,System.Int32,System.String,System.DateTime,System.DateTime,System.Boolean,System.Int32)">
+ <summary>
+ Add RFID card to the database
+ </summary>
+ <param name="rfBadgeGUIDHiWord">Hi word for the card</param>
+ <param name="rfBadgeGUIDLoWord">Lo word for the card</param>
+ <param name="rfBadgeUserID">Card number</param>
+ <param name="assignedTo">Person who is assigned the card to</param>
+ <param name="timeIssued">Issued time</param>
+ <param name="timeUnassigned">Unassigned time</param>
+ <param name="cardValid">Card is valid</param>
+ <param name="editedByID">The RFID card number for the person who did the
+ addition</param>
+ <returns>Boolean to indicate if successful or not</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintInfoProvider.DeleteRfidCardFromDatabase(System.String,System.DateTime,System.Int32)">
+ <summary>
+ Delete ID Card from the database
+ </summary>
+ <param name="cardNumber">RF card number</param>
+ <param name="dateOccurred">Date occurred</param>
+ <param name="editedBy">RF card for the person who did the deletion</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintInfoProvider.RfidCardReturnToDatabase(System.String,System.Int32,System.DateTime,System.String)">
+ <summary>
+ Return card back to the database as UNASSIGNED (Used this with ButtonReturnCard_Click)
+ </summary>
+ <returns>Boolean</returns>
+ <remarks>Input the card from the information obtained by the RFID reader</remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Dal.LintLocalFactoryProvider">
+ <summary>
+ This class is for testing purposes. This will use the local config file for the service information
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.SingletonProviderBase`1" />
+ <seealso cref="T:Wdw_Sust.Textile.Core.Interfaces.ILintFactoryProvider" />
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Dal.LintPagingProvider">
+ <summary>
+ This provider class is used for paging system.
+ </summary>
+ <remarks>Please put all the related methods in this class so we have one common place to work with all the methods. Thanks</remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintRailSystemLogger.LogBagEvent(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintBagEditLogEventArgs)">
+ <summary>
+ Log bag related events
+ </summary>
+ <param name="sender">Object which fires the event</param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintRailSystemLogger.LogRailSequenceEvent(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintRailSequenceEventArgs)">
+ <summary>
+ Log rail sequence events
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintRailSystemLogger.LogOperatorEvent(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintOperatorEventArgs)">
+ <summary>
+ Log operator events
+ </summary>
+ <param name="sender">What control caused the action</param>
+ <param name="e">The event args which contains the action from an operator</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintRailSystemLogger.LogApplicationEvent(Wdw_Sust.Textile.Core.LintApplicationEventLog)">
+ <summary>
+ Log application events
+ </summary>
+ <param name="log"></param>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Dal.LintSecurityProvider">
+ <summary>
+ All security related checking should use this class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintSecurityProvider.HasRailAccessRight(Wdw_Sust.Textile.Core.RfidCard,System.Collections.Generic.List{Wdw_Sust.Textile.Core.Enums.RailAccessOptions},System.Collections.Generic.List{Wdw_Sust.Textile.Core.Enums.LintUserType})">
+ <summary>
+ This is to check if the rfid Card object has the access rights needed
+ </summary>
+ <param name="rfidcard">RFID card to be tested against</param>
+ <param name="accessRight">Access rights needed to perform the action</param>
+ <param name="roles">Roles needed to perform the action, if any</param>
+ <returns>Boolean to tell if the card has right.</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Dal.LintSystemsProvider">
+ <summary>
+ Class LintSystemsProvider.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.ProviderBase`1" />
+ <seealso cref="T:Wdw_Sust.Textile.Core.Interfaces.ILintSystemsProvider" />
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Dal.LintSystemsProvider.LOCK_OBJECT">
+ <summary>
+ The lock object
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Dal.LintSystemsProvider.IS_SERVICE_TEST_MODE">
+ <summary>
+ Use to force the settings to be pointed to the localhost instead of the remote host set up in the database
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Dal.LintSystemsProvider.IsCacheUsed">
+ <summary>
+ Gets a value indicating whether this instance is cache used.
+ </summary>
+ <value><c>true</c> if this instance is cache used; otherwise, <c>false</c>.</value>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintSystemsProvider.GetServiceSettings(Wdw_Sust.Textile.Core.Enums.LintServiceType)">
+ <summary>
+ Gets the service settings.
+ </summary>
+ <param name="serviceID">The service identifier.</param>
+ <returns>LintServiceSetting.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintSystemsProvider.GetServiceSettings">
+ <summary>
+ Gets the service settings.
+ </summary>
+ <returns>System.Collections.Generic.List(Of LintServiceSetting).</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintSystemsProvider.GetSystemParameters(Wdw_Sust.Textile.Core.Enums.Plant,Wdw_Sust.Textile.Core.Enums.LintSystemParameterId)">
+ <summary>
+ Gets the system parameters.
+ </summary>
+ <param name="plant">The plant.</param>
+ <param name="parameterID">The parameter identifier.</param>
+ <returns>LintSystemParameter.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintSystemsProvider.GetSystemParameters(Wdw_Sust.Textile.Core.Enums.Plant)">
+ <summary>
+ Gets the system parameters.
+ </summary>
+ <param name="plant">The plant.</param>
+ <returns>LintSystemParameters.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintSystemsProvider.UpdateSystemParameters(Wdw_Sust.Textile.Core.Enums.Plant,System.Collections.Generic.List{Wdw_Sust.Textile.Core.LintSystemParameter})">
+ <summary>
+ Updates the system parameters.
+ </summary>
+ <param name="plant">The plant.</param>
+ <param name="parameters">The parameters.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintSystemsProvider.GetSystemParameters">
+ <summary>
+ Returns all parameters EXCEPT system user roles (see GetSystemParameterRoles)
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Dal.LintSystemsProvider.GetSystemParameterRoles">
+ <summary>
+ Retrieves only system user roles, from the system parameter sql table.
+ Role= is the indicator/delimiter
+ </summary>
+ <returns></returns>
+</member>
+</members>
+</doc>

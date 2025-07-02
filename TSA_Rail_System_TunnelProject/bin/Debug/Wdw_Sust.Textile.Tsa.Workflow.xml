@@ -1,0 +1,231 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Textile.Tsa.Workflow
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Textile.Tsa.Workflow.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Workflow.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Workflow.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.Dal.TsaWorkflowInfoProvider.AddTsaRailStatusData(Wdw_Sust.Textile.Tsa.TsaRailStatus,System.String)">
+ <summary>
+ Add TSA rail status data. For every 10 minutes there will be a snap shot of the rails stored in the database
+ </summary>
+ <param name="tempTsaStatus">TSA rail snapshot</param>
+ <param name="connectionString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.Dal.TsaWorkflowInfoProvider.GetBaselineData(System.Decimal,System.Decimal)">
+ <summary>
+ Get baseline data
+ </summary>
+ <param name="baselinePeriod">hour in decimal hour</param>
+ <param name="currentTimePeriod">hour in decimal hour</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.Dal.TsaWorkflowInfoProvider.GetWashRateData(System.Decimal)">
+ <summary>
+ K = Category code
+ V = Weight Percentage
+ </summary>
+ <param name="timePeriodInDays">Unit is in days</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowDashboardData.MaximumQuantityBeforeCleanworkStorageByPass">
+ <summary>
+ If the product control is enabled, the system will look at this parameter
+ to determine if it should be called off due to the number of bags in classified
+ side is more than the limit on cleanside.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowDashboardData.CalculateAdjustedBaseline">
+ <summary>
+ This is to calculate the adjusted baseline. Adjusted baseline is calculated based on the weighted percentage configured in the
+ option screen.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowDryerOptimizationDetail.OptimizingDryers">
+ <summary>
+ We have the Wash List by Washer in order of Wash Priority
+ See how many Dryers are available for that Washer
+	Based on Dryer availability, we get a preferred Dryer loading sequence
+	Full Dry Time, Medium Dry Time, Low Dry Time
+	Look at our first item in the Dryer loading sequence
+ Returns Full, Medium or Low
+	Look at the first item in the Wash List
+	Does the dry time = the returned value from the loading sequence
+ IF yes, allocate 2 bags from the Category Code to the Washer Call Off List
+ If no, skip to next Category Code in the list
+ Continue until 2 bags have been allocated — if none of the Category Codes returned the most preferred loading sequence value, then the loading sequence value changes to the second preferred value (for example: from Full to Medium or from Medium to Low)
+ Continue until all bags for all Category Codes are put in order on the Washer Call Off List
+ Once only a single Category Code is left allocate the remaining bags to the end of the Washer Call Off List
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowWasherAllocation.OptimizeWasherAllocationAcrossGroup(System.Decimal,System.Int32)">
+ <summary>
+ This is to try to optimize as many times as the program wishes.
+ </summary>
+ <param name="optimizationLevel">What is the percentage to be considered fully utilized.</param>
+ <param name="numberOfTries">How many times before giving up optimizing.</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowWasherAllocation.ShutDownUnderUtilizedWashers(System.Decimal)">
+ <summary>
+ This is used to remove, if wish, any tunnel that are not optimized to run for the whole specified calculated period.
+ </summary>
+ <param name="percentageThreshold">Threshold value to trigger removal. Value should be between 0 and 1.</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowWasherAllocation.AllocateDisallocateBags(Wdw_Sust.Textile.Tsa.Workflow.TSAWorkflowWashListItem,Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowWasherUtilizationDetail,Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowWasherUtilizationDetail,System.Int32,System.Int32)">
+ <summary>
+ Used to allocate / un-allocate bags for during optimization process
+ </summary>
+ <param name="washListItem">Wash list item to add or remove bags</param>
+ <param name="tunnelToBeShutDown">Tunnel number that will be shutdown</param>
+ <param name="tunnelToBeOptimized">Tunnel number that will be optimized</param>
+ <param name="categoryCode">Category code for the item</param>
+ <param name="numberOfBags">Number of bags that will be allocated or unallocated</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowWasherUtilizationDetails.GetUnoptimizedWashers(System.Decimal)">
+ <summary>
+ Get all tunnels which utilize the tunnel less than the determined threshold value.
+ </summary>
+ <param name="thresholdPercentageValue"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowWasherUtilizationDetails.GetUnderUtilizedWashers">
+ <summary>
+ Get all washers which has remaining capacity value that is greater than 0.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowWashList.FinalizeWashList">
+ <summary>
+Now we have the wash list with category code and percentage of total product to be washed
+adjust ratios to make sure they add up to 100% add up all of the percentages and divide 
+each Category Code percentage by the sum of percentages to get a new list of Category 
+Codes with percentages that add up to 100%
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowWashList.SortBy(System.String)">
+ <summary>
+ Sort by the property name such as "PropertyA DESC, PropertyB ASC"
+ </summary>
+ <param name="propertyName">Names of properties</param>p
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Tsa.Workflow.TSAWorkflowWashListItem">
+ <summary>
+ This class is to capture the followings of each category.
+ 1.) Average bag weight
+ 2.) Bag quantity needed
+ 3.) Bag quantity allocated
+ 4.) washer preferences
+ 5.) The allocation detail to each tunnel
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TSAWorkflowWashListItem.GetMaxNumberOfBagsAllowedToAllocate(System.Decimal)">
+ <summary>
+ To determine how many bags can be allocated during this round. Chemical optimization
+ can be done here.
+ </summary>
+ <param name="allocationFactor"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowEngine.RecentAverageHourlySortVolume">
+ <summary>
+ This is calculated by using the sum of the sorted pounds for the recommended number of hours
+ for the calculation, and then use the sum divided by the number of hours to get the recent
+ average sorted pounds
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowEngine.GetRailStorageInformation">
+ <summary>
+ Get only readonly rail storage information
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowEngine.GetDashboardData">
+ <summary>
+ Get readonly dashboard data
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowEngine.UpdatingDashboardData">
+ <summary>
+Max Value is calculated by taking the Historical Baseline value of the Category Code and 
+adding 2 standard deviations of that Category Code
+
+Start Wash Value is calculated by taking the Historical Baseline value of the Category Code 
+and adding 1 standard deviation of that Category Code
+
+Min Wash Value is calculated by taking the Historical Baseline value of the Category Code 
+and subtracting 1 standard deviation of that Category Code
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowEngine.CreateWashList">
+ <summary>
+How to Populate Wash List
+1.	Is Classified Storage % > 0 and is this category an Express Product?
+a.	Yes: Set Wash Ratio to Current Sorting Rate % and add to Wash List
+b.	No: Is Adjusted Baseline Value smaller than Min?
+i.	Yes: STOP WASHING
+ii.	No: Is Product Already on the Wash List?
+1.	No: Is Adjusted Baseline >= Start Wash?
+a.	Yes: Set Wash Ratio to Adjusted Baseline and Add to Wash List
+b.	No: Stop Washing
+2.	Yes: Is Adjusted Baseline Value greater than  Baseline and smaller than Start Wash?
+a.	Yes: Set Wash Ratio to Adjusted Baseline and keep on Wash List
+b.	No: Is Adjusted Baseline Value greater than Min and smaller than Baseline?
+i.	Yes: Set Wash Ratio to Adjusted Baseline and keep on Wash List
+ii.	No: Is Adjusted Baseline greater than  Start Wash and smaller than Max?
+1.	Yes: Set Wash Ratio to Adjusted Baseline + Start Wash % and keep on Wash List
+2.	No: Is Adjusted Baseline Value greater than  Max?
+a.	Yes: Set Wash Ratio to Adjusted Baseline + (Difference between Max Wash % and Adjusted Baseline %) and keep on Wash List
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Workflow.TsaWorkflowEngine.GetRailStorageData">
+ <summary>
+ NOTE the data for the rail status is stored in the database every 10 minutes by the data collection application
+ this query will return the latest data available, which could be up to 9:59 minutes old
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

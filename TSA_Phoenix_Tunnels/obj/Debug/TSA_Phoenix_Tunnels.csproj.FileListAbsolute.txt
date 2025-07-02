@@ -1,0 +1,10 @@
+C:\Users\colem160\source\repos\TunnelProject\TSA_Phoenix_Tunnels\bin\Debug\TSA_Phoenix_Tunnels.exe.config
+C:\Users\colem160\source\repos\TunnelProject\TSA_Phoenix_Tunnels\bin\Debug\TSA_Phoenix_Tunnels.exe
+C:\Users\colem160\source\repos\TunnelProject\TSA_Phoenix_Tunnels\bin\Debug\TSA_Phoenix_Tunnels.pdb
+C:\Users\colem160\source\repos\TunnelProject\TSA_Phoenix_Tunnels\obj\Debug\TSA_Phoenix_Tunnels.csproj.AssemblyReference.cache
+C:\Users\colem160\source\repos\TunnelProject\TSA_Phoenix_Tunnels\obj\Debug\TSA_Phoenix_Tunnels.frmTunnelInterface.resources
+C:\Users\colem160\source\repos\TunnelProject\TSA_Phoenix_Tunnels\obj\Debug\TSA_Phoenix_Tunnels.Properties.Resources.resources
+C:\Users\colem160\source\repos\TunnelProject\TSA_Phoenix_Tunnels\obj\Debug\TSA_Phoenix_Tunnels.csproj.GenerateResource.cache
+C:\Users\colem160\source\repos\TunnelProject\TSA_Phoenix_Tunnels\obj\Debug\TSA_Phoenix_Tunnels.csproj.CoreCompileInputs.cache
+C:\Users\colem160\source\repos\TunnelProject\TSA_Phoenix_Tunnels\obj\Debug\TSA_Phoenix_Tunnels.exe
+C:\Users\colem160\source\repos\TunnelProject\TSA_Phoenix_Tunnels\obj\Debug\TSA_Phoenix_Tunnels.pdb

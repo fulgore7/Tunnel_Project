@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\Controls\" />
+    <Folder Include="Models\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Logging\Wdw_Sust.Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Interop.RsiOPCAuto">
+      <HintPath>..\..\tsa_rail_system_tunnelproject\Interop.RsiOPCAuto.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

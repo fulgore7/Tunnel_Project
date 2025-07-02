@@ -1,0 +1,1449 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Textile.Global.Opc.WinForms
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Textile.Global.Opc.WinForms.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.My.Resources.Resources.Green_Dot">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.My.Resources.Resources.Help">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.My.Resources.Resources.Left_Arrow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.My.Resources.Resources.Red_Dot">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.My.Resources.Resources.Yellow_Dot">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase">
+ <summary>
+ This class controls the bag edit form control behavior
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.NotifyableBase" />
+ <seealso cref="T:Wdw_Sust.Textile.Global.Opc.WinForms.Interfaces.IBagEditFormVm" />
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase._bagEditMode">
+ <summary>
+ The bag edit mode
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase._zone">
+ <summary>
+ The zone
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase._weight">
+ <summary>
+ The weight
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase._releaseWeight">
+ <summary>
+ The release weight
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.BagEditMode">
+ <summary>
+ Gets the bag edit mode.
+ </summary>
+ <value>The bag edit mode.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.Zone">
+ <summary>
+ Gets the zone.
+ </summary>
+ <value>The zone.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanEnableBagDropButton">
+ <summary>
+ Gets a value indicating whether this instance can enable bag drop button.
+ </summary>
+ <value><c>true</c> if this instance can enable bag drop button; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanEnableStorageDestinationButton">
+ <summary>
+ Gets a value indicating whether this instance can enable storage destination button.
+ </summary>
+ <value><c>true</c> if this instance can enable storage destination button; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanEnableRecirculationDestinationButton">
+ <summary>
+ Gets a value indicating whether this instance can enable recirculation destination button.
+ </summary>
+ <value><c>true</c> if this instance can enable recirculation destination button; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanEnableSortingDestinationButton">
+ <summary>
+ Gets a value indicating whether this instance can enable sorting destination button.
+ </summary>
+ <value><c>true</c> if this instance can enable sorting destination button; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanShowUserAssignmentInformation">
+ <summary>
+ Gets a value indicating whether this instance can show user assignment information.
+ </summary>
+ <value><c>true</c> if this instance can show user assignment information; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanShowRecirculationInformation">
+ <summary>
+ Gets a value indicating whether this instance can show recirculation information.
+ </summary>
+ <value><c>true</c> if this instance can show recirculation information; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanShowAllocationToWasherInformation">
+ <summary>
+ Gets a value indicating whether this instance can show allocation to washer information.
+ </summary>
+ <value><c>true</c> if this instance can show allocation to washer information; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanShowWeightLabel">
+ <summary>
+ Gets a value indicating whether this instance can show weight label.
+ </summary>
+ <value><c>true</c> if this instance can show weight label; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.FormMode">
+ <summary>
+ Gets the bag edit form mode.
+ </summary>
+ <value>The form mode.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanEnableBagDeleteButton">
+ <summary>
+ Gets a value indicating whether this instance can enable bag delete button.
+ </summary>
+ <value><c>true</c> if this instance can enable bag delete button; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanEnableBagAddButton">
+ <summary>
+ Gets a value indicating whether this instance can enable bag add button.
+ </summary>
+ <value><c>true</c> if this instance can enable bag add button; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanEnableBagUpdateButton">
+ <summary>
+ Gets a value indicating whether this instance can enable bag update button.
+ </summary>
+ <value><c>true</c> if this instance can enable bag update button; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanEnableBagCancelButton">
+ <summary>
+ Gets a value indicating whether this instance can enable bag cancel button.
+ </summary>
+ <value><c>true</c> if this instance can enable bag cancel button; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanEnableWasherDestinationButton">
+ <summary>
+ Gets a value indicating whether this instance can enable washer destination button.
+ </summary>
+ <value><c>true</c> if this instance can enable washer destination button; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanShowWarningLabel">
+ <summary>
+ Gets a value indicating whether this instance can show warning label.
+ </summary>
+ <value><c>true</c> if this instance can show warning label; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.WeightLabelText">
+ <summary>
+ Gets the weight label text.
+ </summary>
+ <value>The weight label text.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.WeightLabelColor">
+ <summary>
+ Gets the color of the weight label. The color changes depending on the
+ actual weight in reference to the release weight.
+ </summary>
+ <value>The color of the weight label.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.IsBagVeryOverWeight">
+ <summary>
+ Gets a value indicating whether this instance is bag very over weight.
+ </summary>
+ <value><c>true</c> if this instance is bag very over weight; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.IsBagOverWeight">
+ <summary>
+ Gets a value indicating whether this instance is bag over weight.
+ </summary>
+ <value><c>true</c> if this instance is bag over weight; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.WeightPercentage">
+ <summary>
+ Gets the weight percentage.
+ </summary>
+ <value>The weight percentage.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.Weight">
+ <summary>
+ Gets or sets the weight.
+ </summary>
+ <value>The weight.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.ReleaseWeight">
+ <summary>
+ Gets or sets the release weight.
+ </summary>
+ <value>The release weight.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.CanShowCleanBagWeight">
+ <summary>
+ Gets a value indicating whether this instance can show clean bag weight.
+ Default is set to false unless being overridden.
+ </summary>
+ <value><c>true</c> if this instance can show clean bag weight; otherwise, <c>false</c>.</value>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase.#ctor(Wdw_Sust.Core.Enums.FormMode,Wdw_Sust.Textile.Core.Enums.LintZone)">
+ <summary>
+ Initializes a new instance of the <see cref="T:Wdw_Sust.Textile.Global.Opc.WinForms.Core.BagEditFormVmBase"/> class.
+ </summary>
+ <param name="editMode">The edit mode.</param>
+ <param name="zone">The zone.</param>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Opc.WinForms.Core.OpcBagEditManagerBase`1">
+ <summary>
+ This class is to manage all opc communications and bag operations for the bag
+ form object.
+ </summary>
+ <typeparam name="T"></typeparam>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.OpcBagEditManagerBase`1.CreateBagObject">
+ <summary>
+ Creates the concrete bag object from the derived class
+ </summary>
+ <returns>T.</returns>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.OpcBagEditManagerBase`1.LintBagDetailAfterModified">
+ <summary>
+ Gets the lint bag detail after modified.
+ </summary>
+ <value>The lint bag detail after modified.</value>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.OpcBagEditManagerBase`1.WriteToPlc(Wdw_Sust.Textile.Core.LintBagDetail,System.Boolean)">
+ <summary>
+ Overrides to provide the logic to write to the PLC
+ </summary>
+ <param name="bagInfo">The bag information.</param>
+ <param name="storageDestinationChanged">if set to <c>true</c> [storage destination changed].</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.OpcBagEditManagerBase`1.DeleteBag">
+ <summary>
+ Deletes the bag.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.OpcBagEditManagerBase`1.UpdateBagDataToPlc(Wdw_Sust.Textile.Core.LintBagDetail,System.Boolean)">
+ <summary>
+ Updates the bag data to PLC.
+ </summary>
+ <param name="storageDestinationChanged">if set to <c>true</c> [storage destination changed].</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.OpcBagEditManagerBase`1.AddBagDataToPlc(Wdw_Sust.Textile.Core.LintBagDetail,System.Boolean)">
+ <summary>
+ Adds the bag data to PLC.
+ </summary>
+ <param name="storageDestinationChanged">if set to <c>true</c> [storage destination changed].</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.CreateBagEditViewModel">
+ <summary>
+ Creates the bag edit view model.
+ This needs to be overridden in the derived form.
+ </summary>
+ <returns>IBagEditFormVm.</returns>
+ <exception cref="T:System.InvalidOperationException">This needs to be overridden in the derived class</exception>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.CreateAddBagRailAccessRightEventArgs">
+ <summary>
+ Creates the add bag rail access right event arguments.
+ </summary>
+ <returns>IRailAccessRightEventArgs.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.UpdateStorageDestination">
+ <summary>
+ Updates the storage destination.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.UpdateRecirculation">
+ <summary>
+ Updates the recirculation.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.UpdateSortingStation">
+ <summary>
+ Updates the sorting station.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.UpdateWasherDestination">
+ <summary>
+ Updates the washer destination.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.UpdateDropDestination">
+ <summary>
+ Updates the drop destination.
+ </summary>
+ <exception cref="T:System.ArgumentException">Plant is not specified!!</exception>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.AddBag">
+ <summary>
+ Adds the bag.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.btnAdd_Click(System.Object,System.EventArgs)">
+ <summary>
+ Handles the add bag Click event 
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.btnRecirculation_Click(System.Object,System.EventArgs)">
+ <summary>
+ Handles the recirculation button Click event 
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.btnSortingStation_Click(System.Object,System.EventArgs)">
+ <summary>
+ Handles the sorting station Click event 
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.btnDropDestination_Click(System.Object,System.EventArgs)">
+ <summary>
+ Handles the drop destination Click event 
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.btnAllocatedWasher_Click(System.Object,System.EventArgs)">
+ <summary>
+ Handles the allocated washer Click event 
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.btnDelete_Click(System.Object,System.EventArgs)">
+ <summary>
+ Delete bag
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.UpdateCategory">
+ <summary>
+ Updates the category information.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.btnUpdate_Click(System.Object,System.EventArgs)">
+ <summary>
+ Update the bag data
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.GetAppropiateBagEditRights">
+ <summary>
+ Gets the appropiate bag edit rights depending on which bag properties got changed
+ </summary>
+ <returns>List(Of RailAccessOptions).</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.DoesLocationHaveABag">
+ <summary>
+ Check if the location has a bag already.
+ </summary>
+ <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase._bagManager__DataLoadedFromPlc(System.Object,System.EventArgs)">
+ <summary>
+ Load the data from PLC to the bag object
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.txtboxWeight_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ Capture if the soiled weight was changed by the operator
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagEditBase.txtboxCleanWeight_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ Capture if the clean weight was changed by the operator
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase">
+ <summary>
+ Abstract class for all the opc objects to share. Do not use this class by itself. This 
+ class should be treated as "MustInherits" class
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase._timeStamp">
+ <summary>
+ time stamp of the value change
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase._listOfOPCTags">
+ <summary>
+ Dictionary(Of PLCTagName, Index)
+ </summary>
+ <remarks>String = PLC compliance tag name, Integer = property index</remarks>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase._filterString">
+ <summary>
+ To be overridden by the derived class for specific filtering
+ </summary>
+ <remarks>Override SetPropertyFilter</remarks>
+</member>
+<member name="E:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.PropertiesUpdateCompleted">
+ <summary>
+ Properties are updated successfully. This can be used when you want to have action after the object properties are updated.
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.FilterProperties">
+ <summary>
+ Gets the filter properties.
+ </summary>
+ <value>The filter properties.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.GroupName">
+ <summary>
+ Group name to distinguish which group the PLC tag belongs to.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.ListOfOpcTags">
+ <summary>
+ Dictionary(Of PLCTagName, Index)
+ </summary>
+ <remarks>String = PLC compliance tag name, Integer = property index</remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.PlcName">
+ <summary>
+ OPC topic name from RSLinx
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.TagName">
+ <summary>
+ TagName of the item, which does not include the PLC name and does not
+ include the sub member names.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.GetPropertyIndex(System.String)">
+ <summary>
+ Gets the index of the property on the list.
+ </summary>
+ <param name="tagName">Name of the tag.</param>
+ <returns>System.Int32.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.IsPreDefinedProperties(System.String)">
+ <summary>
+ Used to filter out the properties which are not part of the opc item structure
+ </summary>
+ <param name="propertyName">Name of the property</param>
+ <returns>Boolean to indicate whether the property is pre-defined</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.GetPlcTagCount">
+ <summary>
+ Get number of opc items in the object
+ </summary>
+ <returns>Integer value of the count</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.GetPlcTagName(System.String)">
+ <summary>
+ This is used to get the tag name of a property in a class.
+ The format should be [PLCName]TagName.Property.SubProperty etc...
+ </summary>
+ <param name="itemName">Should not be included the TagName</param>
+ <returns>PLC compliance tag name</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.GetPlcTagNames">
+ <summary>
+ Get the tag names in the opc item format
+ [PLCName]Item_Name.Sub_Item_Name
+ </summary>
+ <returns>List of opc items</returns>
+ <remarks></remarks> 
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.ValueFromObjectToPlc(System.String,System.Object,System.Boolean)">
+ <summary>
+ Write the item value back to the PLC
+ </summary>
+ <param name="itemName">Name of the item to be written</param>
+ <param name="value">Value to be written</param>
+ <param name="asyncWrite">Is asyncWrite supported</param>
+ <remarks>tagName should be the name of the item. If the item is type of GlobalOPCElement
+ item name would be the tag name itself. Otherwise, the item name would be the item itself not 
+ including the tag name.</remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.ShallowClone">
+ <summary>
+ Create a copy of all values in the object
+ </summary>
+ <returns>A clone copy of the object</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.IsSerializable">
+ <summary>
+ Test if the class is serializable.
+ </summary>
+ <value>Boolean to indicate true or false.</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.SetPropertyFilter(System.String@)">
+ <summary>
+ Use to extend the filter to include any unnecessary items for the opc communication
+ in the class
+ </summary>
+ <param name="addedFilters">filter to be added</param>
+ <returns></returns>
+ <remarks>There is already a pre-defined filter already. If there are more items
+ needed to be removed, this function needs to be call</remarks>
+ <example>
+ <code>
+ Protected Overrides Function SetPropertyFilter(ByRef addedFilters As String) As String()
+     addedFilters += "Source_Washer,Recirculation_Destination,Estimated_Pieces,Soiled_Weight"
+     Return MyBase.SetPropertyFilter(addedFilters)
+ End Function
+ </code>
+ </example>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.ValueFromPlcToObject(System.Int32,System.Object)">
+ <summary>
+ This is where the handshaking takes place
+ </summary>
+ <param name="index">Property index</param>
+ <param name="value">Value of the item that has this property index</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase.RaisePropertiesUpdatedEvent(System.EventArgs)">
+ <summary>
+ This is used to raise the property changed event from the OPCComm class
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlLintOpcFormBase.InitializeOpcObjects">
+ <summary>
+ Overrides to define OPC tags here in this function. If this function is not defined.
+ It will create a run time error
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlLintOpcFormBase.Initialize">
+ <summary>
+ This will run the following subroutines in sequence
+ 1.) InitializeOPCSettings()
+ 2.) InitializeOPCObjects()
+ 3.) InitializeOPCCommunication()
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcRailMainFormBase.CheckRailAccessRights(System.Object,Wdw_Sust.Textile.Core.Interfaces.IRailAccessRightEventArgs)">
+ <summary>
+ This is used across all 3 plants. This sub also calls the following subs in sequence.
+ 1.) BeforeCheckingAccessRight()
+ 2.) CheckPlantSpecificRequirements(sender, e)
+ 3.) AfterCheckingAccessRight()
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>TSA Coaches PC is set to readonly and can not do any modification.</remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcRailMainFormBase.OnCheckingAccessRight(System.Object,Wdw_Sust.Textile.Core.Interfaces.IRailAccessRightEventArgs)">
+ <summary>
+ Do not call this sub directly.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcRailMainFormBase.OnCheckedAccessRight(System.Object,Wdw_Sust.Textile.Core.Interfaces.IRailAccessRightEventArgs)">
+ <summary>
+ Do not call this sub directly.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcRailMainFormBase.CreateProductivitySummaryBroadcaster">
+ <summary>
+ The productivity summary braoadcaster is plant specific. you will need to override this in the derived to supply a
+ concrete class object
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcRailMainFormBase.CreateChatClientObject">
+ <summary>
+ The chat client object is plant specific. you will need to override this in the derived to supply a
+ concrete class object
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcRailMainFormBase.CreateAlarmBroadcaster">
+ <summary>
+ The alarm braoadcaster is plant specific. you will need to override this in the derived to supply a
+ concrete class object
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcRailMainFormBase.OnApplicationStarted">
+ <summary>
+ To detect if a shift or ctrl key is pressed before the program is open the first time.
+ Ctrl = Database connection string setter
+ Shift = Admin Console setter
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcRailMainFormBase.GetGlobalSettings">
+ <summary>
+ This is to get all the global settings of the software. If no global settings is needed,
+ the derived form still needs to override this function and erase the MyBase.GetGlobalSettings() statement!!
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcRailMainFormBase.SubscribeToolbarAlarms(Wdw_Sust.Textile.Global.WinForms.CtrlLintAlarmToolStripIndicator)">
+ <summary>
+ Alarm fault type = 4 is a data issue. See the table LINT_software.LINT_Fault_Type_Lookup.
+ This will get all the alarms in the database that are catergorized as Critial
+ </summary>
+ <param name="alarmIndicator"></param>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase">
+ <summary>
+ This button has to work with the UDT structure of Bag in the PLC!!
+ </summary>
+ <seealso cref="T:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBase" />
+ <seealso cref="T:Wdw_Sust.Textile.Core.Interfaces.ILintEditableBag" />
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase._CsManagerWithEvents">
+ <summary>
+ The cs manager
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.BORDER_SIZE_MAX_WEIGHT">
+ <summary>
+ The graphic border size for the round bag indicators when the weight of the bag has reached the max weight.
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.BORDER_SIZE_NORMAL">
+ <summary>
+ The graphic border size for the round bag indicators.
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.BORDER_SIZE_OVER_WEIGHT">
+ <summary>
+ The graphic border size for the round bag indicators when the weight of the bag has reached the over weight range.
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.PERCENTAGE_FOR_BAG_TO_BE_OVER_WEIGHT">
+ <summary>
+ The percentage (%) of the release weight that will make this bag over weight.  This value should be a positive whole number from 0 to 99.  The default value should be 10.
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.SHOULD_HIGHLIGHT_OVERWEIGHT_BAGS_WITH_BORDER_COLOR">
+ <summary>
+ This will put a border color around bag tags on the display to flag bags that are over weight.
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.TextFormat">
+ <summary>
+ The text format
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.Cache">
+ <summary>
+ The cache
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase._bagId">
+ <summary>
+ The bag identifier
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase._category">
+ <summary>
+ The category
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase._categoryDetail">
+ <summary>
+ The category detail
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase._overwieght_zone_display_list">
+ <summary>
+ This list stores all the zones that should show that a bag is overweight.
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase._rolesToChangeBag">
+ <summary>
+ The roles to change bag
+ </summary>
+</member>
+<member name="E:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.OnDisplayBagEditForm">
+ <summary>
+ Occurs when the bag edit form is needed
+ </summary>
+</member>
+<member name="E:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.OnDisplayBagIssueForm">
+ <summary>
+ Occurs when bag issue form is needed
+ </summary>
+</member>
+<member name="E:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.OnDisplayedBagData">
+ <summary>
+ Occurs when after the bag being displayed
+ </summary>
+</member>
+<member name="E:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.OnDisplayingBagData">
+ <summary>
+ Occurs when on displaying the bag
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.BagBackColor">
+ <summary>
+ Gets or sets the color of the bag back.
+ </summary>
+ <value>The color of the bag back.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.BagDrawingMode">
+ <summary>
+ Gets or sets the bag drawing mode.
+ </summary>
+ <value>The bag drawing mode.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.BagMode">
+ <summary>
+ Gets or sets the bag mode.
+ </summary>
+ <value>The bag mode.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.BagRundownZone">
+ <summary>
+ Gets or sets the bag rundown zone.
+ </summary>
+ <value>The bag rundown zone.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.BagTextColor">
+ <summary>
+ Gets the color of the bag text.
+ </summary>
+ <value>The color of the bag text.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.Category">
+ <summary>
+ Gets or sets the category.
+ </summary>
+ <value>The category.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.Font">
+ <summary>
+ Gets or sets the font of the text displayed by the control.
+ </summary>
+ <value>The font.</value>
+ <PermissionSet>
+   <IPermission class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+   <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+   <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode, ControlEvidence" />
+   <IPermission class="System.Diagnostics.PerformanceCounterPermission, System, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+ </PermissionSet>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.IsMaxWeight">
+ <summary>
+ This method indicates whether this instance is at max weight or over.
+ </summary>
+ <value><c>true</c> if this instance is over weight; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.IsOverWeight">
+ <summary>
+ Gets a value indicating whether this instance is over weight.
+ </summary>
+ <value><c>true</c> if this instance is over weight; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.PLC_Bag_ID">
+ <summary>
+ Gets or sets the PLC bag identifier.
+ </summary>
+ <value>The PLC bag identifier.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.ReleaseWeight">
+ <summary>
+ Gets the release weight.
+ </summary>
+ <value>The release weight.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.RolesToChangeBag">
+ <summary>
+ Gets the roles to change bag since some bag editing might need custom rights
+ </summary>
+ <value>The roles to change bag.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.Weight">
+ <summary>
+ Gets the weight.
+ </summary>
+ <value>The weight.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.Zone">
+ <summary>
+ Gets or sets the zone.
+ </summary>
+ <value>The zone.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.BagDetail">
+ <summary>
+ Gets or sets the bag detail.
+ </summary>
+ <value>The bag detail.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.BagId">
+ <summary>
+ Gets the bag identifier.
+ </summary>
+ <value>The bag identifier.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.CategoryDetail">
+ <summary>
+ Gets the category detail.
+ </summary>
+ <value>The category detail.</value>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.CsManager">
+ <summary>
+ Gets the context strip manager.
+ </summary>
+ <value>The cs manager.</value>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.InvalidateCache">
+ <summary>
+ Invalidate the bag graphics stored in the memory so the new color can be re-read from the database
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.ConstructToolTipTextWhenControlIsPressed">
+ <summary>
+ Constructs the tool tip text when control is pressed.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.ConstructToolTipTextWhenNormal">
+ <summary>
+ Constructs the tool tip text when normal.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.ConstructToolTipTextWhenShiftIsPressed">
+ <summary>
+ Constructs the tool tip text when shift is pressed.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.GetBagData(System.Int32)">
+ <summary>
+ Gets the bag data.
+ </summary>
+ <param name="bagId">The bag identifier.</param>
+ <returns>ILintBagDetail.</returns>
+ <exception cref="T:System.InvalidOperationException">This needs to be overridden to provide a concrete implementation to get bag detail</exception>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.GetBagEditData(System.Int32)">
+ <summary>
+ Gets the bag edit data.
+ </summary>
+ <param name="bagID">The bag identifier.</param>
+ <returns>System.String.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.GetCategoryDataAsText">
+ <summary>
+ Gets the category data as text.
+ </summary>
+ <returns>System.String.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.OnUpdatedPlcBagId">
+ <summary>
+ Called when [updated PLC bag identifier].
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.UpdateCategoryCode(System.Int32)">
+ <summary>
+ Updates the category code.
+ </summary>
+ <param name="categoryCode">The category code.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.UpdatePlcBagId(System.Int32)">
+ <summary>
+ Updates the PLC bag identifier.
+ </summary>
+ <param name="plcBagId">The PLC bag identifier.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.ValueFromPlcToObject(System.Int32,System.Object)">
+ <summary>
+ This is where the handshaking takes place
+ </summary>
+ <param name="index">Property index</param>
+ <param name="value">Value of the item that has this property index</param>
+ <exception cref="T:System.ArgumentException">Index Out Of Range!!</exception>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.ConstructToolTipText">
+ <summary>
+ Constructs the tool tip text.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.CsManager__ShowContextStrip(System.Object,System.EventArgs)">
+ <summary>
+ Handles the ShowContextStrip event of the _csManager_ control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.GetPlcTagDataAsText">
+ <summary>
+ Gets the PLC tag data as text.
+ </summary>
+ <returns>System.String.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.Bag_MouseEnter(System.Object,System.EventArgs)">
+ <summary>
+ Handles the MouseEnter event of the Bag control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.ReportBagIssue">
+ <summary>
+ Reports the bag issue.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.Bag_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ Handles the MouseDown event of the Bag control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.Windows.Forms.MouseEventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.Bag_MouseLeave(System.Object,System.EventArgs)">
+ <summary>
+ Handles the MouseLeave event of the Bag control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.Bag_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ Handles the MouseUp event of the Bag control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.Windows.Forms.MouseEventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.CreateBagEditArgument(System.String,Wdw_Sust.Core.Enums.FormMode)">
+ <summary>
+ Creates the bag edit argument.
+ </summary>
+ <param name="message">The message.</param>
+ <param name="bagMode">The bag mode.</param>
+ <returns>BagEditFormEventArgs.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.EditBag">
+ <summary>
+ Edits the bag.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.OPCBag_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ Handles the MouseClick event of the OPCBag control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.Windows.Forms.MouseEventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.ReportBagIssueToolStripMenuItem_Click(System.Object,System.EventArgs)">
+ <summary>
+ Handles the Click event of the ReportBagIssueToolStripMenuItem control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.ShowBagDetailToolStripMenuItem_Click(System.Object,System.EventArgs)">
+ <summary>
+ Handles the Click event of the ShowBagDetailToolStripMenuItem control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.CreateCategoryBackground">
+ <summary>
+ Create the category background and stored in memory.
+ </summary>
+ <returns>Bitmap.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.DrawCategory(System.String,System.Drawing.Graphics)">
+ <summary>
+ Draw Category on the bag graphics. If it is an overweight bad the category number will turn red.
+ </summary>
+ <param name="categoryCode">Category number</param>
+ <param name="g">Graphics to be drawn on</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.DrawCategoryBackground(System.Drawing.Graphics)">
+ <summary>
+ Draws the category background.
+ </summary>
+ <param name="g">The g.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.DrawClickState(System.Drawing.Graphics)">
+ <summary>
+ Draw effect when the bag is being clicked
+ </summary>
+ <param name="g">The g.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.DrawExtraInformation(System.Drawing.Graphics)">
+ <summary>
+ This sub can be overridden to provide extra information on the bag, such as drop destination,
+ manually edited bag etc.
+ </summary>
+ <param name="g">The graphics of the bag</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.DrawHoverState(System.Drawing.Graphics)">
+ <summary>
+ Draw effect when the bag is being hovered
+ </summary>
+ <param name="g">Graphics to be drawn on</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.OnPaint(System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw bag details
+ </summary>
+ <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs"/> that contains the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.Draw2DCategoryBackground(System.Drawing.Rectangle,System.Drawing.Graphics)">
+ <summary>
+ Draw2s the d category background.
+ </summary>
+ <param name="rect">The rect.</param>
+ <param name="g">The g.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.Draw3DCategoryFadeInBackground(System.Drawing.Rectangle,System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Graphics)">
+ <summary>
+ Draw3s the d category fade in background.
+ </summary>
+ <param name="rect">The rect.</param>
+ <param name="graphicsPath">The GraphicsPath.</param>
+ <param name="graphics">The Graphics.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.Draw3DCategoryFadeOutBackground(System.Drawing.Rectangle,System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Graphics)">
+ <summary>
+ Draw3s the d category fade out background.
+ </summary>
+ <param name="rect">The rect.</param>
+ <param name="graphicsPath">The GraphicsPath.</param>
+ <param name="graphics">The Graphics.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase.#ctor">
+ <summary>
+ Initializes a new instance of the <see cref="T:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase"/> class.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcWeightStationBase.RevertCategoryChange">
+ <summary>
+ Revert category changes due to operator's input error or cancel.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcTeamIndicator.Me_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ Handles the MouseClick event of the OPCBag control.
+ </summary>
+ <param name="sender">The source of the event.</param>
+ <param name="e">The <see cref="T:System.Windows.Forms.MouseEventArgs"/> instance containing the event data.</param>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase">
+ <summary>
+ Abstract class for all the bag objects to share. Do not use this class by itself. This 
+ class should be treated as "MustInherits" class
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase._listOfOpcTags">
+ <summary>
+ Dictionary(Of PLCTagName, Index)
+ </summary>
+ <remarks>String = PLC compliance tag name, Integer = property index</remarks>
+</member>
+<member name="F:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase._filterString">
+ <summary>
+ To be overridden by the derived class for specific filtering
+ </summary>
+ <remarks>Override SetPropertyFilter</remarks>
+</member>
+<member name="E:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.PropertiesUpdateCompleted">
+ <summary>
+ Properties are updated successfully. This can be used when you want to have action after the object properties are updated.
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.GroupName">
+ <summary>
+ Group name to distinguish which group the PLC tag belongs to.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.ListOfOpcTags">
+ <summary>
+ Dictionary(Of PLCTagName, Index)
+ </summary>
+ <remarks>String = PLC compliance tag name, Integer = property index</remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.PlcName">
+ <summary>
+ OPC topic name from RSLinx
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.TagName">
+ <summary>
+ TagName of the item, which does not include the PLC name and does not
+ include the sub member names.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.TimeStamp">
+ <summary>
+ time stamp of the value change
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.IsPreDefinedProperties(System.String)">
+ <summary>
+ Used to filter out the properties which are not part of the opc item structure
+ </summary>
+ <param name="propertyName">Name of the property</param>
+ <returns>Boolean to indicate whether the property is pre-defined</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.GetPLCTagCount">
+ <summary>
+ Get number of opc items in the object
+ </summary>
+ <returns>Integer value of the count</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.GetPlcTagName(System.String)">
+ <summary>
+ This is used to get the tag name of a property in a class.
+ The format should be [PLCName]TagName.Property.SubProperty etc...
+ </summary>
+ <param name="itemName">Should not be included the TagName</param>
+ <returns>PLC compliance tag name</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.GetPlcTagNames">
+ <summary>
+ Get the tag names in the opc item format
+ [PLCName]Item_Name.Sub_Item_Name
+ </summary>
+ <returns>List of opc items</returns>
+ <remarks></remarks> 
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.ValueFromObjectToPlc(System.String,System.Object,System.Boolean)">
+ <summary>
+ Write the item value back to the PLC
+ </summary>
+ <param name="itemName">Name of the item to be written</param>
+ <param name="value">Value to be written</param>
+ <param name="asyncWrite">Is asyncWrite supported</param>
+ <remarks>tagName should be the name of the item. If the item is type of GlobalOPCElement
+ item name would be the tag name itself. Otherwise, the item name would be the item itself not 
+ including the tag name.</remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.ShallowClone">
+ <summary>
+ Create a copy of all values in the object
+ </summary>
+ <returns>A clone copy of the object</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.IsSerializable">
+ <summary>
+ Test if the class is serializable.
+ </summary>
+ <value>Boolean to indicate true or false.</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.SetPropertyFilter(System.String@)">
+ <summary>
+ Use to extend the filter to include any unnecessary items for the opc communication
+ in the class
+ </summary>
+ <param name="addedFilters">filter to be added</param>
+ <returns></returns>
+ <remarks>There is already a pre-defined filter already. If there are more items
+ needed to be removed, this function needs to be call</remarks>
+ <example>
+ <code>
+ Protected Overrides Function SetPropertyFilter(ByRef addedFilters As String) As String()
+     addedFilters += "Source_Washer,Recirculation_Destination,Estimated_Pieces,Soiled_Weight"
+     Return MyBase.SetPropertyFilter(addedFilters)
+ End Function
+ </code>
+ </example>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.ValueFromPlcToObject(System.Int32,System.Object)">
+ <summary>
+ This is where the handshaking takes place
+ </summary>
+ <param name="index">Property index</param>
+ <param name="value">Value of the item that has this property index</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.ComponentOpcBase.RaisePropertiesUpdatedEvent(System.EventArgs)">
+ <summary>
+ This is used to raise the property changed event from the OPCComm class
+ </summary>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase">
+ <summary>
+ Class CtrlLintOpcRailFormBase.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlLintOpcFormBase" />
+ <seealso cref="T:Wdw_Sust.Textile.Global.WinForms.Interfaces.ILintRailForm" />
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.Logger">
+ <summary>
+ Gets or sets the logger.
+ </summary>
+ <value>The logger.</value>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.CheckIfBagCanBeEdited(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintBagEventArgs)">
+ <summary>
+ This is to determine if a bag can be edited. It can only be edited if the run down of that bag area is completed.
+ </summary>
+ <param name="sender">The bag which called the sub</param>
+ <param name="e">The parameters associated to the bag</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.CheckPlantSpecificRequirements(System.Object,Wdw_Sust.Textile.Core.Interfaces.IRailAccessRightEventArgs)">
+ <summary>
+ Checks the plant specific requirements.
+ </summary>
+ <param name="sender">The sender.</param>
+ <param name="e">The <see cref="T:Wdw_Sust.Textile.Core.Interfaces.IRailAccessRightEventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.CheckRailAccessRights(System.Object,Wdw_Sust.Textile.Core.Interfaces.IRailAccessRightEventArgs)">
+ <summary>
+ This is used across all 3 plants. This sub also calls the following subs in sequence.
+ 1.) BeforeCheckingAccessRight()
+ 2.) CheckPlantSpecificRequirements(sender, e)
+ 3.) AfterCheckingAccessRight()
+ </summary>
+ <param name="sender">The sender.</param>
+ <param name="e">The <see cref="T:Wdw_Sust.Textile.Core.Interfaces.IRailAccessRightEventArgs"/> instance containing the event data.</param>
+ <remarks>TSA Coaches PC is set to readonly and can not do any modification.</remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.CheckRoleAccessRights(Wdw_Sust.Textile.Core.RfidCard,Wdw_Sust.Textile.Core.EventArgs.LintRoleAccessRightEventArgs)">
+ <summary>
+ Checks the role access rights.
+ </summary>
+ <param name="sender">The sender.</param>
+ <param name="e">The <see cref="T:Wdw_Sust.Textile.Core.EventArgs.LintRoleAccessRightEventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.GetRfidCardInfo(System.Object,Wdw_Sust.Textile.Core.EventArgs.RfidCardInfoEventArgs)">
+ <summary>
+ Gets the RFID card information in the database.
+ </summary>
+ <param name="sender">The sender.</param>
+ <param name="e">The <see cref="T:Wdw_Sust.Textile.Core.EventArgs.RfidCardInfoEventArgs" /> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.Initialize">
+ <summary>
+ This will run the following subroutines in sequence
+ 1.) InitializeOpcSettings()
+ 2.) InitializeOpcObjects()
+ 3.) InitializeOpcCommunication()
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.InitializeOpcObjects">
+ <summary>
+ Overrides to define OPC tags here in this function. If this function is not defined.
+ It will create a run time error
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.LogBagEvent(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintBagEditLogEventArgs)">
+ <summary>
+ Logs the bag event.
+ </summary>
+ <param name="sender">The sender.</param>
+ <param name="e">The <see cref="T:Wdw_Sust.Textile.Core.EventArgs.LintBagEditLogEventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.LogOperatorEvent(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintOperatorEventArgs)">
+ <summary>
+ Logs the operator event in the database.
+ </summary>
+ <param name="sender">The sender.</param>
+ <param name="e">The <see cref="T:Wdw_Sust.Textile.Core.EventArgs.LintOperatorEventArgs" /> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.LogRailSequenceEvent(System.Object,Wdw_Sust.Textile.Core.EventArgs.LintRailSequenceEventArgs)">
+ <summary>
+ Logs the rail sequence event.
+ </summary>
+ <param name="sender">The sender.</param>
+ <param name="e">The <see cref="T:Wdw_Sust.Textile.Core.EventArgs.LintRailSequenceEventArgs" /> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.ManageBagControl(Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcBagBase,Wdw_Sust.Textile.Global.Opc.WinForms.Enums.HandlerAction)">
+ <summary>
+ Manages the bag control.
+ </summary>
+ <param name="ctrl">The control.</param>
+ <param name="handlerAction">The handler action.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.ManageControlsEvent(System.Windows.Forms.Control,Wdw_Sust.Textile.Global.Opc.WinForms.Enums.HandlerAction)">
+ <summary>
+ This meant to be overridden so the derived form can wire events to the control
+ </summary>
+ <param name="ctrl">Control to be wired</param>
+ <param name="handlerAction">The handler action.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.ManageLogInButton(Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcLogInButtonBase,Wdw_Sust.Textile.Global.Opc.WinForms.Enums.HandlerAction)">
+ <summary>
+ Manages the log in button.
+ </summary>
+ <param name="ctrl">The control.</param>
+ <param name="handlerAction">The handler action.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.ManageRailSequenceStep(Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcRailSequenceStepBase,Wdw_Sust.Textile.Global.Opc.WinForms.Enums.HandlerAction)">
+ <summary>
+ Manages the rail sequence step.
+ </summary>
+ <param name="ctrl">The control.</param>
+ <param name="handlerAction">The handler action.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.OnFormClosed(System.Windows.Forms.FormClosedEventArgs)">
+ <summary>
+ To remove all the event handlers to prevent memory leak
+ </summary>
+ <param name="e">The <see cref="T:System.Windows.Forms.FormClosedEventArgs"/> instance containing the event data.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.ShowBagEditForm(System.Object,Wdw_Sust.Textile.Global.Opc.WinForms.EventArgs.BagEditFormEventArgs)">
+ <summary>
+ Shows the bag edit form.
+ </summary>
+ <param name="sender">The sender.</param>
+ <param name="e">The <see cref="T:Wdw_Sust.Textile.Global.Opc.WinForms.EventArgs.BagEditFormEventArgs"/> instance containing the event data.</param>
+ <exception cref="T:System.ArgumentException">This sub needs to be overridden in the derived class to provide a concrete bag edit form</exception>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.ShowBagReportIssueForm(System.Object,Wdw_Sust.Textile.Global.Opc.WinForms.EventArgs.BagIssueReportFormEventArgs)">
+ <summary>
+ Shows the bag report issue form.
+ </summary>
+ <param name="sender">The sender.</param>
+ <param name="e">The <see cref="T:Wdw_Sust.Textile.Global.Opc.WinForms.EventArgs.BagIssueReportFormEventArgs"/> instance containing the event data.</param>
+ <exception cref="T:System.ArgumentException">This sub needs to be overridden in the derived class to provide a concrete bag edit form</exception>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.ManageBagAddButton(Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcBagAddButton,Wdw_Sust.Textile.Global.Opc.WinForms.Enums.HandlerAction)">
+ <summary>
+ Manages the bag add button.
+ </summary>
+ <param name="ctrl">The control.</param>
+ <param name="handlerAction">The handler action.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.ManageWeightStation(Wdw_Sust.Textile.Global.Opc.WinForms.Core.CtrlOpcWeightStationBase,Wdw_Sust.Textile.Global.Opc.WinForms.Enums.HandlerAction)">
+ <summary>
+ Manages the weight station.
+ </summary>
+ <param name="ctrl">The control.</param>
+ <param name="handlerAction">The handler action.</param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailFormBase.RecursiveAddOpcControls(System.Windows.Forms.Control.ControlCollection)">
+ <summary>
+ Recursively adding all OPC controls from the top level down to the OpcComm object.
+ </summary>
+ <param name="ctrls">The CTRLS.</param>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcGoButton">
+ <summary>
+ This button has to work with the UDT structure of Action_Command in the PLC!!
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailSequenceDialog.UpdateSequence">
+ <summary>
+ Updating the sequence and check if the user has right to perform the change.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcRailSequenceDialog.IsCurrentStep(System.Int32)">
+ <summary>
+ Determines whether [is current step] [the specified step to test].
+ </summary>
+ <param name="stepToTest">The step to test.</param>
+ <returns><c>true</c> if [is current step] [the specified step to test]; otherwise, <c>false</c>.</returns>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcDataCollectionMonitoring.RecursiveAddOPCControls(System.Windows.Forms.Control.ControlCollection)">
+ <summary>
+ Recursively adding opc controls residing in the form
+ </summary>
+ <param name="ctrls"></param>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcMachineAvailabilityStatus.OnCreateFactoryObject">
+ <summary>
+ Called when the property Factory is being called but the field was not initialized yet.
+ By overriding this the form will use the concrete provider for database operations.
+ </summary>
+ <returns>ILintFactoryProvider.</returns>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcMachineStatus">
+ <summary>
+ This class can only take a boolean value from the PLC
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcMachineStatus.GraphicShownWhenFalse">
+ <summary>
+ Show when the value is true. If not defined the control will hide with value is true.
+ </summary>
+ <value>Image to be displayed</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.WinForms.CtrlOpcMachineStatus.GraphicShownWhenTrue">
+ <summary>
+ Show when the value is false. If not defined the control will hide with value is false."
+ </summary>
+ <value>Image to be displayed</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

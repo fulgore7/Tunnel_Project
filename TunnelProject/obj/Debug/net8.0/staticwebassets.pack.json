@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\TunnelProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TunnelProject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TunnelProject.mru4x2rmr4.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\TunnelProject\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\TunnelProject\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\TunnelProject\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\TunnelProject\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TunnelProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TunnelProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TunnelProject.props",
+      "PackagePath": "build\\TunnelProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TunnelProject.props",
+      "PackagePath": "buildMultiTargeting\\TunnelProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TunnelProject.props",
+      "PackagePath": "buildTransitive\\TunnelProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

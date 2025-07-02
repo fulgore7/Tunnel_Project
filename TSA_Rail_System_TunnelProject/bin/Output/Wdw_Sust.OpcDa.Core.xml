@@ -1,0 +1,988 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.OpcDa.Core
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.OpcDa.Core.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Wdw_Sust.OpcDa.Core.Interfaces.IOpcElementControl">
+ <summary>
+ This is to address the problem when the control need to call ValueFromObjectToPLC is used. Any OPC
+ control that the tag name itself is the name of the whole tag, the control needs to implement
+ this interface for OPCComm to work properly.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.OpcDa.Core.Interfaces.IOpcBoolean">
+ <summary>
+ For bag edit form for all 3 plants. This
+ interface provides consistency.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm">
+ <summary>
+ Interface to define all the Opc operations how to write and read tags from the Plc processor which is
+ in compliance with the Opc Da technology.
+ </summary>
+</member>
+<member name="E:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.GlobalDataChangeEvent">
+ <summary>
+ This will only fire when property "IsSyncronized" is set to true
+ </summary>
+ <param name="groupName">Name of the group for this data change event.</param>
+ <param name="listOfOpcObjects">List of opc items that were changed during the data change event.</param>
+ <remarks>"IsSyncronized" is set to true by default</remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.AddOpcObject(Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject)">
+ <summary>
+ Used to add items to the OPC instance for OPC communication. IMPORTANT!! If the parent form which owns this object and also inherits
+ from LINTOPCFormBase, make sure to use AddOPCObject(ByVal opcItem as IOPCObject, ByVal parentForm As Form) instead!!
+ </summary>
+ <param name="opcObject">Item to be added - Look at summary for reference on how to use this subroutine</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.AddOpcObjects(Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject[])">
+ <summary>
+ Add more than one object at the same time.
+ </summary>
+ <param name="opcObjects"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.AddOpcObject``1(System.String,System.String,System.String)">
+ <summary>
+ Used to add items to the OPC instance for OPC communication. 
+ </summary>
+ <typeparam name="T">Type to create the instance</typeparam>
+ <param name="plcName">Topic name of the PLC</param>
+ <param name="tagName">Tag name of the PLC</param>
+ <param name="groupName">Group name of the PLC</param>
+ <returns>The newly created object</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.AddOpcObject``1(System.String,System.String,System.String,Wdw_Sust.OpcDa.Core.Interfaces.IHaveOpcObjects)">
+ <summary>
+ Used to add items to the OPC instance for OPC communication. 
+ </summary>
+ <typeparam name="T">Type to create the instance</typeparam>
+ <param name="plcName">Topic name of the PLC</param>
+ <param name="tagName">Tag name of the PLC</param>
+ <param name="groupName">Group name of the PLC</param>
+ <returns>The newly created object</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.CloseOpcComm">
+ <summary>
+ Close all active OPC groups in the server and then disconnect from it.
+ </summary>
+ <remarks>This is only called when the application is going to shut down.
+ Otherwise, call CloseOPCComm(ByVal groupName As String, ByVal clearClientHandles As Boolean) instead
+ </remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.CloseOpcComm(System.String,System.Boolean)">
+ <summary>
+ Close the OPC group specified
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <param name="clearClientHandles">Determine if clearing the client handles in the memory buffer is needed</param>
+ <remarks>This is only called when the application is going to shut down.
+ Otherwise, call CloseOPCComm(ByVal groupName As String, ByVal clearClientHandles As Boolean) instead
+ </remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.IsServerRunning">
+ <summary>
+ Check if the server is running
+ </summary>
+ <returns>Boolean to tell if the OPC server is running</returns>
+ <remarks></remarks>GetNumberOfOpcItems
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.OpenOpcComm">
+ <summary>
+ Open OPC communication for all groups existed in _opcGroupDetails
+ which have not called the OpenOPCComm subroutine yet
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.OpenOpcComm(Wdw_Sust.OpcDa.Core.Interfaces.IHaveOpcObjects,System.Int32)">
+ <summary>
+ Open OPC communication for all groups reside in the frm object
+ </summary>
+ <param name="frm">Form object which contains all intended groups for communication</param>
+ <param name="updateRate">Update rate for all group inside of the form</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.OpenOpcComm(System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ Use to set different property for the group specified. If default properties are used
+ We should only call OpenOPCComm to open all groups at the same time
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <param name="updateRate">Group update rate</param>
+ <param name="isSubscribed">Is the group subscribed</param>
+ <param name="isActive">Is the group active</param>
+ <param name="isSyncronized">Set to see if the data from VB is in sync with data from PLC
+ through the data change event. If value is set to false, the data change event will not update
+ value to object.</param>
+ <param name="opcGlobalDataChangeEventSuppressing">Default is set to false. If individual opc data
+ change event is desired, set this to true</param>
+ <remarks>IsSyncronized property is set to true by default. If you would like to fire off the raw opc data change event
+ you should set IsSyncronized to false and use the WithEvents VB keyword to subscribe GlobalDataChangeFromPLC event from the 
+ OPCComm.Instance</remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.SetGroupActive(System.String,System.Boolean)">
+ <summary>
+ Set group to be active or not active
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <param name="isActive">Boolean to indicate the desired value</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.AsyncWrite(System.String)">
+ <summary>
+ Use this to write to items in the OPC in an Async manner
+ </summary>
+ <param name="groupName">Name of the group to perform async operation</param>
+ <returns>The transaction ID for the transaction</returns>
+ <remarks>-1 will return if no sync operation executed.</remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcComm.SyncWrite(System.String)">
+ <summary>
+ Use this to write to items in the OPC in a Sync manner
+ </summary>
+ <param name="groupName">Name of the group to perform async operation</param>
+ <returns>The transaction ID for the transaction</returns>
+ <remarks>-1 will return if no sync operation executed.</remarks>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.GroupName">
+ <summary>
+ Group name of the item
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.TagName">
+ <summary>
+ Tag number of the item. If this is an UDT the format of the tag would be
+ [PLC_Topic_Name]TagName.SubTagName.SubSubTagName
+ </summary>
+ <value>Name of the tag</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.TimeStamp">
+ <summary>
+ Time stamp to show when the item was come in
+ </summary>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.IsRegisteringInProgress">
+ <summary>
+ To tell if the object is still loading information to the properties
+ </summary>
+ <value>Boolean to tell if it is still registering</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="E:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.PropertiesUpdateCompleted">
+ <summary>
+ Raise event to tell the object's properties have been changed
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="E:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.ItemsRegisteringCompleted">
+ <summary>
+ Items registering has been completed. This only fires one time
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.GetPlcTagNames">
+ <summary>
+ Get the tag name in the opc item format
+ [PLC_Topic_Name]Item_Name.Sub_Item_Name.Sub_Sub_Item_Name
+ </summary>
+ <returns>List of opc items</returns>
+ <remarks></remarks> 
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.GetPlcTagName(System.String)">
+ <summary>
+ This is used to get the tag name of a property in a class.
+ The format should be [PLCName]TagName.Property.SubProperty etc...
+ </summary>
+ <param name="itemName">Should not be included the TagName</param>
+ <returns>PLC compliance tag name</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.GetPropertyIndex(System.String)">
+ <summary>
+ Get the index of the index so that the OPC server can put value in the right
+ property
+ </summary>
+ <param name="plcTag">PLC tag is in the format of [PLC_Topic_Name]TagName.SubTagName</param>
+ <returns>Index of the property</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.ShallowClone">
+ <summary>
+ Create a copy of the object
+ </summary>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.ValueFromPlcToObject(System.Int32,System.Object)">
+ <summary>
+ Value requested from the PLC and stored in the OPC object
+ </summary>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.ValueFromObjectToPlc(System.String,System.Object,System.Boolean)">
+ <summary>
+ Value to be put in to the PLC from the OPC object
+ </summary>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject.RaisePropertiesUpdatedEvent(System.EventArgs)">
+ <summary>
+ This is to tell the object to raise an event if any of the property value has been changed in the data
+ change event
+ </summary>
+ <param name="e">Dummy System.EventArgs</param>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.OpcDa.Core.Interfaces.IOpcPlcNameLinkable">
+ <summary>
+ For dy
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.Interfaces.IOpcPlcNameLinkable.PlcName">
+ <summary>
+ Topic name in RSLINX. If topic name is not setup, an exception will be thrown
+ </summary>
+ <value>name of the topic, usually the name of the PLC</value>
+</member>
+<member name="T:Wdw_Sust.OpcDa.Core.OpcComExceptions.ExceptionCode">
+ <summary>
+ Translation of the PLC error code to readable messages
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Wdw_Sust.OpcDa.Core.OpcCommBase.GlobalDataChangeEvent">
+ <summary>
+ This will only fire when property "IsSyncronized" is set to true
+ </summary>
+ <param name="groupName">Name of the group for this data change event.</param>
+ <param name="listOfOpcObjects">List of opc items that were changed during the data change event.</param>
+ <remarks>"IsSyncronized" is set to true by default</remarks>
+</member>
+<member name="T:Wdw_Sust.OpcDa.Core.OpcComm">
+ <summary>
+ Terminologies: ItemName: name of the item; TagName: name of the property; 
+ PLCTagName: PLC compliance tag name
+ </summary>
+ <remarks>Group definition is global, which means that different PLCs can not
+ use the same group definition. Name of the PLC tag can be the same as long as
+ the tags reside in different groups.</remarks>async
+</member>
+<member name="F:Wdw_Sust.OpcDa.Core.OpcComm._myOpcServer">
+ <summary>
+ RSLinx Server
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.OpcDa.Core.OpcComm._asyncGroupPendingTable">
+ <summary>
+ Dictionary(Of transactionID, groupName)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.OpcDa.Core.OpcComm._asyncPendingItems">
+ <summary>
+ Dictionary(Of groupName, Dictionary(Of PLCTag, value))
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.OpcDa.Core.OpcComm._opcGroupDetails">
+ <summary>
+ Dictionary(Of groupName, groupProperties)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Wdw_Sust.OpcDa.Core.OpcComm.GlobalDataChangeFromPLC">
+ <summary>
+ This will only fire when property "IsSyncronized" is set to false
+ </summary>
+ <param name="TransactionID">Transaction ID assigned by the caller</param>
+ <param name="GroupHandle">Handle of the group</param>
+ <param name="NumItems">Number of items returned from the data change event</param>
+ <param name="ClientHandles">Array of client handles for the data change event</param>
+ <param name="ItemValues">Array of Item values. The index of the array goes with the array of client handles</param>
+ <param name="Qualities"></param>
+ <param name="TimeStamps">When the data change event received from the PLC</param>
+ <remarks>"IsSyncronized" is set to true by default</remarks>
+</member>
+<member name="E:Wdw_Sust.OpcDa.Core.OpcComm.GroupDataChangeEvent">
+ <summary>
+ This will only fire when property "IsSyncronized" is set to false
+ </summary>
+ <param name="groupName"></param>
+ <param name="listOfOpcObjects"></param>
+ <remarks></remarks>
+</member>
+<member name="E:Wdw_Sust.OpcDa.Core.OpcComm.OpcCommStatus">
+ <summary>
+ Used to broadcast information related to Opc communication
+ </summary>
+ <param name="timeStamp">When was the event happened</param>
+ <param name="groupName">Name of the group</param>
+ <param name="message">Message itself</param>
+ <param name="infoType">What kind of the message</param>
+ <remarks></remarks>
+</member>
+<member name="E:Wdw_Sust.OpcDa.Core.OpcComm.AsyncReadCompleted">
+ <summary>
+ Raise event when async read is completed
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <remarks></remarks>
+</member>
+<member name="E:Wdw_Sust.OpcDa.Core.OpcComm.AsyncWriteCompleted">
+ <summary>
+ Raise event when async write is completed
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcComm.ThreadMode">
+ <summary>
+ This can only be set to false when the developer makes sure that no cross-thread issues will arise from the program. Data collection to be recommended
+ to use Multi-threaded
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcComm.EnableOpcCommunication">
+ <summary>
+ This will enable or disable Opc communication for debugging purposes. If this is true it will ignore anything related to Opc, such as 
+ tag definitions, OpcComm.OpenOpcComm
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcComm.LINXGatewayServerName">
+ <summary>
+ This is only in effect if the remote LINX option is used.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcComm.PrintTagNameWhenDebug">
+ <summary>
+ For debugging purposes. This can be set to true to 
+ see what the tags are. This is useful information
+ when a new class is developed. So you can map the property
+ index accordingly.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.GetOpcGroup(System.String)">
+ <summary>
+ Get Opc group object from the list of groups in the Opc server
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm._myOpcGroups_GlobalDataChange(System.Int32,System.Int32,System.Int32,System.Array@,System.Array@,System.Array@,System.Array@)">
+ <summary>
+ Implementation of the Opc data change event.
+ </summary>
+ <param name="TransactionID">A number assigned to the transaction</param>
+ <param name="GroupHandle">Server Handle of the group</param>
+ <param name="NumItems">Number of items was modified in the data change event</param>
+ <param name="ClientHandles">Array of client handles of all changed items</param>
+ <param name="ItemValues">Array of values of all changed items</param>
+ <param name="Qualities"></param>
+ <param name="TimeStamps"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.ProcessMultiThreadedIncomingOpcData">
+ <summary>
+ Processes the multi threaded incoming opc data.
+ This thread will run continuously when MULTI_THREAD mode is used when start the OpcComm object
+ </summary>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.SetItemValue(System.String,System.String,System.Object,System.Boolean)">
+ <summary>
+ Write the value from the object to the PLC tag
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <param name="plcTagName">Name of the PLC tag name</param>
+ <param name="value">Value to be written</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.IsGroupSynchronized(System.String)">
+ <summary>
+ Use to tell if the objects in the group is synchronized with the PLC values
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.GetNumberOfOpcItems(System.String)">
+<summary>
+ Get number of items in a group
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <returns>Count in an integer</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.AddOpcItem(Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject)">
+ <summary>
+ Used to add item to the Opc instance for Opc communication
+ </summary>
+ <param name="opcItem">Item to be added</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.AddOpcObject(Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject)">
+ <summary>
+ Used to add item to the Opc instance for Opc communication. IMPORTANT!! If the parent form which owns this object and also inherits
+ from LINTOpcFormBase, make sure to use AddOpcObject(ByVal opcItem as IOpcObject, ByVal parentForm As Form) instead!!
+ </summary>
+ <param name="opcObject">Item to be added - Look at summary for reference on how to use this subroutine</param>
+ <returns>Opc object handle</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.AddOpcObject(Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject,Wdw_Sust.OpcDa.Core.Interfaces.IHaveOpcObjects)">
+ <summary>
+ Used to add item to the Opc instance for Opc communication. It is very important that if the 
+ parent form inherits from LINTOpcFormBase, the second argument needs to be set to the parent form itself
+ to make sure all groups in the form will be closed properly.
+ </summary>
+ <param name="opcObject">Item to be added - Look at summary for reference on how to use this subroutine</param>
+ <param name="parentForm">Form object which has the group of the opc object and also inherits from LINTOpcFormBase</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.CloseOpcComm">
+ <summary>
+ Close all active Opc groups in the server and then disconnect from it.
+ </summary>
+ <remarks>This is only called when the application is going to shut down.
+ Otherwise, call CloseOpcComm(ByVal groupName As String, ByVal clearClientHandles As Boolean) instead
+ </remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.CloseOpcComm(System.String,System.Boolean)">
+ <summary>
+ Close the Opc group specified
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <param name="clearClientHandles">Determine if clearing the client handles in the memory buffer is needed</param>
+ <remarks>This is only called when the application is going to shut down.
+ Otherwise, call CloseOpcComm(ByVal groupName As String, ByVal clearClientHandles As Boolean) instead
+ </remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.CloseOpcComm(Wdw_Sust.OpcDa.Core.Interfaces.IHaveOpcObjects)">
+ <summary>
+ Close the Opc group specified
+ </summary>
+ <param name="parentForm">Parent object which as the group resides in it</param>
+ <remarks>This is only called when the application is going to shut down.
+ Otherwise, call CloseOpcComm(ByVal groupName As String, ByVal clearClientHandles As Boolean) instead
+ </remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.GetItemValue(System.String,System.String)">
+ <summary>
+ Get the value from the PLC and assign it to the object
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <param name="plcTagName">PLC tag name</param>
+ <returns>Value of the item in the PLC</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.GetItemValue(Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject,System.String)">
+ <summary>
+ Get the value from the PLC and assign it to the object
+ </summary>
+ <param name="opcItem">Opc object</param>
+ <param name="itemName">Name of the item</param>
+ <returns></returns>
+ <remarks>Item name should not include the tag name of the item. If the item is an OpcElement type,
+ the item name should be value.</remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.GetGroupNames">
+ <summary>
+ Get all group names which have already connected to the PLC
+ </summary>
+ <returns>Array of group names</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.IsGroupActive(System.String)">
+ <summary>
+ Check if group is active
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.IsServerRunning">
+ <summary>
+ Check if the server is running
+ </summary>
+ <returns>Boolean to tell if the Opc server is running</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.IsGroupSubscribed(System.String)">
+ <summary>
+ Use to tell if the group is subscribed
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <returns>Boolean indicate if the group is subscribed</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.OpenOpcComm">
+ <summary>
+ Open Opc communication for all groups existed in _opcGroupDetails
+ which have not called the OpenOpcComm subroutine yet
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.OpenOpcComm(Wdw_Sust.OpcDa.Core.Interfaces.IHaveOpcObjects,System.Int32)">
+ <summary>
+ Open Opc communication for all groups reside in the frm object
+ </summary>
+ <param name="frm">Form object which contains all intended groups for communication</param>
+ <param name="updateRate">Update rate for all group inside of the form</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.OpenOpcComm(System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+<summary>
+ Use to set different property for the group specified. If default properties are used
+ We should only call OpenOpcComm to open all groups at the same time
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <param name="updateRate">Group update rate</param>
+ <param name="isSubscribed">Is the group subscribed</param>
+ <param name="isActive">Is the group active</param>
+ <param name="isSyncronized">Set to see if the data from VB is in sync with data from PLC
+ through the data change event. If value is set to false, the data change event will not update
+ value to object.</param>
+ <param name="opcGlobalDataChangeEventSuppressing">Default is set to false. If individual opc data
+ change event is desired, set this to true</param>
+ <remarks>IsSyncronized property is set to true by default. If you would like to fire off the raw opc data change event
+ you should set IsSyncronized to false and use the WithEvents VB keyword to subscribe GlobalDataChangeFromPLC event from the 
+ OpcComm.Instance</remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.SetGroupActive(System.String,System.Boolean)">
+ <summary>
+ Set group to be active or not active
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <param name="isActive">Boolean to indicate the desired value</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.SetGroupActive(Wdw_Sust.OpcDa.Core.Interfaces.IHaveOpcObjects,System.Boolean)">
+ <summary>
+ Set group to be active or not active
+ </summary>
+ <param name="parentForm">Name of the parent form</param>
+ <param name="isActive">Boolean to indicate the desired value</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.SetGroupSubscribed(System.String,System.Boolean)">
+ <summary>
+ Set the specified group to subscribe
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <param name="isSubscribed">Boolean value to indicate the desired state</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.SetGroupSubscribed(Wdw_Sust.OpcDa.Core.Interfaces.IHaveOpcObjects,System.Boolean)">
+ <summary>
+ Set the specified group to subscribe
+ </summary>
+ <param name="parentForm">Name of the parent form</param>
+ <param name="isSubscribed">Boolean value to indicate the desired state</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.SetGroupUpdateRate(System.String,System.Int32)">
+ <summary>
+ Set group update rate
+ </summary>
+ <param name="groupName">Name of the group</param>
+ <param name="updateRate">Update rate in milliseconds</param>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcComm.IsInitializingOpcCommunication">
+ <summary>
+ To determine if the Opc Communication is being initialized.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.AsyncRead(System.String)">
+ <summary>
+ Async read by the group name
+ </summary>
+ <param name="groupName">Group name to perform read operation</param>
+ <returns>Transaction ID for the operation</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.GetCurrentOpcTransactionID">
+ <summary>
+ Get current transaction ID and also advance the ID index
+ </summary>
+ <returns>Current transaction ID</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.AsyncWrite(System.String)">
+ <summary>
+ Use this to write to items in the Opc in an Async manner
+ </summary>
+ <param name="groupName">Name of the group to perform async operation</param>
+ <returns>The transaction ID for the transaction</returns>
+ <remarks>-1 will return if no async operation executed.</remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.SyncWrite(System.String)">
+ <summary>
+ Use this to write to items in the OPC in an Sync manner
+ </summary>
+ <param name="groupName">Name of the group to perform async operation</param>
+ <returns>The transaction ID for the transaction</returns>
+ <remarks>-1 will return if no sync operation executed.</remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcComm.GetOpcObject(System.String,System.String)">
+ <summary>
+ Get class object from the list
+ </summary>
+ <param name="plcName">PLC topic name where the tag belongs to</param>
+ <param name="opcObjectTagName">Tag name of the class object</param>
+ <returns>Class object</returns>
+ <remarks>Tag name should be unique.</remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcElement.#ctor(System.String,System.String)">
+ <summary>
+ Create new object for the class. if groupName is not defined, it will be the
+ same as the TagName)
+ </summary>
+ <param name="plcName">Name of the PLC topic name</param>
+ <param name="tagName">Name of the tag name</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcElement`1.#ctor(System.String,System.String)">
+ <summary>
+ Create new object for the class. if groupName is not defined, it will be the
+ same as the TagName)
+ </summary>
+ <param name="plcName">Name of the PLC topic name</param>
+ <param name="tagName">Name of the tag name</param>
+ <remarks></remarks>
+</member>
+<member name="E:Wdw_Sust.OpcDa.Core.OpcGroupProperties.DataChangeEvent">
+ <summary>
+ This event will only be raised if IsOPCGlobalDataChangeEventSuppressing is set to true 
+ </summary>
+ <param name="sender">Instance of the class</param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcGroupProperties.RaiseGroupDataChangeEvent(Wdw_Sust.OpcDa.Core.EventArgs.OpcGroupDataChangeEventArgs)">
+ <summary>
+ This sub will only be fired if IsOPCGlobalDataChangeEventSuppressing is set to true 
+ </summary>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcItemDictionary.Item(System.String)">
+ <summary>
+ Used to get the OPC object by using the PLC tag name of the 
+ object
+ </summary>
+ <param name="key">Name of the PLC tag name</param>
+ <returns>The IOPCObject from the list</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcItemDictionary.Item(System.Int32)">
+ <summary>
+ Used to get the opc object by using the client handle of the opc object
+ </summary>
+ <param name="key">Client handle of the opc item</param>
+ <returns>The IOPCObject from the list</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcMessagePath.#ctor(System.String,System.String)">
+ <summary>
+ Create new object for the class. if groupName is not defined, it will be the
+ same as the TagName)
+ </summary>
+ <param name="plcName">Name of the PLC topic name</param>
+ <param name="tagName">Name of the tag name</param>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.OpcDa.Core.OpcObjectBase">
+ <summary>
+ All classes which work with OPCComm must inherit from this class
+ to make use of the OPCComm class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.OpcDa.Core.OpcObjectBase._groupName">
+ <summary>
+ Group name to distinguish which group the PLC tag belongs to.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.OpcDa.Core.OpcObjectBase._PLCName">
+ <summary>
+ OPC topic name from RSLinx
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.OpcDa.Core.OpcObjectBase._tagName">
+ <summary>
+ TagName of the item, which does not include the PLC name and does not
+ include the sub member names.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.OpcDa.Core.OpcObjectBase._timeStamp">
+ <summary>
+ time stamp of the value change
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Wdw_Sust.OpcDa.Core.OpcObjectBase._listOfOPCTags">
+ <summary>
+ Dictionary(Of PLCTagName, Index)
+ </summary>
+ <remarks>String = PLC compliance tag name, Integer = property index</remarks>
+</member>
+<member name="F:Wdw_Sust.OpcDa.Core.OpcObjectBase._filterString">
+ <summary>
+ To be overridden by the derived class for specific filtering
+ </summary>
+ <remarks>Override SetPropertyFilter</remarks>
+</member>
+<member name="F:Wdw_Sust.OpcDa.Core.OpcObjectBase._tagDefinitionCache">
+ <summary>
+ Used to cache tag definitions so that it is only generated once. This is a shared field
+ </summary>
+</member>
+<member name="E:Wdw_Sust.OpcDa.Core.OpcObjectBase.PropertiesUpdateCompleted">
+ <summary>
+ Properties are updated successfully. This can be used when you want to have action after the object properties are updated.
+ </summary>
+</member>
+<member name="E:Wdw_Sust.OpcDa.Core.OpcObjectBase.ItemsRegisteringCompleted">
+ <summary>
+ This will only fire once when registration is completed. This can be used to initialize control
+ </summary>
+ <param name="sender">The object itself</param>
+ <param name="e">Dummy argument</param>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcObjectBase.FilterProperties">
+ <summary>
+ Used to filter the property not needed for the OPC object class. This will optimize the OPC communication.
+ When an OPC object inherits from a normal class, some of the properties may not be needed for OPC. Those
+ properties can be put here.
+ </summary>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcObjectBase.GroupName">
+ <summary>
+ Name of the group
+ </summary>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcObjectBase.ListOfPlcTags">
+ <summary>
+ Dictionary(Of PLCTagName, Index)
+ </summary>
+ <remarks>String = PLC compliance tag name, Integer = property index</remarks>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcObjectBase.PlcName">
+ <summary>
+ Topic Name of the PLC set up in RSLinx
+ </summary>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcObjectBase.TagName">
+ <summary>
+ Name of the root tag name defined in the PLC
+ </summary>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcObjectBase.TimeStamp">
+ <summary>
+ Time stamp associated with data change event for the object
+ </summary>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcObjectBase.OPC">
+ <summary>
+ Property to reference to the OPCComm.Instance property. This will ensure that only one instance is defined at a time
+ </summary>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcObjectBase.IsRegisteringInProgress">
+ <summary>
+ Keep track to see if the object is being initialize
+ </summary>
+</member>
+<member name="P:Wdw_Sust.OpcDa.Core.OpcObjectBase.RegisterItems">
+ <summary>
+ How many items have been connected to the OPC server and already got first data back from the PLC
+ </summary>
+ <value></value>
+ <returns>Number of items have been connected to the OPC server.</returns>
+ <remarks>If number of items back is greater than the list of PLC tags for the object, the ItemsRegisteringCompleted event is fire. 
+ This should only be fired once.</remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcObjectBase.GetItemValueFromPlc(System.String)">
+ <summary>
+ Get the item value from the PLC.
+ </summary>
+ <param name="itemName">The is the name starting with the name of the property</param>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcObjectBase.GetPlcTagCount">
+ <summary>
+ Get number of opc items in the object
+ </summary>
+ <returns>Integer value of the count</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcObjectBase.GetPlcTagName(System.String)">
+ <summary>
+ Get the tag name of a property in a class.
+ The format should be [PLCName]TagName.Property.SubProperty etc...
+ </summary>
+ <param name="itemName">Should not be included the TagName</param>
+ <returns>PLC compliance tag name</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcObjectBase.GetPlcTagNames">
+ <summary>
+ Get the tag names in the opc item format
+ [PLCName]Item_Name.Sub_Item_Name
+ </summary>
+ <returns>List of opc items</returns>
+ <remarks></remarks> 
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcObjectBase.ValueFromPlcToObject(System.Int32,System.Object)">
+ <summary>
+ Must be overridden in the inherited class to reflect changes of the value from the PLC items
+ </summary>
+ <param name="index">The member functions must be in ascending alphabetical
+ order. The first index should be 1</param>
+ <param name="value">Value of the item. To avoid late binding, you should specify
+ what type of the value will return from the PLC</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcObjectBase.ValueFromObjectToPlc(System.String,System.Object,System.Boolean)">
+ <summary>
+ Write the item value back to the PLC
+ </summary>
+ <param name="itemName">Name of the item to be written</param>
+ <param name="value">Value to be written</param>
+ <param name="asyncWrite">Is asyncWrite supported. Default is FALSE, which means that the value will be updated to
+ PLC immediately. If the value is TRUE, the value will NOT be 
+ updated to PLC until AsyncWrite(ByVal groupName As String) from OPCComm Class is called</param>
+ <remarks>tagName should be the name of the item. If the item is type of OPCElement
+ item name would be the tag name itself, or itemName can be an empty string. 
+ Otherwise, the item name would be the item itself not including the tag name.</remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcObjectBase.ShallowClone">
+ <summary>
+ The ShallowClone method creates a shallow copy by creating a new object, and 
+ then copying the non-static fields of the current object to the new object. 
+ If a field is a value type, a bit-by-bit copy of the field is performed. 
+ If a field is a reference type, the reference is copied but the referred object is not; 
+ therefore, the original object and its clone refer to the same object.
+ </summary>
+ <returns>A clone copy of the object</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcObjectBase.RaisePropertiesUpdatedEvent(System.EventArgs)">
+ <summary>
+ This is used to raise the property changed event from the OPCComm class
+ </summary>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcObjectBase.SetPropertyFilter(System.String@)">
+ <summary>
+ Use to extend the filter to include any unnecessary items for the opc communication
+ in the class. Use comma (,) to separate more than 1 property
+ </summary>
+ <param name="addedFilters">filter to be added</param>
+ <returns></returns>
+ <remarks>There is already a pre-defined filter already. If there are more items
+ needed to be removed, this function needs to be call</remarks>
+ <example>
+ <code>
+ Protected Overrides Function SetPropertyFilter(ByRef addedFilters As String) As String()
+     addedFilters += "Source_Washer,Recirculation_Destination,Estimated_Pieces,Soiled_Weight"
+     Return MyBase.SetPropertyFilter(addedFilters)
+ End Function
+ </code>
+ </example>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcObjectBase.#ctor(Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject@,System.String)">
+ <summary>
+ Used when the class is defined as a property to another opc item class
+ this will make sure that GroupName, TagName and PLCName are set properly
+ </summary>
+ <param name="parent">Parent class of the is class</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcString.ChangeIPAddress(System.String,System.Boolean)">
+ <summary>
+ This is used to change the ip address        
+ </summary>
+ <param name="ipAddress">IP address</param>
+ <remarks>
+ this is the padding needs happen per AB KB - 50237 - Manipulating the message path string in MSG control structure for Ethernet messages
+ </remarks>
+</member>
+<member name="F:Wdw_Sust.OpcDa.Core.OpcTagGeneratorBase._tagDefinitionCache">
+ <summary>
+ Used to cache tag definitions so that it is only generated once. This is a shared field
+ </summary>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcTagGeneratorBase.IsPreDefinedProperties(System.String,System.String[])">
+ <summary>
+ Used to filter out the properties which are not part of the Opc item structure
+ </summary>
+ <param name="propertyName">Name of the property</param>
+ <returns>Boolean to indicate whether the property is pre-defined</returns>
+ <remarks></remarks> 
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcTagGeneratorBase.TagNameBreakDown(System.String[],System.Collections.Generic.List{System.String}@,System.Reflection.PropertyInfo,System.String,System.Int32)">
+ <summary>
+ Subroutine to break down the tag name to the element level
+ </summary>
+</member>
+<member name="M:Wdw_Sust.OpcDa.Core.OpcTagGeneratorBase.GenerateOpcTags(Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject)">
+ <summary>
+ Logic that generates the opc tags.
+ </summary>
+ <param name="obj">The object.</param>
+ <returns>System.String().</returns>
+ <exception cref="T:System.Exception">PLC name is not defined!!</exception>
+</member>
+</members>
+</doc>

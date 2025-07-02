@@ -1,0 +1,1219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F2BACB6-74BB-4CA6-B206-5030D15C1D01}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TSA_Rail_System.My.MyApplication</StartupObject>
+    <RootNamespace>TSA_Rail_System</RootNamespace>
+    <AssemblyName>TSA_Rail_System</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TSA_Rail_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TSA_Rail_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Output\</OutputPath>
+    <DocumentationFile>TSA_Rail_System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Output\</OutputPath>
+    <DocumentationFile>TSA_Rail_System.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v22.2.Core, Version=22.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.Extensions, Version=22.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.UI, Version=22.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v22.2, Version=22.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Mono.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat, Version=14.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Splat.14.4.1\lib\netstandard2.0\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Classes\OpcGroupNames.vb" />
+    <Compile Include="Classes\GlobalFunctions.vb" />
+    <Compile Include="Classes\SR.vb" />
+    <Compile Include="Classes\TsaProductDistributionBuilder.vb" />
+    <Compile Include="Classes\WorkflowClient.vb" />
+    <Compile Include="Controls\CtrlOpcTsaRailBlockLabel.Designer.vb">
+      <DependentUpon>CtrlOpcTsaRailBlockLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtrlOpcTsaRailBlockLabel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CtrlOpcTsaRunDownButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Enums.vb" />
+    <Compile Include="Controls\CtrlOpcTsaRailFormBase.Designer.vb">
+      <DependentUpon>CtrlOpcTsaRailFormBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtrlOpcTsaRailFormBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCastMemberShiftData.Designer.vb">
+      <DependentUpon>frmCastMemberShiftData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCastMemberShiftData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProductDistribution.Designer.vb">
+      <DependentUpon>frmProductDistribution.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProductDistribution.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCleanExpressProduct.Designer.vb">
+      <DependentUpon>frmCleanExpressProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCleanExpressProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRailMainFormBase.Designer.vb">
+      <DependentUpon>frmRailMainFormBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRailMainFormBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRfidReaderDiagnostics.Designer.vb">
+      <DependentUpon>frmRfidReaderDiagnostics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRfidReaderDiagnostics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTunnelInterface.Designer.vb">
+      <DependentUpon>frmTunnelInterface.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTunnelInterface.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWashdeckProductivity.Designer.vb">
+      <DependentUpon>frmWashdeckProductivity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmWashdeckProductivity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProductivityControl.Designer.vb">
+      <DependentUpon>frmProductivityControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProductivityControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmScaleCalibration.Designer.vb">
+      <DependentUpon>frmScaleCalibration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmScaleCalibration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSortingProductivity.Designer.vb">
+      <DependentUpon>frmSortingProductivity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSortingProductivity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWorkflowCategoryConfigurations.Designer.vb">
+      <DependentUpon>frmWorkflowCategoryConfigurations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmWorkflowCategoryConfigurations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWorkflowEngineViewer.Designer.vb">
+      <DependentUpon>frmWorkflowEngineViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmWorkflowEngineViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Wdw_Sust.Core\attributes\ConnectableOpcItemAttribute.vb" />
+    <Compile Include="Wdw_Sust.Core\attributes\IsOPCArrayAttribute.vb" />
+    <Compile Include="Wdw_Sust.Core\attributes\NotConnectableOpcItemAttribute.vb" />
+    <Compile Include="Wdw_Sust.Core\BufferedNotifyableBase.vb" />
+    <Compile Include="Wdw_Sust.Core\cache\CacheData.vb" />
+    <Compile Include="Wdw_Sust.Core\cache\CacheDurationAttribute.vb" />
+    <Compile Include="Wdw_Sust.Core\cache\CacheManager.vb" />
+    <Compile Include="Wdw_Sust.Core\cache\DataBaseCacheManager.vb" />
+    <Compile Include="Wdw_Sust.Core\cache\UpdatableBase.vb" />
+    <Compile Include="Wdw_Sust.Core\commuications\ConnectionBase.vb" />
+    <Compile Include="Wdw_Sust.Core\commuications\MessageHeader.vb" />
+    <Compile Include="Wdw_Sust.Core\commuications\NetworkMessage.vb" />
+    <Compile Include="Wdw_Sust.Core\commuications\OutgoingConnection.vb" />
+    <Compile Include="Wdw_Sust.Core\commuications\Server.vb" />
+    <Compile Include="Wdw_Sust.Core\commuications\ServiceHostBase.vb" />
+    <Compile Include="Wdw_Sust.Core\commuications\TcpIpSocketProtocol.vb" />
+    <Compile Include="Wdw_Sust.Core\commuications\WcfDuplexClientBase.vb" />
+    <Compile Include="Wdw_Sust.Core\commuications\WcfNetTcpClientBase.vb" />
+    <Compile Include="Wdw_Sust.Core\commuications\WcfNetTcpConnectionBase.vb" />
+    <Compile Include="Wdw_Sust.Core\commuications\WcfNetTcpServiceHostBase.vb" />
+    <Compile Include="Wdw_Sust.Core\ComPortSetting.vb" />
+    <Compile Include="Wdw_Sust.Core\configurations\ConfigurationManager.vb" />
+    <Compile Include="Wdw_Sust.Core\configurations\Core\ConfigurationFileBase.vb" />
+    <Compile Include="Wdw_Sust.Core\configurations\DbConfigFile.vb" />
+    <Compile Include="Wdw_Sust.Core\configurations\EditableConfigurationManager.vb" />
+    <Compile Include="Wdw_Sust.Core\configurations\EditableSingletonConfigurationManager.vb" />
+    <Compile Include="Wdw_Sust.Core\configurations\EncryptedConfigurationManager .vb" />
+    <Compile Include="Wdw_Sust.Core\configurations\EncryptedSqlDbConnectionBuilder.vb" />
+    <Compile Include="Wdw_Sust.Core\configurations\EventArgs\ConfigFileExceptionEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\configurations\EventArgs\ConfiguratoinFileExceptionEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\configurations\SingletonConfigurationManager.vb" />
+    <Compile Include="Wdw_Sust.Core\configurations\SingletonEncryptedConfigurationManager.vb" />
+    <Compile Include="Wdw_Sust.Core\configurations\SqlDbConnectionBuilder.vb" />
+    <Compile Include="Wdw_Sust.Core\CustomObjectBase.vb" />
+    <Compile Include="Wdw_Sust.Core\DatabaseConnectionBuilder.vb" />
+    <Compile Include="Wdw_Sust.Core\encryption\EncryptionProvider.vb" />
+    <Compile Include="Wdw_Sust.Core\Enums.vb" />
+    <Compile Include="Wdw_Sust.Core\eventargs\EndpointEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\eventargs\MessageEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\eventargs\ServiceEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\eventargs\ServiceExceptionEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\extensions\DateTimeExtensions.vb" />
+    <Compile Include="Wdw_Sust.Core\extensions\EnumExtensions.vb" />
+    <Compile Include="Wdw_Sust.Core\extensions\IntegerExtensions.vb" />
+    <Compile Include="Wdw_Sust.Core\extensions\ObjectExtensions.vb" />
+    <Compile Include="Wdw_Sust.Core\extensions\StringExtensions.vb" />
+    <Compile Include="Wdw_Sust.Core\extensions\TimeSpanExtensions.vb" />
+    <Compile Include="Wdw_Sust.Core\extensions\TimeSpanJobDetailExtensions.vb" />
+    <Compile Include="Wdw_Sust.Core\FileLoggerConfigDetail.vb" />
+    <Compile Include="Wdw_Sust.Core\FormSourceAppAttribute.vb" />
+    <Compile Include="Wdw_Sust.Core\Helpers.vb" />
+    <Compile Include="Wdw_Sust.Core\InformationBroadcasterBase.vb" />
+    <Compile Include="Wdw_Sust.Core\InformationSubscriberBase.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\ICacheData.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\ICanBeDirty.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\ICanCheckAccess.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\ICanCheckValidity.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\ICanUpdate.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\ICommunicationProtocol.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IConfigurationFile.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IConfigurationManager.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IConfigurator.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\ICustomObject.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IDatabaseProvider.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IDataRetrievalEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IDiagnostics.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IEditableConfigurationManager.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IEncryptedConfigurationFile.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IExecuteJob.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IExternalSourceMonitorJob.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IHaveConnectionString.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IHaveDuration.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IHaveServiceName.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IInfomationBroadcaster.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IInformationSubscriber.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IJobDetail.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IJobManager.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IJoinableCallBack.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IJoinableService.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IMessageEventHandler.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IMessageHeader.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\INetworkMessage.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IProgramModeEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IProvider.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IServiceHost.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IServiceHostControllerService.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\ISupportCache.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\ITasUser.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IWcfClientBase.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IWcfConnection.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IWcfDuplexServiceHost.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IWcfNetTcpClientBase.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IWcfNetTcpConnection.vb" />
+    <Compile Include="Wdw_Sust.Core\interfaces\IWcfServiceHost.vb" />
+    <Compile Include="Wdw_Sust.Core\job\EventArgs\JobEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\job\ExternalSourceMonitorJob.vb" />
+    <Compile Include="Wdw_Sust.Core\job\HighSpeedJobManager.vb" />
+    <Compile Include="Wdw_Sust.Core\job\JobDetailBase.vb" />
+    <Compile Include="Wdw_Sust.Core\job\JobManager.vb" />
+    <Compile Include="Wdw_Sust.Core\job\JobManagerBase.vb" />
+    <Compile Include="Wdw_Sust.Core\job\JobRunTime.vb" />
+    <Compile Include="Wdw_Sust.Core\job\SpecificRunTimeJobDetail.vb" />
+    <Compile Include="Wdw_Sust.Core\job\SpecificTimeSpanJobDetail.vb" />
+    <Compile Include="Wdw_Sust.Core\job\TimeSpanJobDetail.vb" />
+    <Compile Include="Wdw_Sust.Core\LibVersion.vb" />
+    <Compile Include="Wdw_Sust.Core\logging\ConsoleLogger.vb" />
+    <Compile Include="Wdw_Sust.Core\logging\EventArgs\MessageLoggedEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\logging\EventLogger.vb" />
+    <Compile Include="Wdw_Sust.Core\logging\FileLogger.vb" />
+    <Compile Include="Wdw_Sust.Core\logging\GenericLogger.vb" />
+    <Compile Include="Wdw_Sust.Core\logging\ILogger.vb" />
+    <Compile Include="Wdw_Sust.Core\maths\StandardDeviation.vb" />
+    <Compile Include="Wdw_Sust.Core\NotifyableBase.vb" />
+    <Compile Include="Wdw_Sust.Core\ProviderBase.vb" />
+    <Compile Include="Wdw_Sust.Core\serialization\SerializationManager.vb" />
+    <Compile Include="Wdw_Sust.Core\SingletonProviderBase.vb" />
+    <Compile Include="Wdw_Sust.Core\SingletonTaskBuilder.vb" />
+    <Compile Include="Wdw_Sust.Core\sort\SortManager.vb" />
+    <Compile Include="Wdw_Sust.Core\timer\EventArgs\TimeRecordedEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\timer\EventArgs\TimerEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\timer\HighResolutionTimer.vb" />
+    <Compile Include="Wdw_Sust.Core\timer\RunTimeManager.vb" />
+    <Compile Include="Wdw_Sust.Core\timer\TimeoutManager.vb" />
+    <Compile Include="Wdw_Sust.Core\timer\TimerBase.vb" />
+    <Compile Include="Wdw_Sust.Core\timer\TimerManager.vb" />
+    <Compile Include="Wdw_Sust.Core\validation\BusinessRuleManager.vb" />
+    <Compile Include="Wdw_Sust.Core\validation\EventArgs\ObjectInvalidEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\validation\EventArgs\RuleArgs.vb" />
+    <Compile Include="Wdw_Sust.Core\validation\ObjectValidationErrorDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\attributes\NotConnectableOPCItemAttribute.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\ChatClient.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\ChatMessage.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\ComputerStatusLogDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\ApplicationConfigFile.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\ApplicationConfigManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\DisplayConfigFile.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\DisplayConfigManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\LaundryViewConfigFile.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\LintApplicationConfigurationManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\PlcTopicNameConfigFile.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\RailApplicationConfigFile.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\SortingDisplayClientConfigFile.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\SortingDisplayClientConfigurationManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\SortingDisplayServerConfigFile.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\SortingDisplayServerConfigurationManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\TextileDbConfigFile.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\configurations\TextileDbConfigManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\DatabaseMonitorJobManagerBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\Enums.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\BagReportedIssueEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\ChatClientExceptionEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\DataRetrievalEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\InformationBaseEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\LintAlarmEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\LintApplicationManagerEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\LintBagEditLogEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\LintBagEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\LintChangeDestinationEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\LintMonitoringInfoEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\LintOperatorEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\LintProductivitySummaryEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\LintProgramEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\LintRailAccessRightEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\LintRailSequenceEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\LintRoleAccessRightEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\NewChatMessagesReceivedArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\NewMessageAlertArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\eventargs\RfidCardInfoEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\extensions\AccessRightExtensions.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\extensions\DataRecordExtensions.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\extensions\LintZoneExtensions.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\extensions\ObjectExtensions.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\extensions\UserTypeExtensions.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\extensions\WorkStationExtensions.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\FormStatusController.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\InboundMessage.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IApplicationConfigFile.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IBagViewModelProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IChatClient.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IChatMessage.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ICipPlcConfig.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IDatabaseMonitorJobManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IDisplayConfigFile.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IFloCockpitInfoProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IHaveMachineID.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IHaveMoreTasks.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILaSecProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintAlarmBroadcaster.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintAlarmProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintBagDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintCategoryDescription.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintCategoryDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintDatabaseInformationBroadcaster.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintDataCollectionProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintEditableBag.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintEngineeringDiagnosticsReportProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintFactoryProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintInfoProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintProdStatusProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintProductivityInfoProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintProductivityReportInfoProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintProductivitySummaryBroadcaster.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintRailInfoProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintRailSystemLogger.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintReportInfoProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintSecurityProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintSystemsProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILintTeamProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ILogEventEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IPlcComponentData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IRailAccessRightEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IRoleAccessRightEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ISplunkable.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ITeamDashboardBagDropData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ITeamDashboardCleanworkMachineCastMemberPacingDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ITeamDashboardCleanworkMachinePacingDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ITeamDashboardData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ITeamDashboardDataList.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ITeamMachineCurrentStatus.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\ITeamMachineStatusDistributionDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IWashdeckMachineReadiness.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\interfaces\IWorkflowCategoryConfiguration.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\JensenIronerScanner.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\laundryautomation\EventLogEntry.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LavatecDryer.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LavatecPress.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LavatecShuttle.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\la\LoginStatus.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\la\Machine.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\la\Person.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintAlarm.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintAlarmDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintAlarmLogDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintAlarmParameter.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintApplicationEventLog.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintApplicationManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintApplicationMonitoringDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintBagColorProperties.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintBagDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintBagEditDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintCartDumpProductivityData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintCastMember.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintCastMemberProductivityElectronicBoardData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintCategoryCount.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintCategoryDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintClientWorkStationDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintDepartment.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintEngineeringDiagnosticData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintEngineeringMTBFDiagnosticData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintEngineeringMttrDiagnosticData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintGraphicBag.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintHistoricalMachineProductivity.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintImage.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LINTInterval.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintJobManagerBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintJobProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintKeyValuePair.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintLiveCastProductivityData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintMachine.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintMachineHourlyProductivityData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintMachineLoginStatus.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintMachineWithCipData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintMessage.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintNameValuePair.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintObjectBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintOperatorHourlyProductivity.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintOperatorLoginDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintOperatorMachineLoginStatus.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintOperatorProductivitySummaryData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintPagingUser.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintProdAdminSummary.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintProdBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintProdStatus.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintProdSummary.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintProductSnapshot.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LINTRailEditData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintRailSequence.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintRailSequenceEditData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintRailSequenceLockoutInfo.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintRailSequenceStep.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LINTReceiveAlarmEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintServiceSetting.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintServiceSettings.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintShiftClock.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintShiftData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintSortingDisplayClientDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintSortingDisplayDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintSortingProductivityData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintSortingProductivityDisplayDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintSystemEventLogDetail.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintSystemParameter.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintSystemParameterRole.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintSystemParameters.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintTotalProductivityEfficiencyData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintTunnelProductivityData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LintWashdeckProductivityData.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LINTWashGroupInfo.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\LoggingManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\MessagingPreferences.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\OutboundMessage.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\PlantPerformance.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\PlantPerformanceByTime.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\RfidCard.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\SluggishDatabaseConnectionSimulationJobManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\UnreachableDatabaseSimulationJobManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Core\viewmodels\ViewModelCore.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlFormBase.Designer.vb">
+      <DependentUpon>CtrlFormBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlFormBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlLightFormBase.Designer.vb">
+      <DependentUpon>CtrlLightFormBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlLightFormBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlLintAdminConsoleViewModelBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlMainFormBase.Designer.vb">
+      <DependentUpon>CtrlMainFormBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlMainFormBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlMdiFormBase.Designer.vb">
+      <DependentUpon>CtrlMdiFormBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlMdiFormBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlRailSequenceInfoEditBase.Designer.vb">
+      <DependentUpon>CtrlRailSequenceInfoEditBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlRailSequenceInfoEditBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlUserControlBase.Designer.vb">
+      <DependentUpon>CtrlUserControlBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlUserControlBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlAbout.Designer.vb">
+      <DependentUpon>CtrlAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlBlueId.Designer.vb">
+      <DependentUpon>CtrlBlueId.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlBlueId.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlCheckForUpdates.Designer.vb">
+      <DependentUpon>CtrlCheckForUpdates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlCheckForUpdates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlErrorReporting.Designer.vb">
+      <DependentUpon>CtrlErrorReporting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlErrorReporting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAdminConsole.Designer.vb">
+      <DependentUpon>CtrlLintAdminConsole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAdminConsole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmDetail.Designer.vb">
+      <DependentUpon>CtrlLintAlarmDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmIcon.Designer.vb">
+      <DependentUpon>CtrlLintAlarmIcon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmIcon.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmMonitoringStatusIcon.Designer.vb">
+      <DependentUpon>CtrlLintAlarmMonitoringStatusIcon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmMonitoringStatusIcon.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmToolStripIndicator.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmViewer.Designer.vb">
+      <DependentUpon>CtrlLintAlarmViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAppMonitoring.Designer.vb">
+      <DependentUpon>CtrlLintAppMonitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAppMonitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintCategoryIdChooser.Designer.vb">
+      <DependentUpon>CtrlLintCategoryIdChooser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintCategoryIdChooser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintChatIcon.Designer.vb">
+      <DependentUpon>CtrlLintChatIcon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintChatIcon.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintChatTool.Designer.vb">
+      <DependentUpon>CtrlLintChatTool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintChatTool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintChatToolStripIndicator.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintConnectionStringBuilder.Designer.vb">
+      <DependentUpon>CtrlLintConnectionStringBuilder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintConnectionStringBuilder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintConnectionStringBuilderOld.Designer.vb">
+      <DependentUpon>CtrlLintConnectionStringBuilderOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintConnectionStringBuilderOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintIdCardAssignment.Designer.vb">
+      <DependentUpon>CtrlLintIdCardAssignment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintIdCardAssignment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintIdCardList.Designer.vb">
+      <DependentUpon>CtrlLintIdCardList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintIdCardList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintLogInWindow.Designer.vb">
+      <DependentUpon>CtrlLintLogInWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintLogInWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintOpcTopicNames.Designer.vb">
+      <DependentUpon>CtrlLintOpcTopicNames.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintOpcTopicNames.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintRfidReader.Designer.vb">
+      <DependentUpon>CtrlLintRfidReader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintRfidReader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintSerialPortSetup.Designer.vb">
+      <DependentUpon>CtrlLintSerialPortSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintSerialPortSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintToolStripStatusLabel.Designer.vb">
+      <DependentUpon>CtrlLintToolStripStatusLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintToolStripStatusLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintUserManagement.Designer.vb">
+      <DependentUpon>CtrlLintUserManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintUserManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintUserSearch.Designer.vb">
+      <DependentUpon>CtrlLintUserSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintUserSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLoading.Designer.vb">
+      <DependentUpon>CtrlLoading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlLoading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlOpcBoolLabel.Designer.vb">
+      <DependentUpon>CtrlOpcBoolLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlOpcBoolLabel.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlRfidUsbConfig.Designer.vb">
+      <DependentUpon>CtrlRfidUsbConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlRfidUsbConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlRostrSearch.Designer.vb">
+      <DependentUpon>CtrlRostrSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\CtrlRostrSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\eventargs\AlarmHistoryFormEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\eventargs\ProductivityViewerEventArgs.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\extensions\ControlExtensions.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\extensions\LintApplicationIdExtensions.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\frmDisplayConfig.Designer.vb">
+      <DependentUpon>frmDisplayConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\frmDisplayConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\HealthMonitoringJob.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\Helpers.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\interfaces\ICtrlLintAdminConsoleViewModel.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\interfaces\ILintAppMainForm.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\interfaces\ILintRailForm.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\LintFormConfiguration.vb" />
+    <Compile Include="Wdw_Sust.Textile.Global.WinForms\LoadingManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\BllDatabaseRailInfoProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\BllRailInfoProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\BllWcfRailInfoProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\core\BllRailInfoProviderBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\interfaces\IWcfTsaFactoryProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\interfaces\IWcfTsaRailInfoService.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\interfaces\IWcfTsaRailInfoServiceClient.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\interfaces\IWcfTsaTeamService.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\interfaces\IWcfTsaTeamServiceClient.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\WcfDuplexWorkflowServiceClient.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\WcfSortingDisplayServiceClient.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\WcfTsaFactoryProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\WcfTsaLocalFactoryProvider.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\WcfTsaLocalRailInfoServiceClient.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\WcfTsaLocalTeamServiceClient.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\WcfTsaRailInfoService.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\WcfTsaRailInfoServiceClient.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\WcfTsaTeamService.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\WcfTsaTeamServiceClient.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CtrlOpcTsaRailBlockLabel.resx">
+      <DependentUpon>CtrlOpcTsaRailBlockLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCastMemberShiftData.resx">
+      <DependentUpon>frmCastMemberShiftData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProductDistribution.resx">
+      <DependentUpon>frmProductDistribution.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCleanExpressProduct.resx">
+      <DependentUpon>frmCleanExpressProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRailMainFormBase.resx">
+      <DependentUpon>frmRailMainFormBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRfidReaderDiagnostics.resx">
+      <DependentUpon>frmRfidReaderDiagnostics.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTunnelInterface.resx">
+      <DependentUpon>frmTunnelInterface.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWashdeckProductivity.resx">
+      <DependentUpon>frmWashdeckProductivity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProductivityControl.resx">
+      <DependentUpon>frmProductivityControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScaleCalibration.resx">
+      <DependentUpon>frmScaleCalibration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSortingProductivity.resx">
+      <DependentUpon>frmSortingProductivity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWorkflowCategoryConfigurations.resx">
+      <DependentUpon>frmWorkflowCategoryConfigurations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWorkflowEngineViewer.resx">
+      <DependentUpon>frmWorkflowEngineViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlFormBase.resx">
+      <DependentUpon>CtrlFormBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlLightFormBase.resx">
+      <DependentUpon>CtrlLightFormBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlMainFormBase.resx">
+      <DependentUpon>CtrlMainFormBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlMdiFormBase.resx">
+      <DependentUpon>CtrlMdiFormBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlRailSequenceInfoEditBase.resx">
+      <DependentUpon>CtrlRailSequenceInfoEditBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\core\CtrlUserControlBase.resx">
+      <DependentUpon>CtrlUserControlBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlAbout.resx">
+      <DependentUpon>CtrlAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlBlueId.resx">
+      <DependentUpon>CtrlBlueId.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlCheckForUpdates.resx">
+      <DependentUpon>CtrlCheckForUpdates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlErrorReporting.resx">
+      <DependentUpon>CtrlErrorReporting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAdminConsole.resx">
+      <DependentUpon>CtrlLintAdminConsole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmDetail.resx">
+      <DependentUpon>CtrlLintAlarmDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmIcon.resx">
+      <DependentUpon>CtrlLintAlarmIcon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmMonitoringStatusIcon.resx">
+      <DependentUpon>CtrlLintAlarmMonitoringStatusIcon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAlarmViewer.resx">
+      <DependentUpon>CtrlLintAlarmViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintAppMonitoring.resx">
+      <DependentUpon>CtrlLintAppMonitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintCategoryIdChooser.resx">
+      <DependentUpon>CtrlLintCategoryIdChooser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintChatIcon.resx">
+      <DependentUpon>CtrlLintChatIcon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintChatTool.resx">
+      <DependentUpon>CtrlLintChatTool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintConnectionStringBuilder.resx">
+      <DependentUpon>CtrlLintConnectionStringBuilder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintConnectionStringBuilderOld.resx">
+      <DependentUpon>CtrlLintConnectionStringBuilderOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintIdCardAssignment.resx">
+      <DependentUpon>CtrlLintIdCardAssignment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintIdCardList.resx">
+      <DependentUpon>CtrlLintIdCardList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintLogInWindow.resx">
+      <DependentUpon>CtrlLintLogInWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintOpcTopicNames.resx">
+      <DependentUpon>CtrlLintOpcTopicNames.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintRfidReader.resx">
+      <DependentUpon>CtrlLintRfidReader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintSerialPortSetup.resx">
+      <DependentUpon>CtrlLintSerialPortSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintUserManagement.resx">
+      <DependentUpon>CtrlLintUserManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLintUserSearch.resx">
+      <DependentUpon>CtrlLintUserSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlLoading.resx">
+      <DependentUpon>CtrlLoading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlOpcBoolLabel.resx">
+      <DependentUpon>CtrlOpcBoolLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\CtrlRfidUsbConfig.resx">
+      <DependentUpon>CtrlRfidUsbConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\frmDisplayConfig.resx">
+      <DependentUpon>frmDisplayConfig.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\ClassifiedLoadingPlatformOPCGroupName.datasource" />
+    <None Include="My Project\DataSources\System.Diagnostics.Process.datasource" />
+    <None Include="My Project\DataSources\TSAProductDistributionDetail.datasource" />
+    <None Include="My Project\DataSources\WashdeckOPCGroupName.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.LINT.Config.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.LINT.Core.LINTCategoryDetail.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.LINT.LINTCastMemberProductivityElectronicBoardData.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.LINT.LINTGraphicBag.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.LINT.LINTKeyValuePair.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.LINT.LINTNameValuePair.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.LINT.Productivity.LINTTotalProductivityEfficiencyData.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.LINT.Reporting.TSACartDumpProductivityData.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.LINT.Reporting.TSASortingProductivityData.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.LINT.Reporting.TSAWashdeckProductivityData.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.NSA.LINTCategoryCount.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.TSA.DAL.TSARailInfoProvider.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.TSA.TSAMachineHourlyProductivityData.datasource" />
+    <None Include="My Project\DataSources\WDW_SUST.Textile.TSA.TSAProductSnapshot.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Wdw_Sust.Core\api\index.md" />
+    <None Include="Wdw_Sust.Textile.Tsa.Wcf\app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\donald_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\donald_green.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\donald_lightblue.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\donald_orange.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\donald_pink.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\donald_purple.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\donald_red.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\donald_yellow.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\goofy_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\goofy_green.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\goofy_lightblue.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\goofy_orange.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\goofy_pink.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\goofy_purple.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\goofy_red.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\goofy_yellow.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\mickey_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\mickey_green.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\mickey_lightblue.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\mickey_orange.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\mickey_pink.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\mickey_purple.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\mickey_red.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\mickey_yellow.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\minnie_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\minnie_green.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\minnie_light_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\minnie_orange.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\minnie_pink.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\minnie_purple.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\minnie_red.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\minnie_yellow.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\pluto_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\pluto_green.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\pluto_light_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\pluto_orange.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\pluto_pink.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\pluto_purple.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\pluto_red.ico" />
+    <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\pluto_yellow.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\lib\AutomaticUpdater.dll" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\cancel.png" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\chat_32_by_32.png" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\chat_not_working_32_by_32.png" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\check.png" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\cross.png" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\default_avatar.bmp" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\default_avatar.jpg" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\DevGoofyIcon_LARGE.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\displaySettings.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\donald_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\donald_green.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\donald_light_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\donald_orange.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\donald_pink.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\donald_purple.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\donald_red.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\donald_yellow.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\exclaimation.png" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\goofy_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\goofy_green.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\goofy_light_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\goofy_orange.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\goofy_pink.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\goofy_purple.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\goofy_red.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\goofy_yellow.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\help.png" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\loading_3_dots.png" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\loading_circle.gif" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\mickey_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\mickey_green.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\mickey_light_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\mickey_orange.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\mickey_pink.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\mickey_purple.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\mickey_red.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\mickey_yellow.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\minnie_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\minnie_green.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\minnie_light_blue.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\minnie_orange.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\minnie_pink.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\minnie_purple.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\minnie_red.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\minnie_yellow.ico" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\Prox Number Guide.png" />
+    <Content Include="Wdw_Sust.Textile.Global.WinForms\resources\TS_LOADING.gif" />
+    <None Include="Resources\Tunnel_Fit_1920_1200_8_Tunnels-only-tunnel-6-and-7.png" />
+    <None Include="Resources\Washdeck_Condensed-tunnel-6-7.png" />
+    <EmbeddedResource Include="AtUsbHid.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="Classes\Classified_Loading_Platform_Area_prework.png" />
+    <Content Include="icon.ico" />
+    <Content Include="Icons\DevGoofyIcon.ico" />
+    <Content Include="Icons\DevGoofyIcon_LARGE.ico" />
+    <None Include="Resources\Washdeck_Condensed.png" />
+    <None Include="Resources\checked.png" />
+    <None Include="Resources\cancel.png" />
+    <Content Include="Resources\Classified_Loading_Platform_Area.png" />
+    <Resource Include="Resources\Classified_Loading_Platform_Area_phase1.png" />
+    <None Include="Resources\P1_Rail_Soiled_Storage.png" />
+    <Content Include="Resources\Classified_Loading_Platform_Area_phase2.png" />
+    <Content Include="Resources\Classified_Loading_Platform_Area_phase3.png" />
+    <Content Include="Resources\Classified_Loading_Platform_Area_phase4.png" />
+    <Content Include="Resources\Classified_Loading_Platform_Area_phase5.png" />
+    <Content Include="Resources\Classified_Loading_Platform_Area_prework.png" />
+    <Content Include="Resources\CleansideHMI-Layout3.png" />
+    <None Include="Resources\resize.png" />
+    <None Include="Resources\CleansideHMI-Layout4.png" />
+    <None Include="Resources\CleansideHMI-Phase1.png" />
+    <None Include="Resources\CleansideHMI-Phase2.png" />
+    <None Include="Resources\CleansideHMI-Phase3.png" />
+    <None Include="Resources\CleansideHMI-Phase4.png" />
+    <None Include="Resources\CleansideHMI-Phase5.png" />
+    <None Include="Resources\CleansideHMI-Phase6.png" />
+    <Content Include="Resources\Cleanwork_Productivity_Ironer9.png" />
+    <Content Include="Resources\RightVcSwitchGateOff.png" />
+    <Content Include="Resources\RightVcSwitchGateOn.png" />
+    <None Include="Resources\Red_Dot.JPG" />
+    <None Include="Resources\Green_Dot.png" />
+    <None Include="Resources\Tunnel_Fit_1920_1200_8_Tunnels.PNG" />
+    <None Include="Resources\Sorting_Productivity.PNG" />
+    <None Include="Resources\Plant_Overview.jpg" />
+    <None Include="Resources\Classified_Storage_Area.PNG" />
+    <None Include="Resources\Cleanwork_Productivity.PNG" />
+    <None Include="Resources\claDischarger_expansion_2012.png" />
+    <None Include="Resources\clnStorage_expansion_2012.png" />
+    <Content Include="Resources\Close.png" />
+    <None Include="Resources\Ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Core.WinForms\Wdw_Sust.Core.WinForms.vbproj">
+      <Project>{a883b1e4-43bb-4dae-b9ba-894b5d8cb8c1}</Project>
+      <Name>Wdw_Sust.Core.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Core\Wdw_Sust.Core.vbproj">
+      <Project>{95cbb55e-0b8c-4626-863b-21b51b3d6108}</Project>
+      <Name>Wdw_Sust.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Deploy\Wdw_Sust.Deploy.csproj">
+      <Project>{1f91411e-a497-4114-a748-2450f226c479}</Project>
+      <Name>Wdw_Sust.Deploy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Logging\Wdw_Sust.Logging.csproj">
+      <Project>{30920d90-c352-46dd-aaa6-fd15b59684b5}</Project>
+      <Name>Wdw_Sust.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.OpcDa\Wdw_Sust.OpcDa.Core.vbproj">
+      <Project>{01154bcb-53ac-495f-b9d0-3319aa2c86dc}</Project>
+      <Name>Wdw_Sust.OpcDa.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Rfid\Wdw_Sust.Rfid.vbproj">
+      <Project>{a48316e7-d316-449c-808c-d7d5a50c461b}</Project>
+      <Name>Wdw_Sust.Rfid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Rostr\Wdw_Sust.Rostr.csproj">
+      <Project>{f0972e49-79bf-4726-8b97-2845656745b9}</Project>
+      <Name>Wdw_Sust.Rostr</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Tests\Wdw_Sust.Tests.csproj">
+      <Project>{89fcf1db-3665-4d8c-9e3b-6f75d40f8c9d}</Project>
+      <Name>Wdw_Sust.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Core\Wdw_Sust.Textile.Core.vbproj">
+      <Project>{8b0cf399-5e2f-4906-8d6c-8faa811e9c67}</Project>
+      <Name>Wdw_Sust.Textile.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Global.Dal\Wdw_Sust.Textile.Global.Dal.vbproj">
+      <Project>{5beabe22-b233-4083-a53c-8c25a28ce529}</Project>
+      <Name>Wdw_Sust.Textile.Global.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Global.Opc.WinForms\Wdw_Sust.Textile.Global.Opc.WinForms.vbproj">
+      <Project>{f5560ee1-b030-484d-ab88-d30b6bbe5807}</Project>
+      <Name>Wdw_Sust.Textile.Global.Opc.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Global.Opc\Wdw_Sust.Textile.Global.Opc.vbproj">
+      <Project>{e7850dd1-ca82-4210-94c0-98cff2eea3f3}</Project>
+      <Name>Wdw_Sust.Textile.Global.Opc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Global.Wcf\Wdw_Sust.Textile.Global.Wcf.vbproj">
+      <Project>{6a1fd2f2-e752-4caf-89b7-0fcefa3bf932}</Project>
+      <Name>Wdw_Sust.Textile.Global.Wcf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Global.WinForms.DevExp\Wdw_Sust.Textile.Global.WinForms.DevExp.vbproj">
+      <Project>{9f2b0f2b-02f1-4e3c-b569-dd661fc3ffd0}</Project>
+      <Name>Wdw_Sust.Textile.Global.WinForms.DevExp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Global.WinForms\Wdw_Sust.Textile.Global.WinForms.vbproj">
+      <Project>{de5caf7b-1b65-462c-a0e4-435778284a67}</Project>
+      <Name>Wdw_Sust.Textile.Global.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Tsa.Dal\Wdw_Sust.Textile.Tsa.Dal.vbproj">
+      <Project>{0bd160ca-8375-4a1b-8f6b-f112517755ea}</Project>
+      <Name>Wdw_Sust.Textile.Tsa.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Tsa.Opc.WinForms\Wdw_Sust.Textile.Tsa.Opc.WinForms.vbproj">
+      <Project>{19908d31-7f30-4f93-86c6-1e4c9431ad47}</Project>
+      <Name>Wdw_Sust.Textile.Tsa.Opc.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Tsa.Opc\Wdw_Sust.Textile.Tsa.Opc.vbproj">
+      <Project>{5be0515b-ac91-4362-94e2-60b91df3933d}</Project>
+      <Name>Wdw_Sust.Textile.Tsa.Opc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Tsa.Wcf\Wdw_Sust.Textile.Tsa.Wcf.vbproj">
+      <Project>{98365344-bd51-4ae8-aa03-a4d9ba88e361}</Project>
+      <Name>Wdw_Sust.Textile.Tsa.Wcf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Tsa.Workflow\Wdw_Sust.Textile.Tsa.Workflow.vbproj">
+      <Project>{2da96656-b592-4929-a05b-974b3bfca70c}</Project>
+      <Name>Wdw_Sust.Textile.Tsa.Workflow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Textile.Tsa\Wdw_Sust.Textile.Tsa.vbproj">
+      <Project>{2d37b445-3b82-4a46-adc5-b671d5dd3c73}</Project>
+      <Name>Wdw_Sust.Textile.Tsa</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Web\Wdw_Sust.Web.csproj">
+      <Project>{8990e99a-6e00-417b-b7a1-2c4c647e4a14}</Project>
+      <Name>Wdw_Sust.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

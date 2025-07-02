@@ -1,0 +1,272 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Rfid
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Rfid.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Rfid.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Rfid.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Wdw_Sust.Rfid.Helpers.DecToByteArray(System.Int64)">
+ <summary>
+ Convert decimal value to a byte array
+ </summary>
+ <param name="dec">Decimal value to be converted</param>
+ <returns>Byte array representation of the decimal value</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.Helpers.DecToByteArray(System.Int32)">
+ <summary>
+  To convert decimal value to a byte array
+ </summary>
+ <param name="dec"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.Helpers.BuildWord(System.Byte,System.Byte,System.Byte,System.Byte)">
+ <summary>
+ Convert from Hex to Dec or Dec to Hex
+ </summary>
+ <param name="Byte0"></param>
+ <param name="Byte1"></param>
+ <param name="Byte2"></param>
+ <param name="Byte3"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Rfid.SecuraKeyDevices.DeviceEt4Aum">
+ <summary>
+ This class uses the HID interface therefore not needing a COM Port configuration
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.DeviceEt4Aum.SendCommandToReader(System.Byte[])">
+ <summary>
+ Send command to reader 
+ </summary>
+ <param name="readerCommand">Reader command to use</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.DeviceEt4Aum.ComPortUpdate(System.String)">
+ <summary>
+ Currently Not Being Used.
+ </summary>
+ <param name="comPortName"></param>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.DeviceEt4Aum.#ctor(System.Int32)">
+ <summary>
+ Create an instance of the reader
+ </summary>
+ <param name="inactiveTimeout">Number of seconds to time out the reader. 0 equals to never.</param>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Rfid.SecuraKeyDevices.DeviceEtsSk2.UseSoundEffect">
+ <summary>
+ Use sound effect.
+ </summary>
+ <value>Boolean to indicate if sound effect is used</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.DeviceEtsSk2.ComPortUpdate(System.String)">
+ <summary>
+ Reset the Com Port object, using the original baud rate.
+ </summary>
+ <param name="comPortName"></param>
+ <remarks>Assumes the baudrate is correct</remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.DeviceEtsSk2.SendCommandToReader(System.Byte[])">
+ <summary>
+ Send command to reader 
+ </summary>
+ <param name="readerCommand">Reader command to use</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.DeviceEtsSk2.#ctor(System.String,System.Int32,System.Int32)">
+ <summary>
+ Constructor of reader
+ </summary>
+ <param name="COMPortName">Name of the COM Port i.e. COM4</param>
+ <param name="timeoutInSecond">Number of seconds before timing out. 0 = no timeout</param>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Rfid.SecuraKeyDevices.DeviceEt4Wxm.UseSoundEffect">
+ <summary>
+ Use sound effect.
+ </summary>
+ <value>Boolean to indicate if sound effect is used</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.DeviceEt4Wxm.SendCommandToReader(System.Byte[])">
+ <summary>
+ Send command to reader 
+ </summary>
+ <param name="readerCommand">Reader command to use</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.DeviceEt4Wxm.ComPortUpdate(System.String)">
+ <summary>
+ Currently Not Being Used.
+ </summary>
+ <param name="comPortName"></param>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.DeviceEt4Wxm.#ctor(System.String,System.Int32,System.Int32)">
+ <summary>
+ Constructor of reader
+ </summary>
+ <param name="COMPortName">Name of the COM Port i.e. COM4</param>
+ <param name="timeoutInSecond">Number of seconds before timing out. 0 = no timeout</param>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Rfid.SecuraKeyDevices.ISecuraKeyRfidReader.IsReading">
+ <summary>
+ Property to indicate if the reader is reading at the moment
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Rfid.SecuraKeyDevices.ISecuraKeyRfidReader.CanTimeout">
+ <summary>
+ Property to indicate the reader can cause timeout
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Rfid.SecuraKeyDevices.ISecuraKeyRfidReader.InactiveTimeout">
+ <summary>
+ Inactive timeout in seconds
+ </summary>
+ <value>Number of seconds to cause the timeout event to fire</value>
+</member>
+<member name="P:Wdw_Sust.Rfid.SecuraKeyDevices.ISecuraKeyRfidReader.IsConnected">
+ <summary>
+ Check if the reader is connected and ready to use
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Rfid.SecuraKeyDevices.ISecuraKeyRfidReader.WasComPortFound">
+ <summary>
+ Prevents continued searching for card reader's com port.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Wdw_Sust.Rfid.SecuraKeyDevices.ISecuraKeyRfidReader.UseSoundEffect">
+ <summary>
+ Use sound effect.
+ </summary>
+ <value>Boolean to indicate if sound effect is used</value>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.ISecuraKeyRfidReader.CardReaderDataReceived">
+ <summary>
+ Notify Reader stream that card reader data was received.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.ISecuraKeyRfidReader.ComPortUpdate(System.String)">
+ <summary>
+ Devices implementations can use this method to update Com Port Port
+ </summary>
+ <param name="comPortName"></param>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.ISecuraKeyRfidReader.StopReader">
+ <summary>
+ Only can stop reading if the reader is reading already.
+ Otherwise it will ignore the command.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.ISecuraKeyRfidReader.WritingData(System.Int32)">
+ <summary>
+ Only can start writing if the reader is not reading already.
+ Otherwise it will ignore the command.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.ISecuraKeyRfidReader.StartReadingData(System.Boolean)">
+ <summary>
+ Only can start reading if the reader is not reading already.
+ Otherwise it will ignore the command.
+ </summary>
+ <param name="autoPoll">Indicate if the reader should auto poll</param>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.SecuraKeyRFIDReaderBase.StartReadingData(System.Boolean)">
+ <summary>
+ Only can start reading if the reader is not reading already.
+ Otherwise it will ignore the command.
+ </summary>
+ <param name="autoPoll">Indicate if the reader should auto poll</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.SecuraKeyRFIDReaderBase.WritingData(System.Int32)">
+ <summary>
+ Only can start writing if the reader is not reading already.
+ Otherwise it will ignore the command.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.SecuraKeyDevices.SecuraKeyRFIDReaderBase.StopReader">
+ <summary>
+ Only can stop reading if the reader is reading already.
+ Otherwise it will ignore the command.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Rfid.ThingMagicDevices.DeviceBase.UseSoundEffect">
+ <summary>
+ Use sound effect. If 1 tag is found, it will have a beep. If more than 2 tags it will have an
+ exclamation sound.
+ </summary>
+ <value>Boolean to indicate</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.ThingMagicDevices.DeviceBase.StartReadingData">
+ <summary>
+ Only can start reading if the reader is not reading already.
+ Otherwise it will ignore the command.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.ThingMagicDevices.DeviceBase.StopReadingData">
+ <summary>
+ Only can stop reading if the reader is already reading.
+ Otherwise it will ignore the command.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.ThingMagicDevices.DeviceBase.ConnectReader">
+ <summary>
+ This function needs to be called before reader is operational
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.ThingMagicDevices.DeviceBase.SetSession(Wdw_Sust.Rfid.Enums.Session)">
+ <summary>
+ This can be set on the fly without power down the reader.
+ Session is to direct the tag not to report back if it has already been seen.
+ The tag will hold charge for about 5 minutes.
+ </summary>
+ <param name="session">session number to be set at.</param>
+ <remarks>
+ The setting will be kept until the reader lost power and will be
+ reset back to session 0.
+ </remarks>
+</member>
+<member name="M:Wdw_Sust.Rfid.ThingMagicDevices.DeviceMercury5E.StopReadingData">
+ <summary>
+ Only can stop reading if the reader is already reading.
+ Otherwise it will ignore the command.
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

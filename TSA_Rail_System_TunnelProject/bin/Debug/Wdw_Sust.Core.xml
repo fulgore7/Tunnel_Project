@@ -1,0 +1,1159 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Core
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Core.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Core.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Core.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Wdw_Sust.Core.Attributes.ConnectableOpcItemAttribute">
+ <summary>
+ An attribute declaration to indicate that the property is connectable to the Plc.
+ </summary>
+ <seealso cref="T:System.Attribute" />
+</member>
+<member name="T:Wdw_Sust.Core.Attributes.IsOpcArrayAttribute">
+ <summary>
+ Class IsOpcArrayAttribute.
+ </summary>
+ <seealso cref="T:System.Attribute" />
+</member>
+<member name="F:Wdw_Sust.Core.Attributes.IsOpcArrayAttribute._arraySize">
+ <summary>
+ The array size
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Core.Attributes.IsOpcArrayAttribute._arrayStartIndex">
+ <summary>
+ The array start index
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Core.Attributes.IsOpcArrayAttribute.ArraySize">
+ <summary>
+ Gets or sets the size of the array.
+ </summary>
+ <value>The size of the array.</value>
+</member>
+<member name="P:Wdw_Sust.Core.Attributes.IsOpcArrayAttribute.ArrayStartIndex">
+ <summary>
+ Gets or sets the start index of the array.
+ </summary>
+ <value>The start index of the array.</value>
+</member>
+<member name="M:Wdw_Sust.Core.Attributes.IsOpcArrayAttribute.#ctor(System.Int32,Wdw_Sust.Core.Enums.ArrayStartWithIndex)">
+ <summary>
+ Initializes a new instance of the <see cref="T:Wdw_Sust.Core.Attributes.IsOpcArrayAttribute" /> class.
+ </summary>
+ <param name="size">The size.</param>
+ <param name="arrayStartIndex">Start index of the array.</param>
+</member>
+<member name="T:Wdw_Sust.Core.Attributes.NotConnectableOpcItemAttribute">
+ <summary>
+ An attribute declaration to indicate that the property cannot connect to the Plc.
+ </summary>
+ <seealso cref="T:System.Attribute" />
+</member>
+<member name="M:Wdw_Sust.Core.Attributes.NotConnectableOpcItemAttribute.Match(System.Object)">
+ <summary>
+ When overridden in a derived class, returns a value that indicates whether this instance equals a specified object.
+ </summary>
+ <param name="obj">An <see cref="T:System.Object" /> to compare with this instance of <see cref="T:System.Attribute" />.</param>
+ <returns>true if this instance equals <paramref name="obj" />; otherwise, false.</returns>
+</member>
+<member name="P:Wdw_Sust.Core.Cache.CacheData.Data">
+ <summary>
+ Data to be cached
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Core.Cache.CacheData.LastUpdateTime">
+ <summary>
+ Last update time for the cache
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Core.Cache.CacheData.IsCacheExpired">
+ <summary>
+ CacheDurationInSecond = 0 means the cache will never expire.
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Core.Cache.CacheManager.Cache">
+ <summary>
+ Used to cache repeatedly used data to memory.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Cache.CacheManager.ManageCache(System.String,System.Object,System.Int32)">
+ <summary>
+ Manage the cache dictionary. If the cache dictionary already has the value,
+ it will replace its value to the new ones, otherwises it will add the value to the 
+ dictionary.
+ </summary>
+ <param name="key">Key of the cache value</param>
+ <param name="value">Data associated with the key</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Cache.DataBaseCacheManager.GetDataFromDatabaseOrCache``1(System.Func{``0},System.Int32,System.String)">
+ <summary>
+ Call this function to either get data from cache or from the database
+ </summary>
+ <typeparam name="T">Data type that will be returned from the function call</typeparam>
+ <param name="fuct">The function that will return the data</param>
+ <param name="cacheDurationInSeconds">Determine how long the data will be cached in the cache dictionary. Zero means data will be cached forever before
+ it's manually removed.</param>
+ <param name="cacheKey">Custom cache key value. If it doesn't apply it will use the function name as the key.</param>
+</member>
+<member name="P:Wdw_Sust.Core.Cache.UpdatableBase.LastUpdateTime">
+ <summary>
+ This will return the value last time any of the data got updated
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Communications.OutgoingConnection.Connect(System.String,System.Int32)">
+ <summary>
+ Connect to remote host
+ </summary>
+ <param name="hostName">Host name to be connected</param>
+ <param name="portNumber">Port number of the remote host</param>
+ <returns>Connect status. True = connected</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Communications.TcpIpSocketProtocol.CloseAndCleanup">
+ <summary>
+ Takes care of cleaning up a TcpClient connection - a bit messy, but functional.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Communications.WcfNetTcpConnectionBase.CreateBinding">
+ <summary>
+ By default SecurityMode is not enabled due to not taking local ID
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Communications.WcfNetTcpServiceHostBase`2.OnStartService">
+ <summary>
+ Overrides to initialize any resource that wants the service to do
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Communications.WcfNetTcpServiceHostBase`2.OnStopService">
+ <summary>
+ Overrides to release any resource when the service is stopped
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Communications.WcfNetTcpServiceHostBase`2.StopService">
+ <summary>
+ Stop the service so that the service will not be hosted anymore.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Core.Configurations.EditableSingletonConfigurationManager`2.Instance">
+ <summary>
+ This property should be used to ensure that one and only one 
+ instance is being pointed to and used at all time
+ </summary>
+ <value>An Instance of the class</value>
+ <returns>An Instance of the class</returns>
+ <remarks>An Instance of the class</remarks>
+</member>
+<member name="P:Wdw_Sust.Core.Configurations.Core.ConfigurationFileBase.IsValid">
+ <summary>
+ Returns true if the object status is valid.
+ Check out <see cref="T:Wdw_Sust.Core.Validation.BusinessRuleManager"/> for more informations.
+ </summary>
+ <value><c>true</c> if this instance is valid; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Core.Configurations.ConfigurationManager`1.ConfigFile">
+ <summary>
+ By calling config file.
+ </summary>
+ <value>The configuration file.</value>
+</member>
+<member name="M:Wdw_Sust.Core.Configurations.ConfigurationManager`1.IsConfiguredProperly">
+ <summary>
+ Determines whether the config file is valid. This is returning true with no checking until the function is overridden
+ with the IsValid property.
+ </summary>
+ <returns><c>true</c> if [is configured properly]; otherwise, <c>false</c>.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Configurations.ConfigurationManager`1.OnSavedConfigFileEvent(System.EventArgs)">
+ <summary>
+ This sub routine is called after the file is saved
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:Wdw_Sust.Core.Configurations.ConfigurationManager`1.OnConfigFileNotFoundEvent(System.EventArgs)">
+ <summary>
+ The event-invoking method that derived classes can override.
+ </summary>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Configurations.ConfigurationManager`1.LoadFromConfigObject(`0)">
+ <summary>
+ Loads from configuration object.
+ </summary>
+ <param name="configFile">The configuration file.</param>
+</member>
+<member name="M:Wdw_Sust.Core.Configurations.ConfigurationManager`1.Save">
+ <summary>
+ This function needs to be called to get the config file saved.
+ </summary>
+ <returns><c>true</c> if the file is save successfully, <c>false</c> otherwise.</returns>
+</member>
+<member name="T:Wdw_Sust.Core.Configurations.EncryptedConfigurationManager`1">
+ <summary>
+ Class EncryptedConfigurationManager. The file generated by this class will be encrypted. 
+ This is used when sensitive information is stored in the config file, such as the database connection
+ string.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <seealso cref="T:Wdw_Sust.Core.Configurations.ConfigurationManager`1" />
+</member>
+<member name="P:Wdw_Sust.Core.Configurations.SingletonConfigurationManager`2.Instance">
+ <summary>
+ This property should be used to ensure that one and only one 
+ instance is being pointed to and used at all time
+ </summary>
+ <value>An Instance of the class</value>
+ <returns>An Instance of the class</returns>
+ <remarks>An Instance of the class</remarks>
+</member>
+<member name="P:Wdw_Sust.Core.Configurations.SingletonEncryptedConfigurationManager`2.Instance">
+ <summary>
+ This property should be used to ensure that one and only one 
+ instance is being pointed to and used at all time
+ </summary>
+ <value>An Instance of the class</value>
+ <returns>An Instance of the class</returns>
+ <remarks>An Instance of the class</remarks>
+</member>
+<member name="T:Wdw_Sust.Core.EventArgs.ServiceExceptionEventArgs">
+ <summary>
+ Class ServiceExceptionEventArgs. Provide messages for the service exception when implemented.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.EventArgs.ServiceEventArgs" />
+</member>
+<member name="T:Wdw_Sust.Core.Interfaces.ICanCheckValidity">
+ <summary>
+ This is used to provide if the object state is valid before commiting to database or other 
+ use that requires to check the object status.
+ Check out <see cref="T:Wdw_Sust.Core.Validation.BusinessRuleManager"/> for more information.
+ <seealso cref="T:Wdw_Sust.Core.Validation.BusinessRuleManager"/>.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Interfaces.ICommunicationProtocol.CloseAndCleanup">
+ <summary>
+ Takes care of cleaning up a TcpClient connection - a bit messy, but functional.
+ </summary>
+</member>
+<member name="T:Wdw_Sust.Core.Interfaces.IExternalSourceMonitorJob">
+ <summary>
+ Interface IExternalSourceMonitorJob
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.Interfaces.ITimeSpanJobDetail" />
+ <seealso cref="T:System.IDisposable" />
+</member>
+<member name="P:Wdw_Sust.Core.Interfaces.IExternalSourceMonitorJob.SourceToMonitor">
+ <summary>
+ Gets or sets the source to monitor.
+ </summary>
+ <value>The source to monitor.</value>
+</member>
+<member name="P:Wdw_Sust.Core.Interfaces.IExternalSourceMonitorJob.SourceStatusOk">
+ <summary>
+ Gets or sets a value indicating whether the sournce status is ok.
+ </summary>
+ <value><c>true</c> if source status is ok; otherwise, <c>false</c>.</value>
+</member>
+<member name="E:Wdw_Sust.Core.Interfaces.IExternalSourceMonitorJob.SourceStatusChanged">
+ <summary>
+ Occurs when [source status changed].
+ </summary>
+</member>
+<member name="T:Wdw_Sust.Core.Interfaces.IHaveConnectionString">
+ <summary>
+ Interface IHaveConnectionString. Implement this class to indicate that
+ the object support having a connection string to connect to a database
+ </summary>
+</member>
+<member name="T:Wdw_Sust.Core.Interfaces.IInformationBroadcaster`1">
+ <summary>
+ Use to broadcast information to its subscribers
+ </summary>
+ <typeparam name="T"></typeparam>
+ <seealso cref="T:Wdw_Sust.Core.Interfaces.IInformationBroadcaster" />
+</member>
+<member name="T:Wdw_Sust.Core.Interfaces.IInformationBroadcaster">
+ <summary>
+ Use to broadcast information to its subscribers
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.Interfaces.IInformationBroadcaster" />
+</member>
+<member name="M:Wdw_Sust.Core.Interfaces.ISupportCache.InvalidateCache">
+ <summary>
+ Invalidate all caches
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Interfaces.ISupportCache.InvalidateCache(System.String)">
+ <summary>
+ Only Invalidate cache by the item key
+ </summary>
+</member>
+<member name="T:Wdw_Sust.Core.Encryption.EncryptionProvider">
+ <summary>
+ For more information, please check this link https://msdn.microsoft.com/en-us/library/ms172831.aspx
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Encryption.EncryptionProvider.EncryptData(System.String)">
+ <summary>
+ Encrypts the data.
+ </summary>
+ <param name="plaintext">The plaintext.</param>
+ <returns>System.String.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Encryption.EncryptionProvider.DecryptData(System.String)">
+ <summary>
+ Decrypts the data.
+ </summary>
+ <param name="encryptedtext">The encryptedtext.</param>
+ <returns>System.String.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Encryption.EncryptionProvider.EncryptData(System.Byte[])">
+ <summary>
+ Encrypts the data.
+ </summary>
+ <param name="textBytes">The text bytes.</param>
+ <returns>System.Byte().</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Encryption.EncryptionProvider.DecryptData(System.Byte[])">
+ <summary>
+ Decrypts the data.
+ </summary>
+ <param name="encryptedBytes">The encrypted bytes.</param>
+ <returns>System.Byte().</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Encryption.EncryptionProvider.TruncateHash(System.String,System.Int32)">
+ <summary>
+ Truncates the hash.
+ </summary>
+ <param name="key">The key.</param>
+ <param name="length">The length.</param>
+ <returns>System.Byte().</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Encryption.EncryptionProvider.TestDecoding">
+ <summary>
+ Tests the decoding.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Encryption.EncryptionProvider.TestEncoding">
+ <summary>
+ Tests the encoding.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Encryption.EncryptionProvider.#ctor(System.String)">
+ <summary>
+ Key generated by using http://www.emvlab.org/keyshares/
+ </summary>
+ <remarks>
+ <see>http://msdn.microsoft.com/en-us/library/ms172831.aspx?f=255&amp;MSPPError=-2147217396</see>;
+ </remarks>
+</member>
+<member name="T:Wdw_Sust.Core.Enums.MouseHandlingMode">
+ <summary>
+ MouseHandlingMode: None, Panning, Zooming
+ </summary>
+</member>
+<member name="T:Wdw_Sust.Core.Enums.WcfBindingType">
+ <summary>
+ WcfBindingType: Tcp, Http
+ </summary>
+</member>
+<member name="T:Wdw_Sust.Core.Enums.IOType">
+ <summary>
+ IOType: OUTPUT, INPUT
+ </summary>
+</member>
+<member name="T:Wdw_Sust.Core.Enums.SerialPortBaudRate">
+ <summary>
+ SerialPortBaudRate: Baud4800, Baud9600, Baud19200, Baud38400, Baud57600, Baud115200, Buad230400
+ </summary>
+</member>
+<member name="T:Wdw_Sust.Core.Enums.ProgramMode">
+ <summary>
+ This is to determine which mode the program is in
+ Maintenance mode has the following restrictions
+ 1.) Do not record edits from system operators.
+ 2.) Only used when the default database is not reachable.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Extensions.EnumExtensions.GetFriendlyName(System.Enum)">
+ <summary> Retrieve the description on the enum, e.g. 
+ [Description("Bright Pink")] 
+ BrightPink = 2, 
+ Then when you pass in the enum, it will retrieve the description 
+ </summary> 
+ <param name="en">The Enumeration</param> 
+ <returns>A string representing the friendly name</returns> 
+</member>
+<member name="M:Wdw_Sust.Core.Helpers.BuildAndGetFilePath(System.String,System.Environment.SpecialFolder)">
+ <summary>
+ Creates a folder in the directory specified, and returns the path as a string.
+
+ By default System.IO.Directory.CreateDirectory checks if the path exists, and creates if necessary.
+ </summary>
+ <param name="folderName">String</param>
+ <param name="location">Environment.SpecialFolder</param>
+ <returns>String</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Helpers.CanConnect(System.String)">
+ <summary>
+ Determines whether this instance can connect the specified IP address or domain.
+ </summary>
+ <param name="ipAddressOrDomain">The IP address or domain.</param>
+ <returns><c>true</c> if this instance can connect the specified IP address or domain; otherwise, <c>false</c>.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Helpers.Convert2IntegersToLong(System.Int32,System.Int32)">
+ <summary>
+ Combine 2 integer values to a long value
+ </summary>
+ <param name="lowerBytes">The lower 32 bits of a long data-type</param>
+ <param name="higherBytes">The higher 32 bits of a long data-type</param>
+ <returns>a long value of the combined value</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Helpers.ConvertHexToAsciiByte(System.Char)">
+ <summary>
+ Converts the hexadecimal to ASCII byte.
+ </summary>
+ <param name="hexDigit">The hexadecimal digit.</param>
+ <returns>System.Byte.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Helpers.ConvertToDateTime(System.Int64,System.DateTime)">
+ <summary>
+ Convert a long value to a Date Object
+ </summary>
+ <param name="timeInMicroSecond">Value in microsecond</param>
+ <param name="referenceTime">Time reference for the conversion of a long value</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Helpers.DisplayMilliSecondInTimeFormat(System.Int64)">
+ <summary>
+ Displays the millisecond in time format.
+ </summary>
+ <param name="milliSecond">The millisecond.</param>
+ <returns>System.String.</returns>
+ <exception cref="T:System.ArgumentException">Parameter has to be an integer!</exception>
+</member>
+<member name="M:Wdw_Sust.Core.Helpers.DisplaySecondInTimeFormat(System.Int64)">
+ <summary>
+ Use to display the value into 00:00:00 format. Mainly this is used as a cycle timer
+ </summary>
+ <param name="second">Number of seconds in Long format</param>
+ <returns>String in 00:00:00 format</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Helpers.GetClassLibraryAssemblyVersion">
+ <summary>
+ Gets the class library assembly version.
+ </summary>
+ <returns>System.String.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Helpers.GetEnumDescriptions(System.Type)">
+ <summary>
+ Gets the descriptions from an Enum type.
+ </summary>
+ <param name="enumType">Type of the enum.</param>
+ <returns>List(Of System.String).</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Helpers.GetListOfEnumsFromInteger``1(System.Int32)">
+ <summary>
+ This is to break out an integer back to a list of enum. In order for this to work, the
+ enum values as to be in the binary format (1,2,4,8,16,32...)
+ </summary>
+ <typeparam name="T">The enum type</typeparam>
+ <param name="integerValue">Integer Value that holds a list of ENUMs</param>
+</member>
+<member name="M:Wdw_Sust.Core.Helpers.GetRandomNumber">
+ <summary>
+ Get a random number between 1 and integer.MaxValue
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Helpers.WriteLog(System.String,System.String,System.Boolean,System.Diagnostics.TraceEventType,System.Boolean,System.String,System.Int32,System.Int32)">
+ <summary>
+ This is to write log to a text file for troubleshooting
+ </summary>
+ <param name="logMessage"></param>
+ <param name="applicationName"></param>
+ <param name="enabledDetailedInformation"></param>
+ <param name="type"></param>
+ <param name="appendFile"></param>
+ <param name="customFileName"></param>
+ <param name="maximunFileSizeInBytes"></param>
+ <param name="errorNumber">If used this helps identify the caller</param>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Core.Job.ExternalSourceMonitorJob">
+ <summary>
+ This is used to monitor an external source for change of state and provide feedback later.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.Interfaces.IExternalSourceMonitorJob" />
+</member>
+<member name="T:Wdw_Sust.Core.Job.HighSpeedJobManager">
+ <summary>
+ Class HighSpeedJobManager. This class cannot be inherited.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.Job.JobManagerBase" />
+</member>
+<member name="P:Wdw_Sust.Core.Job.HighSpeedJobManager.TickResolution">
+ <summary>
+ Gets the tick resolution.
+ </summary>
+ <value>The tick resolution.</value>
+</member>
+<member name="M:Wdw_Sust.Core.Job.HighSpeedJobManager.#ctor(System.Int32)">
+ <summary>
+ Initializes a new instance of the <see cref="T:Wdw_Sust.Core.Job.HighSpeedJobManager" /> class.
+ </summary>
+ <param name="tickIntervalInMilliseconds">The tick interval in milliseconds.</param>
+</member>
+<member name="P:Wdw_Sust.Core.Job.HighSpeedJobManager.TickResolutionThreshold">
+ <summary>
+ Gets or sets the tick resolution threshold.
+ </summary>
+ <value>The tick resolution threshold.</value>
+</member>
+<member name="M:Wdw_Sust.Core.Job.HighSpeedJobManager.ProcessJobs">
+ <summary>
+ Each tick will call <code>ProcessJobs()</code>
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Job.HighSpeedJobManager.AdjustTimerResolution(Wdw_Sust.Core.Interfaces.ITimeSpanJobDetail)">
+ <summary>
+ Adjusts the timer resolution.
+ </summary>
+ <param name="jobDetail">The job detail.</param>
+</member>
+<member name="M:Wdw_Sust.Core.Job.HighSpeedJobManager.AddJob(Wdw_Sust.Core.Interfaces.IJobDetail,System.Boolean)">
+ <summary>
+ Adds the job.
+ </summary>
+ <param name="jobDetail">The job detail.</param>
+ <param name="runImmediately">if set to <c>true</c> [run immediately].</param>
+ <returns>IJobDetail.</returns>
+</member>
+<member name="E:Wdw_Sust.Core.Job.CancellableJobDetailBase.JobExecuteError">
+ <summary>
+ Occurs when [job execute error].
+ </summary>
+</member>
+<member name="E:Wdw_Sust.Core.Job.CancellableJobDetailBase.JobExecuted">
+ <summary>
+ Occurs when [job executed].
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Job.CancellableJobDetailBase.Subscribe(Wdw_Sust.Core.Interfaces.IJobManager,System.Boolean)">
+ <summary>
+ Subscribes the specified job scheduler.
+ </summary>
+ <param name="scheduler">The job scheduler.</param>
+ <param name="runImmediately">if set to <c>true</c> [run immediately].</param>
+ <exception cref="T:System.NullReferenceException">jobScheduler</exception>
+</member>
+<member name="M:Wdw_Sust.Core.Job.CancellableJobDetailBase.Unsubscribe">
+ <summary>
+ Unsubscribes this instance.
+ </summary>
+</member>
+<member name="T:Wdw_Sust.Core.Job.JobDetailBase">
+ <summary>
+ Class JobDetailBase.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.Interfaces.IJobDetail" />
+</member>
+<member name="F:Wdw_Sust.Core.Job.JobDetailBase._jobToPerform">
+ <summary>
+ The job to perform
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Core.Job.JobDetailBase._markForRemoval">
+ <summary>
+ The mark for removal
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Core.Job.JobDetailBase._jobScheduler">
+ <summary>
+ Job manager
+ </summary>
+</member>
+<member name="P:Wdw_Sust.Core.Job.JobDetailBase.IsEnabled">
+ <summary>
+ Indicate if the job is enabled at the moment. Even though the job is in
+ the manager, this bit can be set to true when you want to
+ temporarily disable th job from running
+ </summary>
+ <value><c>true</c> if this instance is enabled; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Core.Job.JobDetailBase.JobName">
+ <summary>
+ Gets or sets the name of the job.
+ </summary>
+ <value>The name of the job.</value>
+</member>
+<member name="P:Wdw_Sust.Core.Job.JobDetailBase.LastUpdate">
+ <summary>
+ Gets or sets the last update.
+ </summary>
+ <value>The last update.</value>
+</member>
+<member name="P:Wdw_Sust.Core.Job.JobDetailBase.JobArguments">
+ <summary>
+ Gets the job arguments.
+ </summary>
+ <value>The job arguments.</value>
+</member>
+<member name="P:Wdw_Sust.Core.Job.JobDetailBase.MarkForRemoval">
+ <summary>
+ Gets or sets a value indicating whether the job will be removed from the job manager.
+ </summary>
+ <value><c>true</c> if [mark for removal]; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Core.Job.JobDetailBase.IsBusy">
+ <summary>
+ Indicate if the job is being processed at the moment.
+ </summary>
+ <value><c>true</c> if this instance is busy; otherwise, <c>false</c>.</value>
+</member>
+<member name="P:Wdw_Sust.Core.Job.JobDetailBase.JobScheduler">
+ <summary>
+ Gets the job scheduler.
+ </summary>
+ <value>The job scheduler.</value>
+</member>
+<member name="E:Wdw_Sust.Core.Job.JobDetailBase.JobExecuteError">
+ <summary>
+ Occurs when [job execute error].
+ </summary>
+</member>
+<member name="E:Wdw_Sust.Core.Job.JobDetailBase.JobExecuted">
+ <summary>
+ Occurs when [job executed].
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Job.JobDetailBase.DefineJob(System.Action,System.Object[])">
+ <summary>
+ Defines the job.
+ </summary>
+ <param name="jobToPerform">The job to perform.</param>
+ <param name="args">The arguments.</param>
+</member>
+<member name="M:Wdw_Sust.Core.Job.JobDetailBase.ExecuteJob">
+ <summary>
+ Executes the job.
+ </summary>
+ <exception cref="T:System.ArgumentException">No job is defined</exception>
+</member>
+<member name="M:Wdw_Sust.Core.Job.JobDetailBase.ToString">
+ <summary>
+ Returns a <see cref="T:System.String" /> that represents this instance.
+ </summary>
+ <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Job.JobDetailBase.#ctor(System.Boolean)">
+ <summary>
+ Initializes a new instance of the <see cref="T:Wdw_Sust.Core.Job.JobDetailBase"/> class.
+ </summary>
+ <param name="isEnabled">if set to <c>true</c> [is enabled].</param>
+</member>
+<member name="M:Wdw_Sust.Core.Job.JobDetailBase.Subscribe(Wdw_Sust.Core.Interfaces.IJobManager,System.Boolean)">
+ <summary>
+ Subscribes the specified job scheduler.
+ </summary>
+ <param name="scheduler">The job scheduler.</param>
+ <param name="runImmediately">if set to <c>true</c> [run immediately].</param>
+ <exception cref="T:System.NullReferenceException">jobScheduler</exception>
+</member>
+<member name="M:Wdw_Sust.Core.Job.JobDetailBase.Unsubscribe">
+ <summary>
+ Unsubscribes this instance.
+ </summary>
+</member>
+<member name="E:Wdw_Sust.Core.Job.JobManagerBase._Tick">
+ <summary>
+ Tick event will only raise every second, even though the process time is less than a second
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Job.JobManagerBase._timerManager_TimerTick(System.Object,System.EventArgs)">
+ <summary>
+ Test
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Wdw_Sust.Core.Job.JobManagerBase.ProcessJobs">
+ <summary>
+ Each tick will call <code>ProcessJobs()</code> 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Job.JobManagerBase.ProcessJob(System.String,System.Boolean)">
+ <summary>
+ To force the job to be processed immediately
+ </summary>
+ <param name="jobName"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Job.JobManagerBase.GetJobNames">
+ <summary>
+ Return a list of job names
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Core.Job.SpecificRunTimeJobDetail.ListOfRunTime">
+ <summary>
+ Do not use this to add JobRunTime to the object or it might
+ have unpredicted behavior.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Job.SpecificRunTimeJobDetail.Subscribe(Wdw_Sust.Core.Interfaces.IJobManager,System.Boolean)">
+ <summary>
+ Subscribes the specified job scheduler.
+ </summary>
+ <param name="jobScheduler">The job scheduler.</param>
+ <param name="runImmediately">if set to <c>true</c> [run immediately].</param>
+ <exception cref="T:System.InvalidOperationException">No ListOfRunTime is defined!</exception>
+</member>
+<member name="M:Wdw_Sust.Core.Job.SpecificRunTimeJobDetail.AddJobRunTime(System.Int32)">
+ <summary>
+ This will run the job every day and every hour and every minute at a specific second.
+ </summary>
+ <param name="second"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Job.SpecificRunTimeJobDetail.AddJobRunTime(System.Int32,System.Int32)">
+ <summary>
+ This will run the job every day and every hour at a specific minute and second.
+ </summary>
+ <param name="minute"></param>
+ <param name="second"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Job.SpecificRunTimeJobDetail.AddJobRunTime(System.Int32,System.Int32,System.Int32)">
+ <summary>
+ This will run the job every day at a specific hour, minute and second.
+ </summary>
+ <param name="hour"></param>
+ <param name="minute"></param>
+ <param name="second"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Job.TimeSpanJobDetail.Subscribe(Wdw_Sust.Core.Interfaces.IJobManager,System.Boolean)">
+ <summary>
+ Subscribes the specified job scheduler.
+ </summary>
+ <param name="jobScheduler">The job scheduler.</param>
+ <param name="runImmediately">if set to <c>true</c> [run immediately].</param>
+ <exception cref="T:System.InvalidOperationException">TimeSpanRunTime is not defined</exception>
+</member>
+<member name="M:Wdw_Sust.Core.InformationBroadcasterBase`2.GetSubscriberNames">
+ <summary>
+ Gets the subscriber names.
+ </summary>
+ <returns>List(Of System.String).</returns>
+</member>
+<member name="M:Wdw_Sust.Core.InformationBroadcasterBase`2.WorkCompleted(System.ComponentModel.RunWorkerCompletedEventArgs)">
+ <summary>
+ Use e.Result to indicate of the operation is successful. If not it will continue to try
+ until a predefined number of times reaches and raise the _InformationRetrieveFailed event.
+ </summary>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.InformationBroadcasterBase`2.OnWorkCompletedSucessfully(`1)">
+ <summary>
+ Perform task after the work is completed successfully
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:Wdw_Sust.Core.InformationBroadcasterBase`2.OnWorkCompletedUnsucessfully(`1)">
+ <summary>
+ Perform task after the work is completed unsuccessfully, such as a retry of the same task again
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:Wdw_Sust.Core.InformationBroadcasterBase`2.WorkToPerform(System.Object,System.ComponentModel.DoWorkEventArgs)">
+ <summary>
+ Define what work will be performed when the condition is met. This needs to be overridden to change the
+ behavior of the broadcaster
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.InformationBroadcasterBase`2.OnSubscriberAdded(Wdw_Sust.Core.Interfaces.IInformationSubscriber{`1})">
+ <summary>
+ Overrides when you want to perform extra logic after the subscriber was added.
+ </summary>
+ <param name="addedSubscriber"></param>
+</member>
+<member name="M:Wdw_Sust.Core.InformationBroadcasterBase`2.SubscribeBackgroundWorkerWork(System.ComponentModel.DoWorkEventHandler)">
+ <summary>
+ To declare what the background worker is supposed to do
+ </summary>
+ <param name="eventHandler">The sub that will perform the work</param>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Core.NotifyableBase">
+ <summary>
+ Class NotifyableBase. All derived classes inherit from this class 
+ will take advantages of implementing INotifyPropertyChanged interface.
+ Call SetField function to funnel all PropertyChanged event logics when
+ setting properties.
+ </summary>
+ <seealso cref="T:Wdw_Sust.Core.CustomObjectBase" />
+ <seealso cref="T:System.ComponentModel.INotifyPropertyChanged" />
+</member>
+<member name="P:Wdw_Sust.Core.ProviderBase`1.ConnectionString">
+ <summary>
+ Connection String of the reference database
+ </summary>
+ <value>Connection String</value>
+ <returns></returns>
+ <remarks>Use the connection settings defined from the class
+ WDW_SUST.Textile.LINT.Config</remarks>
+</member>
+<member name="M:Wdw_Sust.Core.ProviderBase`1.GetDataFromDatabaseOrCache``1(System.Func{``0},System.Int32,System.String)">
+ <summary>
+ Call this function to either get data from cache or from the database
+ </summary>
+ <typeparam name="T">Data type that will be returned from the function call</typeparam>
+ <param name="fuct">The function that will return the data</param>
+ <param name="cacheDurationInSeconds">Determine how long the data will be cached in the cache dictionary. Zero means data will be cached forever before
+ it's manually removed.</param>
+ <param name="cacheKey">Custom cache key value. If it doesn't apply it will use the function name as the key.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.ProviderBase`1.ExecuteNonQuery(System.String,System.Object[])">
+ <summary>
+ Use for text queries only, not for stored procedure
+ </summary>
+ <param name="commandText">Command text in the format of 'Query Test {...}'</param>
+ <param name="parameters">Parameters in the {...} brackets</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.ProviderBase`1.ExecuteReader``1(System.String,System.Object[])">
+ <summary>
+ Use for text queries only. Return a list of the object type 'T'
+ </summary>
+ <typeparam name="T">Type parameter of the returned object type</typeparam>
+ <param name="commandText">Text command in the format of 'Query Text {...}'</param>
+ <param name="parameters">Parameters in the {...} brackets. It has to be in the same order in the {...} brackets</param>
+ <returns>List of object type 'T'</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.ProviderBase`1.ManageCache(System.String,System.Object,System.Int32)">
+ <summary>
+ Manage the cache dictionary. If the cache dictionary already has the value,
+ it will replace its value to the new ones, otherwise it will add the value to the
+ dictionary.
+ </summary>
+ <param name="key">Key of the cache value</param>
+ <param name="value">Data associated with the key</param>
+ <param name="cacheDurationInSeconds">Cache duration. Zero means indefinite</param>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Core.SingletonProviderBase`1.Instance(System.Object[])">
+ <summary>
+ This property should be used to ensure that one and only one 
+ instance is being pointed to and used at all time
+ </summary>
+ <value>An Instance of the class</value>
+ <returns>An Instance of the class</returns>
+ <remarks>An Instance of the class</remarks>
+</member>
+<member name="T:Wdw_Sust.Core.Serialization.SerializationManager">
+ <summary>
+ Class SerializationManager. This class is used to manage all class object serialized into different formats.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.SerializeData(System.Object)">
+ <summary>
+ Serializes the data.
+ </summary>
+ <param name="data">The data.</param>
+ <returns>System.Byte().</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.DeserializeData``1(System.Byte[])">
+ <summary>
+ Deserializes the data.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="data">The data.</param>
+ <returns>T.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.DeserializeData(System.Byte[])">
+ <summary>
+ Deserializes the data.
+ </summary>
+ <param name="data">The data.</param>
+ <returns>System.Object.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.SerializeToFile(System.String,System.Object)">
+ <summary>
+ Serializes to file.
+ </summary>
+ <param name="path">The path.</param>
+ <param name="obj">The object.</param>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.DeserializeFromBinaryFile``1(System.String)">
+ <summary>
+ Deserializes from binary file.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="path">The path.</param>
+ <returns>T.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.DeserializeFromXMLObjectString``1(System.String)">
+ <summary>
+ Deserializes from XML object string.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="objString">The object string.</param>
+ <returns>T.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.SerializeToXMLObjectString``1(``0)">
+ <summary>
+ Serializes to XML object string.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="obj">The object.</param>
+ <returns>System.String.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.DeserializeFromXmlFile``1(System.String)">
+ <summary>
+ Deserializes from XML file.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="path">The path.</param>
+ <returns>T.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.SerializeToXML``1(System.String,``0)">
+ <summary>
+ Serializes to XML.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="path">The path.</param>
+ <param name="obj">The object.</param>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.SerializeToXML``1(System.String,``0,System.IO.FileMode)">
+ <summary>
+ Serializes to XML.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="path">The path.</param>
+ <param name="obj">The object.</param>
+ <param name="fileMode">The file mode.</param>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.DeserializeFromEncryptedXmlFileWithKey``1(System.String)">
+ <summary>
+ Deserializes from encrypted XML file with key.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="path">The path.</param>
+ <returns>T.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.SerializeToEncryptedObjectWithKey``1(System.String,``0)">
+ <summary>
+ Serializes to encrypted object with key
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="key">The key.</param>
+ <param name="obj">The object.</param>
+ <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.DeserializeFromEncryptedObjectWithKey``1(System.Byte[])">
+ <summary>
+ Deserializes from encrypted XML file with key.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="encryptedData">The path.</param>
+ <returns>T.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.SerializeToEncryptedXmlWithKey``1(System.String,System.String,``0)">
+ <summary>
+ Serializes to encrypted XML with key.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="key">The key.</param>
+ <param name="path">The path.</param>
+ <param name="obj">The object.</param>
+ <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.SerializeToEncryptedXmlWithKey``1(System.String,System.String,``0,System.IO.FileMode)">
+ <summary>
+ Serializes to encrypted XML with key.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="key">The key.</param>
+ <param name="path">The path.</param>
+ <param name="obj">The object.</param>
+ <param name="fileMode">The file mode.</param>
+ <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+</member>
+<member name="M:Wdw_Sust.Core.Serialization.SerializationManager.IsSerializable(System.Object)">
+ <summary>
+ Determines whether the specified object is serializable.
+ </summary>
+ <param name="obj">The object.</param>
+ <returns><c>true</c> if the specified object is serializable; otherwise, <c>false</c>.</returns>
+</member>
+<member name="T:Wdw_Sust.Core.Sort.SortManager`1">
+ <summary>
+ Used to sort data
+ </summary>
+ <typeparam name="T">Generic type for the data to sort</typeparam>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Sort.SortManager`1.CheckSort(System.Int32,`0,`0)">
+ <summary>
+ This is a recursive function to compare each property to perform a multi property sort. If there is
+ is a tie it will perform the function recursively until there is no tie or all properties needed 
+ to be sorted has been tried already.
+ </summary>
+ <param name="sortLevel">Keeping track of which level it is sorting at the moment</param>
+ <param name="x"></param>
+ <param name="y"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Sort.SortManager`1.GetSortedByList(System.String)">
+ <summary>
+ This is to keep track of which property needs to be sorted.
+ </summary>
+ <param name="sortExpression"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Core.Sort.SortManager`1.SortBy">
+ <summary>
+ This 
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Timer.HighResolutionTimer.RecordTime">
+ <summary>
+ Record elapsed time
+ </summary>
+ <returns>Last elapsed time in seconds</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Timer.HighResolutionTimer.RecordTime(System.Int64)">
+ <summary>
+ Records the time.
+ </summary>
+ <param name="delta">The delta between ticks.</param>
+ <returns></returns>
+</member>
+<member name="P:Wdw_Sust.Core.Timer.TimeoutManager.IsCycled">
+ <summary>
+ If this is set to true, the timer will restart itself after each TimeoutEvent
+ is fired.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Core.Timer.TimerManager.IsActive">
+ <summary>
+ IsActive is to tell if the timer is running at the moment
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Timer.TimerManager.Tick">
+ <summary>
+ Used to raise the tick event
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Timer.TimerManager.StartTimer">
+ <summary>
+ Start the timer
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.Timer.TimerManager.StopTimer">
+ <summary>
+ Stop the timer
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Core.Validation.BusinessRuleManager">
+ <summary>
+ Class BusinessRuleManager.
+ </summary>
+</member>
+<member name="F:Wdw_Sust.Core.Validation.BusinessRuleManager._listOfRules">
+ <summary>
+ The list of rules per object type.
+ </summary>
+</member>
+<member name="E:Wdw_Sust.Core.Validation.BusinessRuleManager.ObjectIsInvalidEvent">
+ <summary>
+ Occurs when the object is detected not being valid.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Core.Validation.BusinessRuleManager.AddRule(System.Type,System.String,System.String,Wdw_Sust.Core.Validation.EventArgs.RuleArgs.RuleDeletgate,System.Boolean)">
+ <summary>
+ Adds the rule.
+ </summary>
+ <param name="t">The type that will be used to validate against.</param>
+ <param name="msg">The message when the rule is broken.</param>
+ <param name="ruleName">Name of the rule.</param>
+ <param name="rule">The rule argument to test.</param>
+ <param name="isRuleEnabled">if set to <c>true</c> [is rule enabled].</param>
+</member>
+<member name="M:Wdw_Sust.Core.Validation.BusinessRuleManager.RemoveRulesByType(System.Type)">
+ <summary>
+ Removes the rules by type.
+ </summary>
+ <param name="t">The t.</param>
+</member>
+<member name="M:Wdw_Sust.Core.Validation.BusinessRuleManager.CheckRules(System.Object)">
+ <summary>
+ Checks if the supplied object is not valid.
+ </summary>
+ <param name="objectInCheck">The object in check.</param>
+ <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+</member>
+</members>
+</doc>

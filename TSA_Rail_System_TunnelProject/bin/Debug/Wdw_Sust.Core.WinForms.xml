@@ -1,0 +1,149 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Core.WinForms
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Core.WinForms.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Core.WinForms.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Core.WinForms.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Wdw_Sust.Core.WinForms.ControlExtensions.LoadEnumDataSource``1(System.Windows.Forms.ComboBox,``0[],``0,System.String,System.Boolean)">
+ <summary>
+ Loads the enum data source to a combo box.
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="cmb">The combo box.</param>
+ <param name="excludedValues">The excluded values.</param>
+ <param name="defaultValue">The default value.</param>
+</member>
+<member name="M:Wdw_Sust.Core.WinForms.ControlExtensions.InvokeIfNeeded(System.Windows.Forms.Control,System.Action,System.Boolean)">
+ <summary>
+ This method will execute the action on a different thread.  This may
+ cause a race condition.
+ </summary>
+ <param name="ctrl"></param>
+ <param name="act"></param>
+ <param name="checkHandle"></param>
+</member>
+<member name="M:Wdw_Sust.Core.WinForms.ControlExtensions.InvokeIfNeededAndWait(System.Windows.Forms.Control,System.Action,System.Boolean)">
+ <summary>
+ This method will execute the action and will wait for it to complete 
+ before returning.  This is needed to make sure this action is complete
+ before moving onto the next action.  This addresses a race condition
+ that can occur if using the other/original method.
+ </summary>
+ <param name="control"></param>
+ <param name="action"></param>
+ <param name="checkHandle"></param>
+</member>
+<member name="M:Wdw_Sust.Core.WinForms.ControlExtensions.Print(System.Windows.Forms.Form,System.Windows.Forms.Control,System.String,System.Drawing.Printing.PrinterSettings)">
+ <summary>
+ Print the control, or any object inherits from control, such as Form
+ </summary>
+ <param name="ctrl">Control to be printed</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.WinForms.ControlExtensions.Print(System.Windows.Forms.Form,System.Windows.Forms.Control,System.Drawing.Printing.PrinterSettings)">
+ <summary>
+ Print the control, or any object inherits from control, such as Form
+ </summary>
+ <param name="ctrl">Control to be printed</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.WinForms.ControlExtensions.PrintToFile(System.Windows.Forms.Form,System.Windows.Forms.Control,System.String)">
+ <summary>
+ Print the control, or any object inherits from control, such as Form
+ </summary>
+ <param name="ctrl">Control to be printed</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.WinForms.Helpers.GetControlImage(System.Windows.Forms.Control)">
+ <summary>
+ Capture an object which inherits from Control, such as form and output as an image
+ </summary>
+ <param name="ctrl">Control to be taken a snapshot of</param>
+ <returns>Bitmap of the control image</returns>
+ <remarks>Return the control’s image</remarks>
+</member>
+<member name="T:Wdw_Sust.Core.WinForms.ContextStripManager">
+ <summary>
+ This class is to use when right button of the mouse is disabled due to lock
+ down configuration and want to show context strip with holding down the left
+ button of the mouse
+ </summary>h
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Core.WinForms.ContextStripManager.ThresholdInSeconds">
+ <summary>
+ Number of second to hold down the left button of the mouse
+ before showing the context strip menu
+ </summary>
+ <value>Number in second</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Wdw_Sust.Core.WinForms.ContextStripManager.IsHolding">
+ <summary>
+ Tell if the left button is being held at the moment
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Core.WinForms.Native.NativeMethods">
+ <summary> 
+ CodeProject.com "Simple pop-up control" "http://www.codeproject.com/cs/miscctrl/simplepopup.asp". 
+ </summary> 
+</member>
+<member name="M:Wdw_Sust.Core.WinForms.Printing.PrintMaster.Print(System.Drawing.Bitmap,System.Drawing.Printing.PrinterSettings)">
+ <summary>
+ Print the image. This function meant to be used with PrintDialog and get the printer settings from its properties
+ </summary>
+ <param name="bp">Image to be printed</param>
+ <param name="printerSettings">Printer settings from the PrintDialog</param>
+ <returns>Boolean to indicate if the print was successful</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.WinForms.Printing.PrintMaster.Print(System.Windows.Forms.Control,System.Drawing.Printing.PrinterSettings)">
+ <summary>
+ Print the form image. This function meant to be used with PrintDialog and get the printer settings from its properties
+ </summary>
+ <param name="ctrl">Form image to be printed</param>
+ <param name="printerSettings">Printer settings from the PrintDialog</param>
+ <returns>Boolean to indicate if the print was successful</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.WinForms.Printing.PrintMaster.Print(System.Windows.Forms.Control)">
+ <summary>
+ Print the control, or any object inherits from control, such as Form
+ </summary>
+ <param name="ctrl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Core.WinForms.Printing.PrintMaster.Print(System.Windows.Forms.Control,Wdw_Sust.Core.WinForms.Enums.PrintingMode)">
+ <summary>
+ Print the control, or any object inherits from control, such as Form
+ </summary>
+ <param name="ctrl"></param>
+ <param name="printOrientation"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

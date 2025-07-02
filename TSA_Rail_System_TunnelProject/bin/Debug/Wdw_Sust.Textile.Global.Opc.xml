@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Textile.Global.Opc
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Textile.Global.Opc.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Opc.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Opc.Interfaces.IOpcBagObject">
+ <summary>
+ For bag edit form for all 3 plants. This
+ interface provides consistency.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.OpcLintCycleCountDetail.#ctor(System.String,System.String)">
+ <summary>
+ Create new object for the class. if groupName is not defined, it will be the
+ same as the TagName)
+ </summary>
+ <param name="plcName">Name of the PLC topic name</param>
+ <param name="tagName">Name of the tag name</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.OpcLintMachineAvailability.#ctor(System.String,System.String)">
+ <summary>
+ Create new object for the class. if groupName is not defined, it will be the
+ same as the TagName)
+ </summary>
+ <param name="plcName">Name of the PLC topic name</param>
+ <param name="tagName">Name of the tag name</param>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.OpcLintSortingStationDisplayDetail.#ctor">
+ <summary>
+ This constructor is not for OPC communication but for object initialization
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Opc.OpcLintSortingStationDisplayDetail.#ctor(Wdw_Sust.OpcDa.Core.Interfaces.IOpcObject@,System.String)">
+ <summary>
+ Used when the class is defined as a property to another opc item class
+ this will make sure that GroupName, TagName and PLCName are set properly
+ </summary>
+ <param name="parent">Parent class of the is class</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

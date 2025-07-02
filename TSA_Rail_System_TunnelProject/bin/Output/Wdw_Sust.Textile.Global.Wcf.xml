@@ -1,0 +1,77 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Textile.Global.Wcf
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Textile.Global.Wcf.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Wcf.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Global.Wcf.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Wcf.Core.WcfLintNetTcpConnectionBase.CreateBinding">
+ <summary>
+ By default SecurityMode is not enabled due to not taking local ID
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Wcf.Core.WcfLintNetTcpServiceHostBase`2">
+ <summary>
+ This is the base class to provide basic functionality to host
+ a Wcf service using Tcp end point
+ </summary>
+ <typeparam name="contract">Contract Type</typeparam>
+ <typeparam name="service">Service Type</typeparam>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Wcf.Core.WcfLintNetTcpServiceHostBase`2.OnStartService">
+ <summary>
+ Overrides to initialize any resource that wants the service to do
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Wcf.Core.WcfLintNetTcpServiceHostBase`2.OnStopService">
+ <summary>
+ Overrides to release any resource when the service is stopped
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Wcf.Core.WcfLintNetTcpServiceHostBase`2.StopService">
+ <summary>
+ Stop the service so that the service will not be hosted anymore.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Global.Wcf.WcfServiceServer">
+ <summary>
+ This class is used to control different service hosts by using a Wcf service gateway
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Wcf.WcfChatClient.RefreshMessages(System.DateTime)">
+ <summary>
+ Refresh messages immediately.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Global.Wcf.WcfChatClient._timer_TimeoutEvent(System.Object,System.EventArgs)">
+ <summary>
+ Retrieve new message from the services, if any
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

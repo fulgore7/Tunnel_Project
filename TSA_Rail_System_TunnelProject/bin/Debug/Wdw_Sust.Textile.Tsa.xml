@@ -1,0 +1,50 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Textile.Tsa
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Textile.Tsa.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Wdw_Sust.Textile.Tsa.Enums.TsaMachineId">
+ <summary>
+ This list is mapped to the database table "LINT_software.LINT_Machine_Name_Lookup""
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Tsa.Enums.TSA_CLEANWORK_BAG_MOVEMENT_ORIGIN">
+ <summary>
+ This list is mapped to the TSA_Futurail_Cleanwork PLC time origin time stamp
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Tsa.Enums.TSA_CLASSIFIED_BAG_MOVEMENT_ORIGIN">
+ <summary>
+ This list is mapped to the TSA_Futurail_Classified PLC time origin time stamp
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Tsa.TsaCallOffData">
+ <summary>
+ This class is used in OpcTsaWorkflowActiveCallOffData
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|c:\\users\\colem160\\source\\repos\\tunnelproject\\tunnel_project\\tsa_phoenix_tunnels\\frmtunnelinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|solutionrelative:tsa_phoenix_tunnels\\frmtunnelinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmTunnelInterface.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Phoenix_Tunnels\\frmTunnelInterface.cs",
+              "RelativeDocumentMoniker": "TSA_Phoenix_Tunnels\\frmTunnelInterface.cs",
+              "ToolTip": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Phoenix_Tunnels\\frmTunnelInterface.cs [Design]",
+              "RelativeToolTip": "TSA_Phoenix_Tunnels\\frmTunnelInterface.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T13:10:04.114Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

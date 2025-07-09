@@ -36,7 +36,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(478, 642);
+            this.ClientSize = new System.Drawing.Size(478, 890);
             this.Name = "frmTunnelInterface";
             this.Text = "Phoenix  Tunnels";
             this.ResumeLayout(false);

@@ -1131,10 +1131,6 @@
       <Project>{1f91411e-a497-4114-a748-2450f226c479}</Project>
       <Name>Wdw_Sust.Deploy</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.Logging\Wdw_Sust.Logging.csproj">
-      <Project>{30920d90-c352-46dd-aaa6-fd15b59684b5}</Project>
-      <Name>Wdw_Sust.Logging</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Wdw_Sust\Wdw_Sust.OpcDa\Wdw_Sust.OpcDa.Core.vbproj">
       <Project>{01154bcb-53ac-495f-b9d0-3319aa2c86dc}</Project>
       <Name>Wdw_Sust.OpcDa.Core</Name>

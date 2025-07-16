@@ -65,6 +65,9 @@
     <Compile Include="frmTunnelInterface.Designer.cs">
       <DependentUpon>frmTunnelInterface.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logic\TagManager.cs" />
+    <Compile Include="Models\Tag.cs" />
+    <Compile Include="OPC.DA\OPCDAClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmTunnelInterface.resx">

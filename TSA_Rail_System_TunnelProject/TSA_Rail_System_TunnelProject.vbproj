@@ -762,6 +762,26 @@
     <Compile Include="Wdw_Sust.Textile.Global.WinForms\interfaces\ILintRailForm.vb" />
     <Compile Include="Wdw_Sust.Textile.Global.WinForms\LintFormConfiguration.vb" />
     <Compile Include="Wdw_Sust.Textile.Global.WinForms\LoadingManager.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\core\CtrlOpcBagBase.Designer.vb">
+      <DependentUpon>CtrlOpcBagBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\core\CtrlOpcBagBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\core\CtrlOpcBase.Designer.vb">
+      <DependentUpon>CtrlOpcBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\core\CtrlOpcBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\core\CtrlOpcTsaBase.Designer.vb">
+      <DependentUpon>CtrlOpcTsaBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\core\CtrlOpcTsaBase.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\CtrlOpcTsaBag.Designer.vb">
+      <DependentUpon>CtrlOpcTsaBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\CtrlOpcTsaBag.vb" />
     <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\BllDatabaseRailInfoProvider.vb" />
     <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\BllRailInfoProvider.vb" />
     <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\BllWcfRailInfoProvider.vb" />
@@ -930,6 +950,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Wdw_Sust.Textile.Global.WinForms\frmDisplayConfig.resx">
       <DependentUpon>frmDisplayConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\core\CtrlOpcBagBase.resx">
+      <DependentUpon>CtrlOpcBagBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\core\CtrlOpcBase.resx">
+      <DependentUpon>CtrlOpcBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\CtrlOpcTsaBag.resx">
+      <DependentUpon>CtrlOpcTsaBag.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

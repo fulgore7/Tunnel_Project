@@ -7,51 +7,95 @@ using TSA_Phoenix_Tunnels.Models;
 using TSA_Phoenix_Tunnels.OPC.DA;
 
 namespace TSA_Phoenix_Tunnels.Logic
-{
-    // Event args for tag update
+{   /// <summary>
+    /// Event args for tag update, can be raised in tests.
+    /// </summary>
     public class TagUpdatedEventArgs : EventArgs
     {
         public Tag Tag { get; }
-        public TagUpdatedEventArgs(Tag tag)
-        {
-            Tag = tag;
-        }
+        public TagUpdatedEventArgs(Tag tag) => Tag = tag;
     }
 
-    public class TagManager
+    /// <summary>
+    /// Interface for TagManager to allow TDD & mocking.
+    /// </summary>
+    public interface ITagManager : IDisposable
     {
-        private readonly OPCDAClient _opcClient;
-        private readonly Dictionary<string, Tag> _tags = new();
+        event EventHandler<TagUpdatedEventArgs> TagUpdated;
+        void AddTag(string tagName);
+        IEnumerable<Tag> GetTags();
+        Tag GetTag(string tagName);
+        bool WriteTag(string tagName, object value);
+    }
+
+    /// <summary>
+    /// TagManager mediates between OPCDAClient and UI.
+    /// Compatible with TDD via ITagManager and dependency injection.
+    /// </summary>
+    public class TagManager : ITagManager
+    {
+        private readonly IOPCDAClient _opcClient;
+        private readonly Dictionary<string, Tag> _tags = new Dictionary<string, Tag>();
 
         public event EventHandler<TagUpdatedEventArgs> TagUpdated;
 
-        public TagManager(OPCDAClient opcClient)
+        /// <summary>
+        /// Inject IOPCDAClient for TDD/mocking.
+        /// </summary>
+        public TagManager(IOPCDAClient opcClient)
         {
-            _opcClient = opcClient;
+            _opcClient = opcClient ?? throw new ArgumentNullException(nameof(opcClient));
             _opcClient.TagValueChanged += OpcClient_TagValueChanged;
         }
 
-        // Add a tag to be managed and subscribed
-        public void AddTag(string tagName)
+        /// <summary>
+        /// Add a tag for subscription and management.
+        /// </summary>
+        public virtual void AddTag(string tagName)
         {
             _opcClient.SubscribeTag(tagName);
-            _tags[tagName] = new Tag { Name = tagName };
+            if (!_tags.ContainsKey(tagName))
+                _tags[tagName] = new Tag { Name = tagName };
         }
 
-        public IEnumerable<Tag> GetTags() => _tags.Values;
+        /// <summary>
+        /// Returns all managed tags.
+        /// </summary>
+        public virtual IEnumerable<Tag> GetTags() => _tags.Values;
 
-        public Tag GetTag(string tagName)
+        /// <summary>
+        /// Returns a single tag by name.
+        /// </summary>
+        public virtual Tag GetTag(string tagName)
         {
             _tags.TryGetValue(tagName, out var tag);
             return tag;
         }
-
-        private void OpcClient_TagValueChanged(object sender, TagValueChangedEventArgs e)
+        public virtual bool WriteTag(string tagName, object value)
         {
-            // Update cache
+            // Expose write through to OPCDAClient
+            var writeTagMethod = _opcClient.GetType().GetMethod("WriteTag");
+            if (writeTagMethod != null)
+                return (bool)writeTagMethod.Invoke(_opcClient, new object[] { tagName, value });
+            return false;
+        }
+        /// <summary>
+        /// Handles tag value changes. Virtual for TDD.
+        /// </summary>
+        protected virtual void OpcClient_TagValueChanged(object sender, TagValueChangedEventArgs e)
+        {
             _tags[e.Tag.Name] = e.Tag;
-            // Notify subscribers
             TagUpdated?.Invoke(this, new TagUpdatedEventArgs(e.Tag));
         }
+
+        /// <summary>
+        /// Unsubscribe from events and clean resources.
+        /// </summary>
+        public virtual void Dispose()
+        {
+            _opcClient.TagValueChanged -= OpcClient_TagValueChanged;
+            _opcClient.Dispose();
+        }
+
     }
 }

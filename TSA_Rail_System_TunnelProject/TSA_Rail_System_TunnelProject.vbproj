@@ -781,7 +781,9 @@
     <Compile Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\CtrlOpcTsaBag.Designer.vb">
       <DependentUpon>CtrlOpcTsaBag.vb</DependentUpon>
     </Compile>
-    <Compile Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\CtrlOpcTsaBag.vb" />
+    <Compile Include="Wdw_Sust.Textile.Tsa.Opc.WinForms\CtrlOpcTsaBag.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\BllDatabaseRailInfoProvider.vb" />
     <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\BllRailInfoProvider.vb" />
     <Compile Include="Wdw_Sust.Textile.Tsa.Wcf\BllWcfRailInfoProvider.vb" />

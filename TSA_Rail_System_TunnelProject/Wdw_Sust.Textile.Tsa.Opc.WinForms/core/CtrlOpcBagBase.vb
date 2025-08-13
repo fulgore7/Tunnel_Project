@@ -899,8 +899,8 @@ Namespace Core
             _overwieght_zone_display_list.Add(LintZone.CLASSIFIED_EMPTY_BAG_RETURN)
 
             ' remove any duplicates that were added to the list above.  Its okay to add duplicates.
-            Dim uniqueLintZones As List(Of LintZone) = _overwieght_zone_display_list.Distinct().ToList()
-            _overwieght_zone_display_list = uniqueLintZones
+            ' Dim uniqueLintZones As List(Of LintZone) = _overwieght_zone_display_list.Distinct().ToList()
+            '_overwieght_zone_display_list = uniqueLintZones
 
         End Sub
 

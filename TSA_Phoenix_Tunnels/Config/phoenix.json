@@ -1,0 +1,10 @@
+{
+    "ServerProgId": "PhoenixContact.AX-Server.21",
+    "GroupName": "DefGroup",
+    "UpdateRateMs": 100,
+    "Tags": [
+        "MyPLC.Cycles",
+        "MyPLC.Wash_Cycle",
+        "MyPLC.MainQ"
+    ]
+}

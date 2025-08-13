@@ -1,0 +1,9 @@
+{
+    "ServerProgId": "Matrikon.OPC.Simulation.1",
+    "GroupName": "MyGroup",
+    "UpdateRateMs": 100,
+    "Tags": [
+        "Random.Int2",
+        "Bucket Brigade.Int4"
+    ]
+}

@@ -10,7 +10,7 @@ Imports Wdw_Sust.Textile.Tsa.Dal
 ''' </summary>
 ''' <remarks></remarks>
 Public Class CtrlOpcTsaBag
-    Inherits CtrlOpcBagBase
+    Inherits Core.CtrlOpcBagBase
 
 
 End Class

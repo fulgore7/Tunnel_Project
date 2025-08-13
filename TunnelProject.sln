@@ -7,6 +7,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TSA_Rail_System_TunnelProje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSA_Phoenix_Tunnels", "TSA_Phoenix_Tunnels\TSA_Phoenix_Tunnels.csproj", "{879E7514-BA79-48C4-ABF9-71108D59BE76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tunnel_Test", "Tunnel_Test\Tunnel_Test.csproj", "{BDA8889C-4258-4783-86F4-BBE50813DB8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,14 @@ Global
 		{879E7514-BA79-48C4-ABF9-71108D59BE76}.Release|Any CPU.Build.0 = Release|Any CPU
 		{879E7514-BA79-48C4-ABF9-71108D59BE76}.Release|x86.ActiveCfg = Release|Any CPU
 		{879E7514-BA79-48C4-ABF9-71108D59BE76}.Release|x86.Build.0 = Release|Any CPU
+		{BDA8889C-4258-4783-86F4-BBE50813DB8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA8889C-4258-4783-86F4-BBE50813DB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA8889C-4258-4783-86F4-BBE50813DB8D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BDA8889C-4258-4783-86F4-BBE50813DB8D}.Debug|x86.Build.0 = Debug|Any CPU
+		{BDA8889C-4258-4783-86F4-BBE50813DB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA8889C-4258-4783-86F4-BBE50813DB8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDA8889C-4258-4783-86F4-BBE50813DB8D}.Release|x86.ActiveCfg = Release|Any CPU
+		{BDA8889C-4258-4783-86F4-BBE50813DB8D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

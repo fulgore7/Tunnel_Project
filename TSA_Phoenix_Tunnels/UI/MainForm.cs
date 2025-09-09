@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,9 +54,9 @@ namespace TSA_Phoenix_Tunnels.UI
             // 
             this.txtCycles.Location = new System.Drawing.Point(30, 80);
             this.txtCycles.Name = "txtCycles";
-            this.txtCycles.Size = new System.Drawing.Size(220, 22);
-            this.txtCycles.TabIndex = 2;
             this.txtCycles.ReadOnly = true;
+            this.txtCycles.Size = new System.Drawing.Size(220, 20);
+            this.txtCycles.TabIndex = 2;
             // 
             // MainForm
             // 
@@ -68,6 +67,7 @@ namespace TSA_Phoenix_Tunnels.UI
             this.Name = "MainForm";
             this.Text = "OPC DA Demo";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,6 +121,11 @@ namespace TSA_Phoenix_Tunnels.UI
         {
             if (_tagManager != null)
                 _tagManager.Dispose();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

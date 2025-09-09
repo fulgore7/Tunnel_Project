@@ -42,6 +42,7 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.7, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.7\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -84,6 +85,9 @@
     <Reference Include="TitaniumAS.Opc.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\TitaniumAS.Opc.Client.NetCore.1.0.2.1\lib\net40\TitaniumAS.Opc.Client.dll</HintPath>
     </Reference>
+    <Reference Include="Wdw_Sust.Textile.Global.Opc.WinForms">
+      <HintPath>..\..\..\Wdw_Sust\Wdw_Sust.Textile.Global.Opc.WinForms\bin\Debug\Wdw_Sust.Textile.Global.Opc.WinForms.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="frmTunnelInterface.cs">
@@ -118,6 +122,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Bag.resx">
       <DependentUpon>Bag.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +153,28 @@
   <ItemGroup>
     <Content Include="exclaimation.png" />
     <Content Include="Left_Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Wdw_Sust\Wdw_Sust.OpcDa\Wdw_Sust.OpcDa.Core.vbproj">
+      <Project>{01154bcb-53ac-495f-b9d0-3319aa2c86dc}</Project>
+      <Name>Wdw_Sust.OpcDa.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wdw_Sust\Wdw_Sust.Textile.Global.WinForms\Wdw_Sust.Textile.Global.WinForms.vbproj">
+      <Project>{de5caf7b-1b65-462c-a0e4-435778284a67}</Project>
+      <Name>Wdw_Sust.Textile.Global.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wdw_Sust\Wdw_Sust.Textile.Tsa.Dal\Wdw_Sust.Textile.Tsa.Dal.vbproj">
+      <Project>{0bd160ca-8375-4a1b-8f6b-f112517755ea}</Project>
+      <Name>Wdw_Sust.Textile.Tsa.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wdw_Sust\Wdw_Sust.Textile.Tsa.Opc.WinForms\Wdw_Sust.Textile.Tsa.Opc.WinForms.vbproj">
+      <Project>{19908D31-7F30-4F93-86C6-1E4C9431AD47}</Project>
+      <Name>Wdw_Sust.Textile.Tsa.Opc.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wdw_Sust\Wdw_Sust.Textile.Tsa.Opc\Wdw_Sust.Textile.Tsa.Opc.vbproj">
+      <Project>{5be0515b-ac91-4362-94e2-60b91df3933d}</Project>
+      <Name>Wdw_Sust.Textile.Tsa.Opc</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

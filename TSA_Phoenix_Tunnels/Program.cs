@@ -31,6 +31,7 @@ namespace TSA_Phoenix_Tunnels
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new frmTunnelInterface());
             Application.Run(new MainForm(tagManager));
         }
     }

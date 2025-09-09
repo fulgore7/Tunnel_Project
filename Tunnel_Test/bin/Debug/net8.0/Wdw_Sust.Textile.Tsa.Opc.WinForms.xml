@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Wdw_Sust.Textile.Tsa.Opc.WinForms
+</name>
+</assembly>
+<members>
+<member name="T:Wdw_Sust.Textile.Tsa.Opc.WinForms.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Opc.WinForms.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Opc.WinForms.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Opc.WinForms.My.Resources.Resources.inactiveSwitchGate">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Opc.WinForms.My.Resources.Resources.RightVcSwitchGateOff">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Wdw_Sust.Textile.Tsa.Opc.WinForms.My.Resources.Resources.RightVcSwitchGateOn">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Opc.WinForms.CtrlOpcTsaBagWithStorageDestination.DrawExtraInformation(System.Drawing.Graphics)">
+ <summary>
+ Draw storage destination on the graphics
+ </summary>
+ <param name="g">Graphics from the object</param>
+ <remarks></remarks>
+</member>
+<member name="T:Wdw_Sust.Textile.Tsa.Opc.WinForms.CtrlOpcTsaBag">
+ <summary>
+ This button has to work with the UDT structure of Bag in the PLC!!
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Opc.WinForms.CtrlOpcTsaBag.ConstructToolTipTextWhenShiftIsPressed">
+ <summary>
+ Constructs the tool tip text when shift is pressed.
+ </summary>
+</member>
+<member name="M:Wdw_Sust.Textile.Tsa.Opc.WinForms.CtrlOpcTsaCategoryDetails.WriteDataToPLC(Wdw_Sust.Textile.Tsa.TsaCategoryDetail)">
+ <summary>
+ Writing data to both classified and cleanwork PLC
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

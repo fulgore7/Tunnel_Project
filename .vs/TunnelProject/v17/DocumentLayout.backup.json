@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|c:\\users\\colem160\\source\\repos\\tunnelproject\\tunnel_project\\tsa_phoenix_tunnels\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|solutionrelative:tsa_phoenix_tunnels\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\tsa_phoenix_tunnels\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|solutionrelative:tsa_phoenix_tunnels\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\tsa_phoenix_tunnels\\config\\phoenix.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|solutionrelative:tsa_phoenix_tunnels\\config\\phoenix.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\tsa_phoenix_tunnels\\logic\\tagmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|solutionrelative:tsa_phoenix_tunnels\\logic\\tagmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\tsa_phoenix_tunnels\\config\\phoenix.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|solutionrelative:tsa_phoenix_tunnels\\config\\phoenix.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\tsa_phoenix_tunnels\\opc.da\\opcdaclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|c:\\users\\colem160\\source\\repos\\tunnelproject\\tunnel_project\\tsa_phoenix_tunnels\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|solutionrelative:tsa_phoenix_tunnels\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|c:\\users\\colem160\\source\\repos\\tunnelproject\\tunnel_project\\tsa_phoenix_tunnels\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{879E7514-BA79-48C4-ABF9-71108D59BE76}|TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj|solutionrelative:tsa_phoenix_tunnels\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BDA8889C-4258-4783-86F4-BBE50813DB8D}|Tunnel_Test\\Tunnel_Test.csproj|c:\\users\\colem160\\source\\repos\\tunnelproject\\tunnel_project\\tunnel_test\\tunneltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Phoenix_Tunnels\\UI\\MainForm.cs",
               "RelativeDocumentMoniker": "TSA_Phoenix_Tunnels\\UI\\MainForm.cs",
@@ -76,20 +76,20 @@
               "RelativeDocumentMoniker": "TSA_Phoenix_Tunnels\\Logic\\TagManager.cs",
               "ToolTip": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Phoenix_Tunnels\\Logic\\TagManager.cs",
               "RelativeToolTip": "TSA_Phoenix_Tunnels\\Logic\\TagManager.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAmwFAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAhwE0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-12T18:49:49.042Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Phoenix_Tunnels\\UI\\MainForm.cs",
               "RelativeDocumentMoniker": "TSA_Phoenix_Tunnels\\UI\\MainForm.cs",
               "ToolTip": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Phoenix_Tunnels\\UI\\MainForm.cs",
               "RelativeToolTip": "TSA_Phoenix_Tunnels\\UI\\MainForm.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAUwFYAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAUwGsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-12T18:41:22.815Z",
               "EditorCaption": ""
@@ -109,13 +109,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Phoenix_Tunnels\\Program.cs",
               "RelativeDocumentMoniker": "TSA_Phoenix_Tunnels\\Program.cs",
               "ToolTip": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Phoenix_Tunnels\\Program.cs",
               "RelativeToolTip": "TSA_Phoenix_Tunnels\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAIwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAIwBAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T21:06:31.276Z",
               "EditorCaption": ""
@@ -135,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "phoenix.json",
               "DocumentMoniker": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Phoenix_Tunnels\\Config\\phoenix.json",
               "RelativeDocumentMoniker": "TSA_Phoenix_Tunnels\\Config\\phoenix.json",
@@ -148,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "OPCDAClient.cs",
               "DocumentMoniker": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Phoenix_Tunnels\\OPC.DA\\OPCDAClient.cs",
               "RelativeDocumentMoniker": "TSA_Phoenix_Tunnels\\OPC.DA\\OPCDAClient.cs",

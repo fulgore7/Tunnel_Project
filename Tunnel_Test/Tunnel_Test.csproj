@@ -21,6 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Wdw_Sust\wdw_sust.opc.da.core.ph\Wdw_Sust.OpcDa.Core.Ph.csproj" />
+    <ProjectReference Include="..\..\..\Wdw_Sust\Wdw_Sust.OpcDa\Wdw_Sust.OpcDa.Core.vbproj" />
     <ProjectReference Include="..\TSA_Phoenix_Tunnels\TSA_Phoenix_Tunnels.csproj" />
   </ItemGroup>
 

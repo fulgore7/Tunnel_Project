@@ -12,7 +12,23 @@
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net48": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Dal\\Wdw_Sust.Textile.Tsa.Dal.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Dal\\Wdw_Sust.Textile.Tsa.Dal.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc.WinForms\\Wdw_Sust.Textile.Tsa.Opc.WinForms.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc.WinForms\\Wdw_Sust.Textile.Tsa.Opc.WinForms.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc\\Wdw_Sust.Textile.Tsa.Opc.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc\\Wdw_Sust.Textile.Tsa.Opc.vbproj"
+              }
+            }
           }
         }
       },
@@ -53,6 +69,12 @@
             "projectReferences": {
               "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj": {
                 "projectPath": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Phoenix_Tunnels\\TSA_Phoenix_Tunnels.csproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\wdw_sust.opc.da.core.ph\\Wdw_Sust.OpcDa.Core.Ph.csproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\wdw_sust.opc.da.core.ph\\Wdw_Sust.OpcDa.Core.Ph.csproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj"
               }
             }
           }
@@ -67,7 +89,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -118,8 +140,288 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj",
+        "projectName": "Wdw_Sust.Core",
+        "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj",
+        "projectName": "Wdw_Sust.Logging",
+        "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj",
+        "packagesPath": "C:\\Users\\colem160\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\colem160\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj"
+              }
+            }
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Microsoft.Bcl.HashCode": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Runtime.Serialization.Primitives": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\wdw_sust.opc.da.core.ph\\Wdw_Sust.OpcDa.Core.Ph.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\wdw_sust.opc.da.core.ph\\Wdw_Sust.OpcDa.Core.Ph.csproj",
+        "projectName": "Wdw_Sust.OpcDa.Core.Ph",
+        "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\wdw_sust.opc.da.core.ph\\Wdw_Sust.OpcDa.Core.Ph.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj",
+        "projectName": "Wdw_Sust.OpcDa.Core",
+        "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc.WinForms\\Wdw_Sust.Textile.Global.Opc.WinForms.vbproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc.WinForms\\Wdw_Sust.Textile.Global.Opc.WinForms.vbproj",
+        "projectName": "Wdw_Sust.Textile.Global.Opc.WinForms",
+        "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc.WinForms\\Wdw_Sust.Textile.Global.Opc.WinForms.vbproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj",
+        "projectName": "Wdw_Sust.Textile.Global.WinForms",
+        "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Dal\\Wdw_Sust.Textile.Tsa.Dal.vbproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Dal\\Wdw_Sust.Textile.Tsa.Dal.vbproj",
+        "projectName": "Wdw_Sust.Textile.Tsa.Dal",
+        "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Dal\\Wdw_Sust.Textile.Tsa.Dal.vbproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc.WinForms\\Wdw_Sust.Textile.Tsa.Opc.WinForms.vbproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc.WinForms\\Wdw_Sust.Textile.Tsa.Opc.WinForms.vbproj",
+        "projectName": "Wdw_Sust.Textile.Tsa.Opc.WinForms",
+        "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc.WinForms\\Wdw_Sust.Textile.Tsa.Opc.WinForms.vbproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc.WinForms\\Wdw_Sust.Textile.Global.Opc.WinForms.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc.WinForms\\Wdw_Sust.Textile.Global.Opc.WinForms.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Dal\\Wdw_Sust.Textile.Tsa.Dal.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Dal\\Wdw_Sust.Textile.Tsa.Dal.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc\\Wdw_Sust.Textile.Tsa.Opc.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc\\Wdw_Sust.Textile.Tsa.Opc.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc\\Wdw_Sust.Textile.Tsa.Opc.vbproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc\\Wdw_Sust.Textile.Tsa.Opc.vbproj",
+        "projectName": "Wdw_Sust.Textile.Tsa.Opc",
+        "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc\\Wdw_Sust.Textile.Tsa.Opc.vbproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
       }
     }
   }

@@ -16,5 +16,10 @@ namespace TSA_Phoenix_Tunnels
         {
             InitializeComponent();
         }
+
+        private void ctrlOpcTsaBag1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

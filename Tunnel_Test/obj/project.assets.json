@@ -1343,13 +1343,6 @@
       },
       "TSA_Phoenix_Tunnels/1.0.0": {
         "type": "project",
-        "dependencies": {
-          "Wdw_Sust.OpcDa.Core": "1.0.0",
-          "Wdw_Sust.Textile.Global.WinForms": "1.0.0",
-          "Wdw_Sust.Textile.Tsa.Dal": "1.0.0",
-          "Wdw_Sust.Textile.Tsa.Opc": "1.0.0",
-          "Wdw_Sust.Textile.Tsa.Opc.WinForms": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/TSA_Phoenix_Tunnels.dll": {}
         },
@@ -1375,7 +1368,8 @@
           "Newtonsoft.Json": "13.0.3",
           "System.Net.Http": "4.3.4",
           "System.Runtime.Serialization.Primitives": "4.3.0",
-          "Wdw_Sust.Core": "1.0.0"
+          "Wdw_Sust.Core": "1.0.0",
+          "Wdw_Sust.Textile.Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Wdw_Sust.Logging.dll": {}
@@ -1401,7 +1395,12 @@
         "type": "project",
         "dependencies": {
           "Wdw_Sust.Core": "1.0.0",
-          "Wdw_Sust.OpcDa.Core": "1.0.0"
+          "Wdw_Sust.OpcDa.Core": "1.0.0",
+          "Wdw_Sust.Textile.Global.Opc": "1.0.0",
+          "Wdw_Sust.Textile.Global.Opc.WinForms": "1.0.0",
+          "Wdw_Sust.Textile.Global.WinForms": "1.0.0",
+          "Wdw_Sust.Textile.Tsa.Opc": "1.0.0",
+          "Wdw_Sust.Textile.Tsa.Opc.WinForms": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Wdw_Sust.OpcDa.Core.Ph.dll": {}
@@ -1410,12 +1409,40 @@
           "bin/placeholder/Wdw_Sust.OpcDa.Core.Ph.dll": {}
         }
       },
+      "Wdw_Sust.Textile.Core/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Wdw_Sust.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Wdw_Sust.Textile.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Wdw_Sust.Textile.Core.dll": {}
+        }
+      },
+      "Wdw_Sust.Textile.Global.Opc/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Wdw_Sust.Core": "1.0.0",
+          "Wdw_Sust.OpcDa.Core": "1.0.0",
+          "Wdw_Sust.Textile.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Wdw_Sust.Textile.Global.Opc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Wdw_Sust.Textile.Global.Opc.dll": {}
+        }
+      },
       "Wdw_Sust.Textile.Global.Opc.WinForms/1.0.0": {
         "type": "project",
         "dependencies": {
           "Wdw_Sust.Core": "1.0.0",
           "Wdw_Sust.Logging": "1.0.0",
           "Wdw_Sust.OpcDa.Core": "1.0.0",
+          "Wdw_Sust.Textile.Core": "1.0.0",
+          "Wdw_Sust.Textile.Global.Opc": "1.0.0",
           "Wdw_Sust.Textile.Global.WinForms": "1.0.0"
         },
         "compile": {
@@ -1429,7 +1456,8 @@
         "type": "project",
         "dependencies": {
           "Wdw_Sust.Core": "1.0.0",
-          "Wdw_Sust.Logging": "1.0.0"
+          "Wdw_Sust.Logging": "1.0.0",
+          "Wdw_Sust.Textile.Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Wdw_Sust.Textile.Global.WinForms.dll": {}
@@ -1441,7 +1469,8 @@
       "Wdw_Sust.Textile.Tsa.Dal/1.0.0": {
         "type": "project",
         "dependencies": {
-          "Wdw_Sust.Core": "1.0.0"
+          "Wdw_Sust.Core": "1.0.0",
+          "Wdw_Sust.Textile.Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Wdw_Sust.Textile.Tsa.Dal.dll": {}
@@ -1454,7 +1483,9 @@
         "type": "project",
         "dependencies": {
           "Wdw_Sust.Core": "1.0.0",
-          "Wdw_Sust.OpcDa.Core": "1.0.0"
+          "Wdw_Sust.OpcDa.Core": "1.0.0",
+          "Wdw_Sust.Textile.Core": "1.0.0",
+          "Wdw_Sust.Textile.Global.Opc": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Wdw_Sust.Textile.Tsa.Opc.dll": {}
@@ -1469,6 +1500,8 @@
           "Wdw_Sust.Core": "1.0.0",
           "Wdw_Sust.Logging": "1.0.0",
           "Wdw_Sust.OpcDa.Core": "1.0.0",
+          "Wdw_Sust.Textile.Core": "1.0.0",
+          "Wdw_Sust.Textile.Global.Opc": "1.0.0",
           "Wdw_Sust.Textile.Global.Opc.WinForms": "1.0.0",
           "Wdw_Sust.Textile.Global.WinForms": "1.0.0",
           "Wdw_Sust.Textile.Tsa.Dal": "1.0.0",
@@ -4550,6 +4583,16 @@
       "path": "../../../Wdw_Sust/wdw_sust.opc.da.core.ph/Wdw_Sust.OpcDa.Core.Ph.csproj",
       "msbuildProject": "../../../Wdw_Sust/wdw_sust.opc.da.core.ph/Wdw_Sust.OpcDa.Core.Ph.csproj"
     },
+    "Wdw_Sust.Textile.Core/1.0.0": {
+      "type": "project",
+      "path": "../../../Wdw_Sust/Wdw_Sust.Textile.Core/Wdw_Sust.Textile.Core.vbproj",
+      "msbuildProject": "../../../Wdw_Sust/Wdw_Sust.Textile.Core/Wdw_Sust.Textile.Core.vbproj"
+    },
+    "Wdw_Sust.Textile.Global.Opc/1.0.0": {
+      "type": "project",
+      "path": "../../../Wdw_Sust/Wdw_Sust.Textile.Global.Opc/Wdw_Sust.Textile.Global.Opc.vbproj",
+      "msbuildProject": "../../../Wdw_Sust/Wdw_Sust.Textile.Global.Opc/Wdw_Sust.Textile.Global.Opc.vbproj"
+    },
     "Wdw_Sust.Textile.Global.Opc.WinForms/1.0.0": {
       "type": "project",
       "path": "../../../Wdw_Sust/Wdw_Sust.Textile.Global.Opc.WinForms/Wdw_Sust.Textile.Global.Opc.WinForms.vbproj",
@@ -4699,7 +4742,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

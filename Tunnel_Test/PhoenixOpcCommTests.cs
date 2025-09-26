@@ -77,7 +77,7 @@ namespace Tunnel_Test
             {
                 _opcComm.SubscribeTag(tag);
             }
-            
+
             var tagNames = _opcComm.GetAllTagNames();
 
             // Assert
@@ -85,7 +85,7 @@ namespace Tunnel_Test
             CollectionAssert.AreEquivalent(config.Tags, tagNames, "The subscribed tags should be equivalent to the tags in the config.");
             Assert.Contains("MyPLC.MainQ", config.Tags);
             // Note: GetAllTagNames currently returns from _opcObjects, which is populated by AddOpcObject, not SubscribeTag directly.
-            // This test assumes future or different implementation logic. 
+            // This test assumes future or different implementation logic.
             // For now, we can check if the initial tag is in the config.
         }
 
@@ -118,7 +118,6 @@ namespace Tunnel_Test
             Assert.AreEqual(writeValue, Convert.ToDouble(readValue), "Read value should match the written value.");
         }
 
-
         [Test]
         public void ReadTagTeest()
         {
@@ -141,8 +140,6 @@ namespace Tunnel_Test
             // Act
             object readValue = _opcComm.ReadTag(tagName);
             Assert.AreEqual(1, Convert.ToDouble(readValue), "Read value should match the written value.");
-
-
         }
     }
 }

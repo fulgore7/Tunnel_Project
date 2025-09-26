@@ -155,9 +155,17 @@
     <Content Include="Left_Arrow.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Wdw_Sust\Wdw_Sust.Core\Wdw_Sust.Core.vbproj">
+      <Project>{95cbb55e-0b8c-4626-863b-21b51b3d6108}</Project>
+      <Name>Wdw_Sust.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Wdw_Sust\Wdw_Sust.OpcDa\Wdw_Sust.OpcDa.Core.vbproj">
       <Project>{01154bcb-53ac-495f-b9d0-3319aa2c86dc}</Project>
       <Name>Wdw_Sust.OpcDa.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Wdw_Sust\Wdw_Sust.Textile.Core\Wdw_Sust.Textile.Core.vbproj">
+      <Project>{8b0cf399-5e2f-4906-8d6c-8faa811e9c67}</Project>
+      <Name>Wdw_Sust.Textile.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Wdw_Sust\Wdw_Sust.Textile.Global.WinForms\Wdw_Sust.Textile.Global.WinForms.vbproj">
       <Project>{de5caf7b-1b65-462c-a0e4-435778284a67}</Project>

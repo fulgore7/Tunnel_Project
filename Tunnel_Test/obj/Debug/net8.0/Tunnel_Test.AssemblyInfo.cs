@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tunnel_Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+803bc5bec50833887689f9149ca8321b61586446")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88bc38f919e5df21289978761e80c6a07a593ea6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tunnel_Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tunnel_Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

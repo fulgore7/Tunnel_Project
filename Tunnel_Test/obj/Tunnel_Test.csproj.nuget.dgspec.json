@@ -12,23 +12,7 @@
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net48": {
-            "projectReferences": {
-              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
-                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj"
-              },
-              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj": {
-                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj"
-              },
-              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Dal\\Wdw_Sust.Textile.Tsa.Dal.vbproj": {
-                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Dal\\Wdw_Sust.Textile.Tsa.Dal.vbproj"
-              },
-              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc.WinForms\\Wdw_Sust.Textile.Tsa.Opc.WinForms.vbproj": {
-                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc.WinForms\\Wdw_Sust.Textile.Tsa.Opc.WinForms.vbproj"
-              },
-              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc\\Wdw_Sust.Textile.Tsa.Opc.vbproj": {
-                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc\\Wdw_Sust.Textile.Tsa.Opc.vbproj"
-              }
-            }
+            "projectReferences": {}
           }
         }
       },
@@ -140,7 +124,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -194,6 +178,9 @@
             "projectReferences": {
               "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
                 "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj"
               }
             }
           }
@@ -259,6 +246,21 @@
               },
               "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
                 "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc.WinForms\\Wdw_Sust.Textile.Global.Opc.WinForms.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc.WinForms\\Wdw_Sust.Textile.Global.Opc.WinForms.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc\\Wdw_Sust.Textile.Global.Opc.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc\\Wdw_Sust.Textile.Global.Opc.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc.WinForms\\Wdw_Sust.Textile.Tsa.Opc.WinForms.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc.WinForms\\Wdw_Sust.Textile.Tsa.Opc.WinForms.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc\\Wdw_Sust.Textile.Tsa.Opc.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Tsa.Opc\\Wdw_Sust.Textile.Tsa.Opc.vbproj"
               }
             }
           }
@@ -291,6 +293,26 @@
         "net48": {}
       }
     },
+    "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj",
+        "projectName": "Wdw_Sust.Textile.Core",
+        "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
     "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc.WinForms\\Wdw_Sust.Textile.Global.Opc.WinForms.vbproj": {
       "restore": {
         "projectUniqueName": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc.WinForms\\Wdw_Sust.Textile.Global.Opc.WinForms.vbproj",
@@ -309,8 +331,40 @@
               "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
                 "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj"
               },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc\\Wdw_Sust.Textile.Global.Opc.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc\\Wdw_Sust.Textile.Global.Opc.vbproj"
+              },
               "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj": {
                 "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc\\Wdw_Sust.Textile.Global.Opc.vbproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc\\Wdw_Sust.Textile.Global.Opc.vbproj",
+        "projectName": "Wdw_Sust.Textile.Global.Opc",
+        "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc\\Wdw_Sust.Textile.Global.Opc.vbproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj"
               }
             }
           }
@@ -334,6 +388,9 @@
               },
               "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj": {
                 "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Logging\\Wdw_Sust.Logging.csproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj"
               }
             }
           }
@@ -354,6 +411,9 @@
             "projectReferences": {
               "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj": {
                 "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Core\\Wdw_Sust.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj"
               }
             }
           }
@@ -381,8 +441,14 @@
               "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
                 "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj"
               },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj"
+              },
               "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc.WinForms\\Wdw_Sust.Textile.Global.Opc.WinForms.vbproj": {
                 "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc.WinForms\\Wdw_Sust.Textile.Global.Opc.WinForms.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc\\Wdw_Sust.Textile.Global.Opc.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc\\Wdw_Sust.Textile.Global.Opc.vbproj"
               },
               "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj": {
                 "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.WinForms\\Wdw_Sust.Textile.Global.WinForms.vbproj"
@@ -415,6 +481,12 @@
               },
               "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj": {
                 "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.OpcDa\\Wdw_Sust.OpcDa.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Core\\Wdw_Sust.Textile.Core.vbproj"
+              },
+              "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc\\Wdw_Sust.Textile.Global.Opc.vbproj": {
+                "projectPath": "C:\\Users\\colem160\\source\\repos\\Wdw_Sust\\Wdw_Sust.Textile.Global.Opc\\Wdw_Sust.Textile.Global.Opc.vbproj"
               }
             }
           }

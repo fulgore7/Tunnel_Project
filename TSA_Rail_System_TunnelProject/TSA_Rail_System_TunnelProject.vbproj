@@ -373,6 +373,51 @@
     <Compile Include="Wdw_Sust.Core\validation\EventArgs\ObjectInvalidEventArgs.vb" />
     <Compile Include="Wdw_Sust.Core\validation\EventArgs\RuleArgs.vb" />
     <Compile Include="Wdw_Sust.Core\validation\ObjectValidationErrorDetail.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\ab\BackplaneCipPathNode.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\ab\CipPath.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\ab\CipPathNode.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\ab\EthernetCipPathNode.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\ab\RslinxOpcDaSettings.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\ab\RslinxOpcTagGenerator.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\Enums.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\eventargs\OPCCommStatusEventArgs.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\eventargs\OPCGlobalDataChangeEventArgs.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\eventargs\OPCGroupDataChangeEventArgs.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\eventargs\OPCItemRegisteringProgressEventArgs.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\eventargs\OpcMetaDataEventArgs.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\20100122 - OPCObjectBase_Back_Up.vb.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\IHaveOpcObjects.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\IOPCActivity.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\IOPCBoolean.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\IOpcComm.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\IOpcElementControl.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\IOpcObject AllenBradley.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\IOpcObject.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\IOpcObjectPhoenix.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\IOPCPLCNameLinkable.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\IOpcTagGenerator.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\OPCHelper.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\OPCItemPropertyItem.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\OPCObjectBaseNew.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\interfaces\OPCRecordedComm.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OPCComExceptions.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcComm.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcDictionary.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcElement.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcGroupDefinition.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcGroupList.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcGroupProperties.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcIncomingData.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcItemDictionary.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcItemKey.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcItemWriteErrorException.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcMessagePath.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcObjectAbBase.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcObjectBase.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcObjectDictionary.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcString.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\OpcTagGeneratorBase.vb" />
+    <Compile Include="Wdw_Sust.OpcDa.Core\softing\SoftingOpcTagGenerator.vb" />
     <Compile Include="Wdw_Sust.Textile.Core\attributes\NotConnectableOPCItemAttribute.vb" />
     <Compile Include="Wdw_Sust.Textile.Core\ChatClient.vb" />
     <Compile Include="Wdw_Sust.Textile.Core\ChatMessage.vb" />
@@ -997,9 +1042,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="Wdw_Sust.Core\api\index.md" />
+    <None Include="Wdw_Sust.OpcDa.Core\app.config" />
     <None Include="Wdw_Sust.Textile.Tsa.Wcf\app.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Wdw_Sust.OpcDa.Core\lib\Interop.RsiOPCAuto.dll" />
+    <Content Include="Wdw_Sust.OpcDa.Core\lib\RsiOPCAuto.dll" />
     <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\donald_blue.ico" />
     <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\donald_green.ico" />
     <Content Include="Wdw_Sust.Textile.Core\resources\ProgramIcons\donald_lightblue.ico" />

@@ -1,0 +1,80 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F15096C-0046-455B-B255-F8C8AA5059D4}|Wdw_Sust.OpcDa.Core.Plc\\Wdw_Sust.OpcDa.Core.Plc.csproj|c:\\users\\colem160\\source\\repos\\tunnelproject\\tunnel_project\\wdw_sust.opcda.core.plc\\wdw_sust.opcda.core.plc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7F15096C-0046-455B-B255-F8C8AA5059D4}|Wdw_Sust.OpcDa.Core.Plc\\Wdw_Sust.OpcDa.Core.Plc.csproj|solutionrelative:wdw_sust.opcda.core.plc\\wdw_sust.opcda.core.plc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F2BACB6-74BB-4CA6-B206-5030D15C1D01}|TSA_Rail_System_TunnelProject\\TSA_Rail_System_TunnelProject.vbproj|c:\\users\\colem160\\source\\repos\\tunnelproject\\tunnel_project\\tsa_rail_system_tunnelproject\\wdw_sust.opcda.core\\interfaces\\opcobjectbasenew.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{8F2BACB6-74BB-4CA6-B206-5030D15C1D01}|TSA_Rail_System_TunnelProject\\TSA_Rail_System_TunnelProject.vbproj|solutionrelative:tsa_rail_system_tunnelproject\\wdw_sust.opcda.core\\interfaces\\opcobjectbasenew.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 170,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Wdw_Sust.OpcDa.Core.Plc",
+              "DocumentMoniker": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\Wdw_Sust.OpcDa.Core.Plc\\Wdw_Sust.OpcDa.Core.Plc.csproj",
+              "RelativeDocumentMoniker": "Wdw_Sust.OpcDa.Core.Plc\\Wdw_Sust.OpcDa.Core.Plc.csproj",
+              "ToolTip": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\Wdw_Sust.OpcDa.Core.Plc\\Wdw_Sust.OpcDa.Core.Plc.csproj",
+              "RelativeToolTip": "Wdw_Sust.OpcDa.Core.Plc\\Wdw_Sust.OpcDa.Core.Plc.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-30T14:14:37.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OPCObjectBaseNew.vb",
+              "DocumentMoniker": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Rail_System_TunnelProject\\Wdw_Sust.OpcDa.Core\\interfaces\\OPCObjectBaseNew.vb",
+              "RelativeDocumentMoniker": "TSA_Rail_System_TunnelProject\\Wdw_Sust.OpcDa.Core\\interfaces\\OPCObjectBaseNew.vb",
+              "ToolTip": "C:\\Users\\colem160\\source\\repos\\TunnelProject\\Tunnel_Project\\TSA_Rail_System_TunnelProject\\Wdw_Sust.OpcDa.Core\\interfaces\\OPCObjectBaseNew.vb",
+              "RelativeToolTip": "TSA_Rail_System_TunnelProject\\Wdw_Sust.OpcDa.Core\\interfaces\\OPCObjectBaseNew.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-09-29T14:27:18.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 411,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

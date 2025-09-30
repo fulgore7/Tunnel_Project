@@ -1,0 +1,12 @@
+C:\Users\colem160\source\repos\TunnelProject\Tunnel_Project\Wdw_Sust.OpcDa.Core.Plc\bin\Debug\net8.0\Wdw_Sust.OpcDa.Core.Plc.deps.json
+C:\Users\colem160\source\repos\TunnelProject\Tunnel_Project\Wdw_Sust.OpcDa.Core.Plc\bin\Debug\net8.0\Wdw_Sust.OpcDa.Core.Plc.dll
+C:\Users\colem160\source\repos\TunnelProject\Tunnel_Project\Wdw_Sust.OpcDa.Core.Plc\bin\Debug\net8.0\Wdw_Sust.OpcDa.Core.Plc.pdb
+C:\Users\colem160\source\repos\TunnelProject\Tunnel_Project\Wdw_Sust.OpcDa.Core.Plc\obj\Debug\net8.0\Wdw_Sust.OpcDa.Core.Plc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\colem160\source\repos\TunnelProject\Tunnel_Project\Wdw_Sust.OpcDa.Core.Plc\obj\Debug\net8.0\Wdw_Sust.OpcDa.Core.Plc.AssemblyInfoInputs.cache
+C:\Users\colem160\source\repos\TunnelProject\Tunnel_Project\Wdw_Sust.OpcDa.Core.Plc\obj\Debug\net8.0\Wdw_Sust.OpcDa.Core.Plc.AssemblyInfo.cs
+C:\Users\colem160\source\repos\TunnelProject\Tunnel_Project\Wdw_Sust.OpcDa.Core.Plc\obj\Debug\net8.0\Wdw_Sust.OpcDa.Core.Plc.csproj.CoreCompileInputs.cache
+C:\Users\colem160\source\repos\TunnelProject\Tunnel_Project\Wdw_Sust.OpcDa.Core.Plc\obj\Debug\net8.0\Wdw_Sust.OpcDa.Core.Plc.sourcelink.json
+C:\Users\colem160\source\repos\TunnelProject\Tunnel_Project\Wdw_Sust.OpcDa.Core.Plc\obj\Debug\net8.0\Wdw_Sust.OpcDa.Core.Plc.dll
+C:\Users\colem160\source\repos\TunnelProject\Tunnel_Project\Wdw_Sust.OpcDa.Core.Plc\obj\Debug\net8.0\refint\Wdw_Sust.OpcDa.Core.Plc.dll
+C:\Users\colem160\source\repos\TunnelProject\Tunnel_Project\Wdw_Sust.OpcDa.Core.Plc\obj\Debug\net8.0\Wdw_Sust.OpcDa.Core.Plc.pdb
+C:\Users\colem160\source\repos\TunnelProject\Tunnel_Project\Wdw_Sust.OpcDa.Core.Plc\obj\Debug\net8.0\ref\Wdw_Sust.OpcDa.Core.Plc.dll

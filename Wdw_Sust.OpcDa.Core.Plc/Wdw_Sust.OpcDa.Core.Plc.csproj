@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="AllenBradley\" />
-    <Folder Include="Phoenix\" />
   </ItemGroup>
 
 </Project>

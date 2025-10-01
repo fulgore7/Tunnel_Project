@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
-//using Wdw_Sust.OpcDa.Core.Plc.Interface;
+//using TSA_Rail_System.Attributes;
+//using TSA_Rail_System.Interfaces;
 //using Wdw_Sust.Core.Attributes;
 //using Wdw_Sust.OpcDa.Core.Interfaces;
 
@@ -15,9 +16,6 @@ namespace Wdw_Sust.OpcDa.Core.Plc.AllenBradley
         /// Used to cache tag definitions so that they are generated only once.
         /// </summary>
         private static readonly Dictionary<Type, List<string>> _tagDefinitionCache = new();
-
-        /// <inheritdoc />
-        public bool PrintTagNameWhenDebug { get; set; }
 
         /// <summary>
         /// Generates OPC tags for the provided object.
@@ -43,13 +41,13 @@ namespace Wdw_Sust.OpcDa.Core.Plc.AllenBradley
             }
 
             // If this is a primitive OPC element
-            if (obj is IOpcPrimitiveData)
+            if (obj is OpcElement)
             {
                 var tag = GenerateOpcElementTagName(obj);
                 obj.ListOfOpcTags.Add(tag, 1);
                 names.Add(tag);
 
-                if (PrintTagNameWhenDebug)
+                if (OpcComm.PrintTagNameWhenDebug)
                     Console.WriteLine($"{tag} = index 1");
 
                 return names.ToArray();
@@ -88,7 +86,7 @@ namespace Wdw_Sust.OpcDa.Core.Plc.AllenBradley
                     names.Add(tempTag);
                     obj.ListOfOpcTags.Add(tempTag, 1);
 
-                    if (PrintTagNameWhenDebug)
+                    if (OpcComm.PrintTagNameWhenDebug)
                         Console.WriteLine($"{tempTag} = index 1");
 
                     return names.ToArray();
@@ -106,7 +104,7 @@ namespace Wdw_Sust.OpcDa.Core.Plc.AllenBradley
                 finalTags.Add(tagName);
                 obj.ListOfOpcTags.Add(tagName, index);
 
-                if (PrintTagNameWhenDebug)
+                if (OpcComm.PrintTagNameWhenDebug)
                     Console.WriteLine($"{tagName} = index {index}");
 
                 index++;
@@ -153,12 +151,12 @@ namespace Wdw_Sust.OpcDa.Core.Plc.AllenBradley
         /// <summary>
         /// Determines if a property is related to OPC tag generation.
         /// </summary>
-        private static bool IsPropertyOpcRelated(PropertyInfo publicProperty, string[] filters)
+        private bool IsPropertyOpcRelated(PropertyInfo publicProperty, string[] filters)
         {
             if (!publicProperty.Module.ScopeName.ToLower().StartsWith("wdw_sust"))
                 return false;
 
-            if (Attribute.IsDefined(publicProperty, typeof(NotConnectableOpcItemAttribute)) &&
+            if (Attribute.IsDefined(publicProperty, typeof(NotConnectableOPCItemAttribute)) &&
                 !Attribute.IsDefined(publicProperty, typeof(ConnectableOpcItemAttribute)))
                 return false;
 
@@ -179,6 +177,17 @@ namespace Wdw_Sust.OpcDa.Core.Plc.AllenBradley
             if ((publicProperty.PropertyType.IsClass || publicProperty.PropertyType.IsInterface) &&
                 publicProperty.PropertyType.FullName != "System.String")
             {
+                if (string.IsNullOrEmpty(subTagName))
+                {
+                    if (index > -1)
+                        subTagName = $"{publicProperty.Name}[{index}]";
+                    else
+                        subTagName = publicProperty.Name;
+                }
+                else
+                {
+                    subTagName = $"{subTagName}.{publicProperty.Name}";
+                }
                 subTagName = HandleOpcArrayTagName(subTagName, publicProperty.Name, index);
 
                 var subProperties = publicProperty.PropertyType.GetProperties();

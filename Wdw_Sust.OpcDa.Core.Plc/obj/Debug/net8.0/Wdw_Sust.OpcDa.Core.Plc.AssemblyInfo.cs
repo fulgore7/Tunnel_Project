@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Wdw_Sust.OpcDa.Core.Plc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+679d210916db3b4d129107f56cf7fb713b5a9a4e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e44f3b10367a283b7c941a86399df83a7776d7b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Wdw_Sust.OpcDa.Core.Plc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Wdw_Sust.OpcDa.Core.Plc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

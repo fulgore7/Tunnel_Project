@@ -10,4 +10,8 @@
     <Folder Include="AllenBradley\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TSA_Rail_System_TunnelProject\TSA_Rail_System_TunnelProject.vbproj" />
+  </ItemGroup>
+
 </Project>

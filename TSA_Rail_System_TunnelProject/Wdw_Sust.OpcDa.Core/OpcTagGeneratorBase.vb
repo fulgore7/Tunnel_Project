@@ -1,4 +1,6 @@
 ﻿Imports System.Reflection
+Imports TSA_Rail_System.Attributes
+Imports TSA_Rail_System.Interfaces
 Imports Wdw_Sust.Core.Attributes
 Imports Wdw_Sust.OpcDa.Core.Interfaces
 
@@ -9,9 +11,6 @@ Public MustInherit Class OpcTagGeneratorBase
     ''' Used to cache tag definitions so that it is only generated once. This is a shared field
     ''' </summary>
     Private Shared ReadOnly _tagDefinitionCache As New Dictionary(Of Type, List(Of String))()
-
-    Public Property PrintTagNameWhenDebug As Boolean Implements IOpcTagGenerator.PrintTagNameWhenDebug
-
 
     ''' <summary>
     ''' Logic that generates the opc tags.
@@ -33,12 +32,12 @@ Public MustInherit Class OpcTagGeneratorBase
             Next
             Return names.ToArray
             'If this is an OpcElement
-        ElseIf TypeOf obj Is IOpcPrimitiveData Then
+        ElseIf TypeOf obj Is OpcElement Then
             s = GenerateOpcElementTagName(obj)
             'TODO: this needs to be separated from GetPLCTagNames as it intends to return a list of plc tags
             obj.ListOfOpcTags.Add(s, 1)  ' OpcElement always has 1 index only
             names.Add(s)
-            If PrintTagNameWhenDebug Then Console.WriteLine(String.Format("{0} = index {1}", s, 1))
+            If OpcComm.PrintTagNameWhenDebug Then Console.WriteLine(String.Format("{0} = index {1}", s, 1))
             Return names.ToArray
             'If list of tags has already in the cache
         ElseIf _tagDefinitionCache.ContainsKey(obj.GetType) Then
@@ -65,7 +64,7 @@ Public MustInherit Class OpcTagGeneratorBase
                 Dim tempTag As String = GenerateOpcElementTagName(obj)
                 names.Add(tempTag)
                 obj.ListOfOpcTags.Add(tempTag, 1)
-                If PrintTagNameWhenDebug Then Console.WriteLine(String.Format("{0} = index {1}", s, 1))
+                If OpcComm.PrintTagNameWhenDebug Then Console.WriteLine(String.Format("{0} = index {1}", s, 1))
                 Return names.ToArray
             End If
 
@@ -79,7 +78,7 @@ Public MustInherit Class OpcTagGeneratorBase
             s = GenerateOpcTagName(obj.PlcName, obj.TagName, s)
             tempList.Add(s)
             obj.ListOfOpcTags.Add(s, index)
-            If PrintTagNameWhenDebug Then 'TODO: How to handle Allen Bradley comm hard coded.
+            If OpcComm.PrintTagNameWhenDebug Then 'TODO: How to handle Allen Bradley comm hard coded.
                 Console.WriteLine(String.Format("{0} = index {1}", s, index))
             End If
             index += 1
@@ -111,7 +110,7 @@ Public MustInherit Class OpcTagGeneratorBase
         'Check if the property of the object falls in the scope of WDW_SUST.dll
         If Not publicProperty.Module.ScopeName.ToLower.StartsWith("wdw_sust") Then Return False ' And Not publicProperty.ReflectedType.BaseType.FullName = "WDW_SUST.Textile.LINT.Opc.Core.OpcObjectBase" Then Return False
         'Check if the property is non-connectable Opc item
-        If Attribute.IsDefined(publicProperty, GetType(NotConnectableOpcItemAttribute)) Then
+        If Attribute.IsDefined(publicProperty, GetType(NotConnectableOPCItemAttribute)) Then
             If Not Attribute.IsDefined(publicProperty, GetType(ConnectableOpcItemAttribute)) Then Return False
         End If
         'Check if the property is predefined to be not connected
@@ -126,16 +125,15 @@ Public MustInherit Class OpcTagGeneratorBase
         If IsPropertyOpcRelated(publicProperty, filters) Then
             If (publicProperty.PropertyType.IsClass OrElse publicProperty.PropertyType.IsInterface) AndAlso
                 publicProperty.PropertyType.FullName <> "System.String" Then
-                'If subTagName Is String.Empty Then
-                '    If index > -1 Then
-                '        subTagName = String.Format("{0}[{1}]", publicProperty.Name, index)
-                '    Else
-                '        subTagName = String.Format("{0}", publicProperty.Name)
-                '    End If
-                'Else
-                '    subTagName = String.Format("{0}.{1}", subTagName, publicProperty.Name)
-                'End If
-                subTagName = HandleOpcArrayTagName(subTagName, publicProperty.Name, index)
+                If subTagName Is String.Empty Then
+                    If index > -1 Then
+                        subTagName = String.Format("{0}[{1}]", publicProperty.Name, index)
+                    Else
+                        subTagName = String.Format("{0}", publicProperty.Name)
+                    End If
+                Else
+                    subTagName = String.Format("{0}.{1}", subTagName, publicProperty.Name)
+                End If
                 Dim mySubType As Type = publicProperty.PropertyType
                 Dim subPublicProperties() As PropertyInfo
                 subPublicProperties = mySubType.GetProperties
@@ -170,26 +168,5 @@ Public MustInherit Class OpcTagGeneratorBase
         End If
     End Sub
 
-    Public Function GenerateOpcTagName() As String() Implements IOpcTagGenerator.GenerateOpcTagName
-        Throw New NotImplementedException()
-    End Function
-
-    Public MustOverride Function HandleOpcArrayTagName(tagName As String, propertyName As String, index As Integer) As String Implements IOpcTagGenerator.HandleOpcArrayTagName
-
 End Class
 
-'Public Class PhTagGenerator
-'    Inherits OpcTagGeneratorBase
-
-'    Public Overrides Function HandleOpcArrayTagName(tagName As String, propertyName As String, index As Integer) As String
-'        Throw New NotImplementedException()
-'    End Function
-
-'    Protected Overrides Function GenerateOpcElementTagName(obj As IOpcObject) As String
-'        Throw New NotImplementedException()
-'    End Function
-
-'    Protected Overrides Function GenerateOpcTagName(plcTopicName As String, tagName As String, subTagName As String) As String
-'        Throw New NotImplementedException()
-'    End Function
-'End Class
